@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python:*)",
+      "Bash(pip:*)",
+      "Bash(C:/Users/Cliente/AppData/Local/Python/pythoncore-3.14-64/python.exe:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)",
+      "Bash(cp:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(pip install:*)",
+      "Bash(pip show:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Skill(update-config)",
+      "Bash(head -1500 \"C:\\\\PROJETO-IA\\\\TRADE\\\\Oliver-Velez-Metodo\\\\topicos apostila ariane.txt\")",
+      "Read(//tmp/**)",
+      "Bash(grep -E \"\\\\.\\(html|md|txt\\)$\")",
+      "Bash(find \"C:\\\\\\\\PROJETO-IA\\\\\\\\TRADE\\\\\\\\Oliver-Velez-Metodo\" -type f -name \"*.html\" -o -name \"*.md\" -o -name \"*.txt\")",
+      "Bash(find C:\\\\\\\\PROJETO-IA\\\\\\\\TRADE\\\\\\\\Oliver-Velez-Metodo *)",
+      "Bash(pip3 list *)",
+      "Bash(python3 -c \"import sys; print\\('Python packages:'\\); import pkg_resources; [print\\(f' ✓ {d.project_name} {d.version}'\\) for d in pkg_resources.working_set]\")",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m 'Projeto Landing Page Price Action - Versão 1.0 Completa *)"
+    ]
+  }
+}

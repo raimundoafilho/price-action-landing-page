@@ -1,0 +1,274 @@
+═══════════════════════════════════════════════════════════════════════════════
+CHECKLIST PRÉ-EXECUÇÃO - Gerador JSON Consolidado
+Data: 2026-04-24
+Status: ✓ PRONTO PARA PRODUÇÃO
+═══════════════════════════════════════════════════════════════════════════════
+
+ANTES DE EXECUTAR O SCRIPT
+═════════════════════════════════════════════════════════════════════════════
+
+□ Verificar Ambiente Python
+  □ Versão Python 3.6+ instalada
+    Comando: python3 --version
+    Esperado: Python 3.X.X
+
+  □ Python acessível via linha de comando
+    Comando: python3 -c "print('OK')"
+    Esperado: OK
+
+□ Verificar Arquivos de Entrada
+  □ pdf_extracted.json existe
+    Local: C:\PROJETO-IA\TRADE\apostila_scraped\pdf_extracted.json
+    Tamanho esperado: ~328 KB
+    Status: ls -lh pdf_extracted.json
+
+  □ pdf_texto_completo.txt existe
+    Local: C:\PROJETO-IA\TRADE\apostila_scraped\pdf_texto_completo.txt
+    Tamanho esperado: ~141 KB
+    Status: ls -lh pdf_texto_completo.txt
+
+□ Verificar Script Principal
+  □ generate_landing_page_consolidated.py existe
+    Local: C:\PROJETO-IA\TRADE\apostila_scraped\generate_landing_page_consolidated.py
+    Tamanho esperado: ~15 KB
+    Status: ls -lh generate_landing_page_consolidated.py
+
+  □ Script é legível e não está corrompido
+    Comando: head -5 generate_landing_page_consolidated.py
+    Esperado: #!/usr/bin/env python3 (ou similar)
+
+□ Verificar Espaço em Disco
+  □ Espaço livre > 500 MB
+    Comando: df -h C:\
+    Esperado: >500 MB disponíveis
+
+  □ Pasta apostila_scraped tem permissão de escrita
+    Teste: touch test.tmp && rm test.tmp
+    Esperado: Sem erros
+
+□ Revisar Documentação
+  □ GERADOR_JSON.md lido
+  □ RESUMO_IMPLEMENTACAO.txt lido
+  □ ESTRUTURA_VISUAL.txt revisado
+
+═════════════════════════════════════════════════════════════════════════════
+
+EXECUTAR O SCRIPT
+═════════════════════════════════════════════════════════════════════════════
+
+PASSO 1: Abrir Terminal
+  □ PowerShell ou Bash disponível
+  □ Navegar para pasta: cd C:\PROJETO-IA\TRADE\apostila_scraped
+
+PASSO 2: Executar Script
+  □ Comando: python3 generate_landing_page_consolidated.py
+
+  Resultado esperado:
+  ┌─────────────────────────────────────────────────────────┐
+  │ ================================================================================
+  │ GERADOR JSON CONSOLIDADO - Landing Page Price Action
+  │ ================================================================================
+  │
+  │ [FASE 1/5] Carregando dados brutos...
+  │   ✓ pdf_extracted.json: 350 páginas carregadas
+  │   ✓ pdf_texto_completo.txt: 83,702 caracteres carregados
+  │
+  │ [FASE 2/5] Identificando estrutura de módulos...
+  │   ✓ 5 módulos encontrados:
+  │     1. Módulo Básico 1... (páginas 3-7, X imagens)
+  │     2. Módulo Básico 2... (páginas 8-60, X imagens)
+  │     ...
+  │
+  │ [FASE 3/5] Extraindo tópicos por módulo...
+  │ [FASE 4/5] Construindo estrutura JSON consolidada...
+  │ [FASE 5/5] Salvando e validando...
+  │   ✓ Arquivo salvo: landing-page-data.json
+  │   ✓ Tamanho: ~2.5 MB
+  │
+  │ ✓ PROCESSAMENTO CONCLUÍDO COM SUCESSO!
+  └─────────────────────────────────────────────────────────┘
+
+  Tempo esperado: <5 segundos
+
+═════════════════════════════════════════════════════════════════════════════
+
+APÓS EXECUÇÃO - VALIDAÇÃO
+═════════════════════════════════════════════════════════════════════════════
+
+□ Arquivo de Saída Criado
+  □ landing-page-data.json existe
+    Local: C:\PROJETO-IA\TRADE\apostila_scraped\landing-page-data.json
+    Tamanho esperado: ~2.4-2.6 MB
+    Comando: ls -lh landing-page-data.json
+
+□ Arquivo Não Está Vazio
+  □ Tamanho > 100 KB
+    Comando: wc -c landing-page-data.json
+    Esperado: >2,000,000 bytes
+
+□ Validar Estrutura JSON
+  □ JSON é válido (sem syntax errors)
+    Comando: python3 -m json.tool landing-page-data.json > /dev/null
+    Esperado: Sem erros
+
+  □ Amostragem rápida
+    Comando: head -50 landing-page-data.json
+    Esperado: Começar com { "metadata": {
+
+□ Verificar Integridade dos Dados
+  □ Amostragem: Abrir em VS Code / Editor
+    - Confirmar presença de "modules"
+    - Confirmar presença de "metadata"
+    - Confirmar presença de "journey"
+    - Confirmar présença de múltiplas imagens com "alt" e "caption"
+
+□ Verificar Contagens
+  □ Módulos: 5
+    Comando: grep -c '"id": "module-' landing-page-data.json
+    Esperado: ≥5
+
+  □ Tópicos: ~35
+    Comando: grep -c '"id": "module-[0-9]*-topic-' landing-page-data.json
+    Esperado: ~35
+
+  □ Slides: 350
+    Comando: grep -c '"page_number":' landing-page-data.json
+    Esperado: ≥350
+
+  □ Imagens: 877
+    Comando: grep -c '"id": "img-' landing-page-data.json
+    Esperado: ~877
+
+□ Verificar Metadados SEO
+  □ SEO presentes em slides
+    Comando: grep -c '"seo":' landing-page-data.json
+    Esperado: ≥300
+
+□ Verificar Otimizações de Imagem
+  □ WebP habilitado
+    Comando: grep -c '"webp_enabled": true' landing-page-data.json
+    Esperado: ~877
+
+  □ Lazy loading habilitado
+    Comando: grep -c '"lazy_load": true' landing-page-data.json
+    Esperado: ~877
+
+═════════════════════════════════════════════════════════════════════════════
+
+PRÓXIMOS PASSOS APÓS SUCESSO
+═════════════════════════════════════════════════════════════════════════════
+
+□ Backup do Arquivo
+  □ Fazer cópia de segurança
+    Comando: cp landing-page-data.json landing-page-data-backup.json
+
+  □ Armazenar em Cloud (Google Drive, OneDrive, etc)
+
+□ Integração com Landing Page
+  □ Copiar landing-page-data.json para projeto Next.js
+    Destino: squads/price-action-education/public/data/
+
+  □ Criar componentes React para renderizar
+  □ Configurar rotas dinâmicas (/modules/:id, /slides/:id)
+  □ Implementar busca e filtros
+
+□ Otimizar Imagens
+  □ Extrair imagens do PDF original (se ainda não feito)
+  □ Converter para WebP
+  □ Gerar srcsets para responsividade
+  □ Implementar LQIP (blur placeholders)
+
+□ Deploy
+  □ Fazer deploy da landing page para produção
+  □ Testar em navegadores (Chrome, Firefox, Safari, Edge)
+  □ Validar com Lighthouse (Performance >= 90)
+  □ Configurar Analytics e Monitoring
+
+═════════════════════════════════════════════════════════════════════════════
+
+TROUBLESHOOTING - SE ALGO DER ERRADO
+═════════════════════════════════════════════════════════════════════════════
+
+Problema: "FileNotFoundError: pdf_extracted.json"
+Solução:
+  1. Verificar se está no diretório correto
+     Comando: pwd
+     Esperado: C:\PROJETO-IA\TRADE\apostila_scraped
+  2. Listar arquivos
+     Comando: ls -la *.json
+     Esperado: Ver pdf_extracted.json na lista
+
+Problema: "SyntaxError" no script
+Solução:
+  1. Verificar versão do Python
+     Comando: python3 --version
+     Esperado: Python 3.6+
+  2. Verificar indentação do script
+     Abrir em editor de texto
+
+Problema: Arquivo JSON muito grande (>5 MB)
+Solução:
+  1. Normal - arquivo consolidado é grande (~2.5 MB)
+  2. Se > 5 MB, pode ter duplicação
+  3. Verificar contagem de imagens:
+     Comando: grep -c '"id": "img-' landing-page-data.json
+     Esperado: ~877 (se mais, há duplicação)
+
+Problema: JSON inválido (não abre em editor)
+Solução:
+  1. Validar sintaxe
+     Comando: python3 -m json.tool landing-page-data.json | head
+  2. Procurar por caractere problemático (Unicode)
+  3. Reexecutar script
+
+Problema: Script leva muito tempo (>30s)
+Solução:
+  1. Normal tempo primeira execução: <5s
+  2. Se > 30s, pode estar processando arquivo muito grande
+  3. Verificar tamanho de pdf_extracted.json
+     Comando: ls -lh pdf_extracted.json
+     Esperado: ~328 KB
+
+═════════════════════════════════════════════════════════════════════════════
+
+MÉTRICAS ESPERADAS APÓS EXECUÇÃO
+═════════════════════════════════════════════════════════════════════════════
+
+Arquivo Gerado:
+  ✓ landing-page-data.json
+  ✓ Tamanho: ~2.4-2.6 MB
+  ✓ Formato: JSON válido
+  ✓ Encoding: UTF-8
+
+Conteúdo Estruturado:
+  ✓ metadata (1 seção)
+  ✓ journey (1 seção, 6 estágios)
+  ✓ modules (5 módulos)
+  ✓ topics (~35 tópicos)
+  ✓ slides (350 slides)
+  ✓ images (877 imagens)
+  ✓ tables (10 tabelas)
+
+Qualidade de Dados:
+  ✓ Sem duplicação
+  ✓ Sem campos vazios críticos
+  ✓ Todas as imagens com alt text
+  ✓ Todas as imagens com caption
+  ✓ Todos os slides com SEO metadata
+  ✓ Sem caracteres corrompidos
+
+═════════════════════════════════════════════════════════════════════════════
+
+CONTATO EM CASO DE DÚVIDAS
+═════════════════════════════════════════════════════════════════════════════
+
+Desenvolvedor: Raimundo Araujo Filho
+Email: raimundoaraujo.filho@hotmail.com
+Projeto: Apostila FIMATHE - Método Price Action
+Documentação: GERADOR_JSON.md
+Data: 2026-04-24
+
+═════════════════════════════════════════════════════════════════════════════
+✓ CHECKLIST COMPLETO - PRONTO PARA EXECUTAR
+═══════════════════════════════════════════════════════════════════════════════
+

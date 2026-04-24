@@ -1,0 +1,311 @@
+═══════════════════════════════════════════════════════════════════════════════
+ESTRUTURA VISUAL - Hierarquia do JSON Consolidado
+═══════════════════════════════════════════════════════════════════════════════
+
+NÍVEL 0: RAIZ JSON
+═══════════════════════════════════════════════════════════════════════════════
+
+landing-page-data.json
+├── metadata
+│   ├── title: "Método Price Action de Oliver Velez"
+│   ├── author: "Oliver Velez"
+│   ├── total_modules: 5
+│   ├── total_slides: 350
+│   ├── total_images: 877
+│   ├── total_tables: 10
+│   └── ...
+├── journey
+│   ├── title: "Trajetória do Trader"
+│   └── stages: [6 estágios de progressão]
+└── modules: [Array de 5 módulos]
+
+═══════════════════════════════════════════════════════════════════════════════
+NÍVEL 1: MÓDULOS (5 no total)
+═══════════════════════════════════════════════════════════════════════════════
+
+modules[0]
+├── id: "module-01"
+├── order: 1
+├── title: "Módulo Básico 1 - Conhecimentos Básicos"
+├── pages_total: 5
+├── images_total: 8
+└── topics: [3 tópicos]
+
+modules[1]
+├── id: "module-02"
+├── order: 2
+├── title: "Módulo Básico 2 - Introdução ao Método"
+├── pages_total: 53
+├── images_total: 124
+└── topics: [8 tópicos]
+
+modules[2]
+├── id: "module-03"
+├── order: 3
+├── title: "Módulo Intermediário 1 - Reconhecendo os Setups"
+├── pages_total: 40
+├── images_total: 186
+└── topics: [5 tópicos]
+
+modules[3]
+├── id: "module-04"
+├── order: 4
+├── title: "Módulo Intermediário 2 - Refino dos Setups"
+├── pages_total: 40
+├── images_total: 245
+└── topics: [4 tópicos]
+
+modules[4]
+├── id: "module-05"
+├── order: 5
+├── title: "Módulo Avançado - Consistência"
+├── pages_total: 210
+├── images_total: 314
+└── topics: [6 tópicos]
+
+═══════════════════════════════════════════════════════════════════════════════
+NÍVEL 2: TÓPICOS (≈35 no total)
+═══════════════════════════════════════════════════════════════════════════════
+
+modules[0].topics[0]
+├── id: "module-01-topic-01"
+├── order: 1
+├── title: "Bolsa de Valores"
+└── slides: [≈2 slides]
+
+modules[0].topics[1]
+├── id: "module-01-topic-02"
+├── order: 2
+├── title: "Tipos de Traders"
+└── slides: [≈1-2 slides]
+
+modules[0].topics[2]
+├── id: "module-01-topic-03"
+├── order: 3
+├── title: "Corretora"
+└── slides: [≈1 slide]
+
+... (35 tópicos no total)
+
+═══════════════════════════════════════════════════════════════════════════════
+NÍVEL 3: SLIDES (350 no total)
+═══════════════════════════════════════════════════════════════════════════════
+
+modules[0].topics[0].slides[0]
+├── id: "module-01-slide-001"
+├── page_number: 3
+├── title: "Bolsa de Valores"
+├── content_preview: "Módulo Básico 1 CONHECIMENTOS BÁSICOS..."
+├── content_full: "[Texto completo da página]"
+├── layout_type: "standard"
+├── images: [Array of 2-3 imagens]
+├── tables: []
+├── metadata:
+│   ├── reading_time_minutes: 1
+│   ├── content_length: 212
+│   ├── has_images: true
+│   └── has_tables: false
+└── seo:
+    ├── title: "Bolsa de Valores - Método Price Action Oliver Velez"
+    ├── description: "Aprenda bolsa de valores no curso..."
+    └── keywords: "trading, price action, bolsa de valores..."
+
+modules[1].topics[0].slides[0]
+├── id: "module-02-slide-001"
+├── page_number: 8
+├── title: "Análise dos Candles"
+├── content_preview: "[Preview de 300 caracteres]"
+├── content_full: "[Conteúdo completo]"
+├── layout_type: "standard"
+├── images: [Array of múltiplas imagens]
+├── tables: [Array de tabelas, se houver]
+└── ...
+
+... (350 slides no total)
+
+═══════════════════════════════════════════════════════════════════════════════
+NÍVEL 4: IMAGENS (877 no total)
+═══════════════════════════════════════════════════════════════════════════════
+
+modules[0].topics[0].slides[0].images[0]
+├── id: "img-003-01"
+├── src: "apostila-module-1-page-003-01.webp"
+├── src_fallback: "apostila-module-1-page-003-01.png"
+├── alt: "Bolsa de Valores - Ilustração 1 (página 3)"
+├── caption: "Fig. 3.1"
+├── type: "icon"
+├── dimensions:
+│   ├── width: 94
+│   └── height: 133
+├── position:
+│   ├── x: 259
+│   └── y: 518
+├── priority: "normal"
+└── optimization:
+    ├── webp_enabled: true
+    ├── lazy_load: true
+    └── srcset: true
+
+modules[1].topics[2].slides[5].images[0]
+├── id: "img-045-01"
+├── src: "apostila-module-2-page-045-01.webp"
+├── alt: "Gráfico de análise de candlestick (página 45)"
+├── type: "chart"
+├── dimensions:
+│   ├── width: 580
+│   └── height: 350
+├── priority: "high"
+└── optimization:
+    ├── webp_enabled: true
+    ├── lazy_load: true
+    └── srcset: true
+
+... (877 imagens no total)
+
+═══════════════════════════════════════════════════════════════════════════════
+NÍVEL 5: TABELAS (10 no total)
+═══════════════════════════════════════════════════════════════════════════════
+
+modules[X].topics[Y].slides[Z].tables[0]
+├── id: "table-XXX-01"
+├── caption: "Tabela 123.1"
+├── data: [
+│   [Linha 1: Cabeçalho],
+│   [Linha 2: Dados],
+│   [Linha 3: Dados],
+│   ...
+│ ]
+├── page_source: 123
+└── responsive: true
+
+═══════════════════════════════════════════════════════════════════════════════
+ESTATÍSTICAS RESUMIDAS
+═══════════════════════════════════════════════════════════════════════════════
+
+Nível            | Quantidade | Exemplos
+─────────────────┼────────────┼──────────────────────────────────────
+Raiz             | 1          | landing-page-data.json
+Módulos          | 5          | module-01, module-02, ...
+Tópicos          | ~35        | Bolsa de Valores, Candles, ...
+Slides           | 350        | slide-001 até slide-350
+Imagens          | 877        | img-003-01, img-045-02, ...
+Tabelas          | 10         | table-XXX-01, table-YYY-02, ...
+─────────────────┴────────────┴──────────────────────────────────────
+
+═══════════════════════════════════════════════════════════════════════════════
+FLUXO DE NAVEGAÇÃO (como ficará a landing page)
+═══════════════════════════════════════════════════════════════════════════════
+
+HOME (Landing Page)
+  │
+  ├─→ [Jornada do Trader] (6 estágios com progresso %)
+  │     1. Conhecimentos Básicos (17%)
+  │     2. Conhecendo o Método (33%)
+  │     3. Reconhecendo os Setups (50%)
+  │     4. Refino dos Setups (67%)
+  │     5. Consistência no Simulador (83%)
+  │     6. Conta Real (100%)
+  │
+  └─→ [Módulos Disponíveis]
+        │
+        ├─ Módulo 1: Básico 1 - Conhecimentos Básicos
+        │   ├─ Tópico 1: Bolsa de Valores
+        │   │   ├─ Slide 1 (página 3) → Conteúdo + 2 imagens
+        │   │   └─ Slide 2 (página 4) → Conteúdo + 2 imagens
+        │   ├─ Tópico 2: Tipos de Traders
+        │   │   └─ Slide 1 (página 5) → Conteúdo + 1 imagem
+        │   └─ Tópico 3: Corretora
+        │       └─ Slide 1 (página 7) → Conteúdo + 2 imagens
+        │
+        ├─ Módulo 2: Básico 2 - Introdução ao Método
+        │   ├─ Tópico 1: Análise dos Candles
+        │   ├─ Tópico 2: Controle de Forças
+        │   ├─ Tópico 3: Barra Elefante, Lei da Continuidade...
+        │   ├─ Tópico 4: Tempos Gráficos Analíticos
+        │   ├─ Tópico 5: Indicadores
+        │   ├─ Tópico 6: Lei de 3, 5 e 8 Barras
+        │   ├─ Tópico 7: Setups à Favor da Tendência
+        │   └─ Tópico 8: Setups Contra à Tendência
+        │
+        ├─ Módulo 3: Intermediário 1 - Reconhecendo os Setups
+        │   ├─ Tópico 1: Setup 1 - Push
+        │   ├─ Tópico 2: Setup 2 - Pull Back
+        │   ├─ Tópico 3: Setup 3 - Acumulação
+        │   ├─ Tópico 4: Filtragem por Tendência
+        │   └─ Tópico 5: Filtragem por Volatilidade
+        │
+        ├─ Módulo 4: Intermediário 2 - Refino dos Setups
+        │   ├─ Tópico 1: Afunilamento de Preço
+        │   ├─ Tópico 2: Dinâmica de Mercado
+        │   ├─ Tópico 3: Confirmação de Setups
+        │   └─ Tópico 4: Gestão de Risco
+        │
+        └─ Módulo 5: Avançado - Consistência
+            ├─ Tópico 1: Operando no Simulador
+            ├─ Tópico 2: Transição para Conta Real
+            ├─ Tópico 3: Psicologia Operacional
+            ├─ Tópico 4: Gerenciamento de Capital
+            ├─ Tópico 5: Documentação de Operações
+            └─ Tópico 6: Análise de Desempenho
+
+═══════════════════════════════════════════════════════════════════════════════
+VISUALIZAÇÃO ESTRUTURAL (ASCII Tree Simplificado)
+═══════════════════════════════════════════════════════════════════════════════
+
+landing-page-data.json
+├── metadata [1 nó]
+├── journey [1 nó]
+└── modules [5 nós]
+    ├── module-01 (Básico 1) [5 páginas]
+    │   └── topics [3 nós]
+    │       ├── topic-01: Bolsa de Valores [2 slides, 4 imagens]
+    │       ├── topic-02: Tipos de Traders [1 slide, 1 imagem]
+    │       └── topic-03: Corretora [2 slides, 4 imagens]
+    ├── module-02 (Básico 2) [53 páginas]
+    │   └── topics [8 nós]
+    │       └── [~7 slides cada, múltiplas imagens]
+    ├── module-03 (Intermediário 1) [40 páginas]
+    │   └── topics [5 nós]
+    │       └── [~8 slides cada, múltiplas imagens]
+    ├── module-04 (Intermediário 2) [40 páginas]
+    │   └── topics [4 nós]
+    │       └── [~10 slides cada, múltiplas imagens]
+    └── module-05 (Avançado) [210 páginas]
+        └── topics [6 nós]
+            └── [~35 slides cada, múltiplas imagens]
+
+═══════════════════════════════════════════════════════════════════════════════
+EXEMPLO DE NAVEGAÇÃO DO USUÁRIO
+═══════════════════════════════════════════════════════════════════════════════
+
+1. Usuário acessa /modules/module-01
+   ↓ Exibe Módulo Básico 1 com 3 tópicos
+
+2. Clica em "Bolsa de Valores" (topic-01)
+   ↓ Exibe lista de 2 slides
+
+3. Clica em "Slide 1: BM&F"
+   ↓ Abre slide-001 com:
+     - Título: "Bolsa de Valores"
+     - Conteúdo textual completo
+     - 4 imagens com alt text + captions
+     - SEO metadata no head
+     - Tempo estimado de leitura (1 min)
+
+4. Scroll para ver imagens
+   ↓ Lazy loading carrega imagens (WebP + JPEG fallback)
+   ↓ Responsive srcset se em mobile
+
+5. Navega para próximo slide
+   ↓ Carrega slide-002 (página 4)
+
+6. Volta para tópico
+   ↓ Retorna a lista de slides do tópico
+
+7. Muda de tópico
+   ↓ Navega para "Tipos de Traders"
+
+═══════════════════════════════════════════════════════════════════════════════
+✓ ESTRUTURA PRONTA PARA RENDERIZAR COM NEXT.JS + REACT
+═══════════════════════════════════════════════════════════════════════════════
+

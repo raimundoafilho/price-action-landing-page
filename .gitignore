@@ -1,0 +1,101 @@
+# Environment & Secrets
+.env
+.env.local
+.env*.local
+.env*.js
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE & Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+desktop.ini
+
+# Build & Dist
+dist/
+build/
+*.min.js
+*.min.css
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary Files
+.tmp/
+.temp/
+*.tmp
+
+# Python artifacts (se usado em build)
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Original source files (documentação auxiliar)
+AGENTS.md
+CHANGELOG-PRD-v1.1.md
+COMO-USAR-PDF-CONVERTER.md
+FERRAMENTAS-SCRAPING-RECOMENDACOES.md
+PRD-LANDING-PAGE-ANDRE-TRADER.md
+RESUMO-FERRAMENTAS-SCRAPING.txt
+RESUMO-REVISAO-PRD.txt
+REVISAO-PRD-DETALHADA.md
+SUMARIO-EXECUCAO.txt
+TRANSCRICOES*.txt
+
+# Directories (referência, não necessários para deploy)
+docs/
+transcricoes/
+Fimathe-Project/
+Oliver-Velez-Metodo/
+
+# .aiox Framework (local only)
+.aiox/
+.ai/
+.antigravity/
+.codex/
+.cursor/
+.gemini/
+
+# Image originals (manter apenas JSON e WebP otimizados)
+apostila_scraped/*.png.bak
+apostila_scraped/*.jpg.bak
+apostila_scraped/image_analysis.json.bak
+apostila_scraped/pdf_extracted.json.bak
+apostila_scraped/ANALISE_IMAGENS_RELATORIO.md
+apostila_scraped/EXEMPLO_IMPLEMENTACAO.html
+apostila_scraped/INDICE_ARQUIVOS.txt
+apostila_scraped/OTIMIZACAO_TECNICA.yaml
+apostila_scraped/RESUMO_EXTRACAO.txt
+apostila_scraped/SUMARIO_EXECUTIVO.md
+apostila_scraped/VALIDACAO_RAPIDA.txt
+apostila_scraped/VISUALIZACAO_DADOS.txt
+
+# Exceções: sempre incluir
+!.gitignore
+!.github/
+!.claude/
+!core-config.yaml
+!README.md
+!CHANGELOG.md
+!index.html
+!style.css
+!app.js
+!apostila_scraped/landing-page-data.json
+!apostila_scraped/images-webp/
+!apostila_scraped/images-fallback/

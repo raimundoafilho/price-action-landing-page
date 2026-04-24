@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste do Sistema de Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #f5f5f5;
+    }
+    .test-section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #3498db;
+    }
+    .test-section h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .test-item {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .success {
+      background: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .error {
+      background: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    .warning {
+      background: #fff3cd;
+      color: #856404;
+      border: 1px solid #ffeeba;
+    }
+    code {
+      background: #f0f0f0;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+    }
+    .password-test {
+      margin-top: 20px;
+      padding: 15px;
+      background: #ecf0f1;
+      border-radius: 6px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      width: 100%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background: #2980b9;
+    }
+    .result {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 4px;
+      display: none;
+    }
+    .result.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🔐 Teste do Sistema de Login — Price Action</h1>
+
+<div class="test-section">
+  <h2>1. Informações de Autenticação</h2>
+
+  <div class="test-item success">
+    <strong>✅ Senha Configurada:</strong> <code>AndreTrader</code>
+  </div>
+
+  <div class="test-item success">
+    <strong>✅ Armazenamento:</strong> sessionStorage (memória da sessão)
+  </div>
+
+  <div class="test-item success">
+    <strong>✅ Case-sensitive:</strong> Sim, exatamente <code>AndreTrader</code>
+  </div>
+</div>
+
+<div class="test-section">
+  <h2>2. Teste de Senha</h2>
+
+  <div class="password-test">
+    <p>Digite a senha para testar:</p>
+    <input type="password" id="testPassword" placeholder="Digite aqui...">
+    <button onclick="testPassword()">Testar Senha</button>
+
+    <div id="testResult" class="result"></div>
+  </div>
+</div>
+
+<div class="test-section">
+  <h2>3. Verificação de Arquivos</h2>
+
+  <div class="test-item">
+    <strong>Arquivos Modificados:</strong>
+    <ul>
+      <li><code>index.html</code> — div#login-screen + botão Logout ✅</li>
+      <li><code>app.js</code> — Funções de autenticação ✅</li>
+      <li><code>style.css</code> — Estilos de login ✅</li>
+    </ul>
+  </div>
+
+  <div class="test-item warning">
+    <strong>⚠️ Para acessar a plataforma real:</strong>
+    <ol>
+      <li>Abra <code>index.html</code> no navegador</li>
+      <li>Você verá a tela de login</li>
+      <li>Digite <code>AndreTrader</code> (exato)</li>
+      <li>Clique em "🔓 Entrar"</li>
+    </ol>
+  </div>
+</div>
+
+<div class="test-section">
+  <h2>4. Teste de sessionStorage</h2>
+
+  <button onclick="testSessionStorage()">Verificar sessionStorage</button>
+  <div id="storageResult" style="margin-top: 10px;"></div>
+</div>
+
+<div class="test-section">
+  <h2>5. Fluxo de Autenticação</h2>
+
+  <div class="test-item">
+    <strong>Sequência:</strong>
+    <ol>
+      <li>Página carrega → <code>checkAuthentication()</code></li>
+      <li>Verifica <code>sessionStorage.getItem('authenticated')</code></li>
+      <li>Se NÃO autenticado → Mostra login screen</li>
+      <li>Usuário digita senha → <code>submitPassword()</code></li>
+      <li>Se correto → <code>sessionStorage.setItem('authenticated', 'true')</code></li>
+      <li>Se correto → <code>showLandingPage()</code> → <code>initialize()</code></li>
+      <li>Landing page carrega normalmente</li>
+      <li>Usuário clica "🚪 Sair" → <code>logout()</code></li>
+      <li>Limpa sessionStorage → Recarrega página</li>
+      <li>Volta para tela de login</li>
+    </ol>
+  </div>
+</div>
+
+<div class="test-section">
+  <h2>6. Comportamento Esperado</h2>
+
+  <table style="width: 100%; border-collapse: collapse;">
+    <tr style="background: #ecf0f1;">
+      <th style="padding: 10px; border: 1px solid #bdc3c7; text-align: left;">Ação</th>
+      <th style="padding: 10px; border: 1px solid #bdc3c7; text-align: left;">Resultado Esperado</th>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">Digitar "AndreTrader" + Enter</td>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">✅ Acesso liberado</td>
+    </tr>
+    <tr style="background: #f9f9f9;">
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">Digitar "senha errada" + Enter</td>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">❌ Erro exibido</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">Clicar botão "🚪 Sair"</td>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">🔄 Volta para login</td>
+    </tr>
+    <tr style="background: #f9f9f9;">
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">Recarregar página (F5)</td>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">🔄 Pede login novamente</td>
+    </tr>
+    <tr>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">Fechar e reabrir browser</td>
+      <td style="padding: 10px; border: 1px solid #bdc3c7;">🔄 Pede login novamente</td>
+    </tr>
+  </table>
+</div>
+
+<div class="test-section">
+  <h2>7. Console Log (Verificar erros)</h2>
+
+  <div class="test-item warning">
+    <strong>Para verificar se há erros:</strong>
+    <ol>
+      <li>Abra a página com a plataforma</li>
+      <li>Pressione <strong>F12</strong> (DevTools)</li>
+      <li>Vá para a aba <strong>Console</strong></li>
+      <li>Procure por mensagens vermelhas (erros)</li>
+      <li>Você deve ver: ✅ <code>Inicializando landing page...</code></li>
+    </ol>
+  </div>
+</div>
+
+<script>
+const CORRECT_PASSWORD = 'AndreTrader';
+
+function testPassword() {
+  const input = document.getElementById('testPassword');
+  const result = document.getElementById('testResult');
+  const pwd = input.value.trim();
+
+  result.classList.add('show');
+
+  if (pwd === CORRECT_PASSWORD) {
+    result.innerHTML = '<div class="test-item success"><strong>✅ Senha Correta!</strong> Você teria acesso à plataforma.</div>';
+  } else if (pwd === '') {
+    result.innerHTML = '<div class="test-item warning"><strong>⚠️ Campo vazio</strong> Digite a senha e tente novamente.</div>';
+  } else {
+    result.innerHTML = '<div class="test-item error"><strong>❌ Senha Incorreta!</strong> Você veria esta mensagem: "❌ Senha incorreta. Tente novamente."</div>';
+  }
+}
+
+function testSessionStorage() {
+  const result = document.getElementById('storageResult');
+  const isAuthenticated = sessionStorage.getItem('authenticated');
+
+  let html = '<div class="test-item">';
+
+  if (isAuthenticated === 'true') {
+    html += '<strong style="color: green;">✅ Você está autenticado!</strong><br>';
+    html += '<code>sessionStorage.getItem("authenticated") = "true"</code>';
+  } else {
+    html += '<strong style="color: #f39c12;">⚠️ Você NÃO está autenticado.</strong><br>';
+    html += '<code>sessionStorage.getItem("authenticated") = null ou undefined</code><br><br>';
+    html += 'Para testar, você precisa:<br>';
+    html += '1. Abrir <code>index.html</code><br>';
+    html += '2. Fazer login com <code>AndreTrader</code><br>';
+    html += '3. Retornar a esta página';
+  }
+
+  html += '</div>';
+  result.innerHTML = html;
+}
+
+// Log inicial
+console.log('🔐 Página de teste de login carregada');
+console.log('CORRECT_PASSWORD =', CORRECT_PASSWORD);
+</script>
+
+</body>
+</html>

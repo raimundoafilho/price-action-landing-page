@@ -1,0 +1,109 @@
+markdownExploder: true
+project:
+  type: greenfield
+  installedAt: '2026-03-19T00:00:00.000Z'
+  version: 2.1.0
+  name: TRADE
+  description: Projeto de Trade — Synkra AIOX
+
+user_profile: raimundo
+
+ide:
+  selected:
+    - claude-code
+    - codex
+    - gemini
+    - cursor
+    - github-copilot
+    - antigravity
+  configs:
+    vscode: false
+    codex: true
+    gemini: true
+    cursor: true
+    github-copilot: true
+    antigravity: true
+    zed: false
+    claude-desktop: false
+    claude-code: true
+
+mcp:
+  enabled: false
+  configLocation: .claude/mcp.json
+  servers: []
+
+qa:
+  qaLocation: docs/qa
+
+prd:
+  prdFile: docs/prd.md
+  prdVersion: v4
+  prdSharded: true
+  prdShardedLocation: docs/prd
+  epicFilePattern: epic-{n}*.md
+
+architecture:
+  architectureFile: docs/architecture.md
+  architectureVersion: v4
+  architectureSharded: true
+  architectureShardedLocation: docs/architecture
+
+devLoadAlwaysFiles:
+  - docs/framework/coding-standards.md
+  - docs/framework/tech-stack.md
+  - docs/framework/source-tree.md
+
+devStoryLocation: docs/stories
+frameworkDocsLocation: docs/framework
+projectDocsLocation: docs/architecture/project-decisions
+
+lazyLoading:
+  enabled: true
+  heavySections:
+    - pvMindContext
+    - squads
+    - registry
+
+git:
+  showConfigWarning: true
+  cacheTimeSeconds: 300
+
+decisionLogging:
+  enabled: true
+  async: true
+  location: .ai/
+  indexFile: decision-logs-index.md
+  format: adr
+
+projectStatus:
+  enabled: true
+  autoLoadOnAgentActivation: true
+  showInGreeting: true
+  cacheTimeSeconds: 60
+  components:
+    gitBranch: true
+    gitStatus: true
+    recentWork: true
+    currentEpic: true
+    currentStory: true
+  statusFile: .aiox/project-status.yaml
+
+boundary:
+  frameworkProtection: true
+  protected:
+    - .aiox-core/core/**
+    - .aiox-core/development/tasks/**
+    - .aiox-core/development/templates/**
+    - .aiox-core/development/checklists/**
+    - .aiox-core/development/workflows/**
+    - .aiox-core/infrastructure/**
+    - .aiox-core/constitution.md
+  exceptions:
+    - .aiox-core/data/**
+    - .aiox-core/development/agents/*/MEMORY.md
+
+agentIdentity:
+  greeting:
+    contextDetection: true
+    sessionDetection: hybrid
+    workflowDetection: hardcoded

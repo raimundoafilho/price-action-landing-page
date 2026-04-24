@@ -1,0 +1,215 @@
+================================================================================
+PIPELINE DE OTIMIZAÇÃO DE IMAGENS - LEIA PRIMEIRO
+================================================================================
+
+O que foi preparado:
+  Pipeline completo para extrair, otimizar e indexar 877 imagens do PDF
+  da apostila. Converte para WebP + PNG fallback com redução ~75%.
+
+Arquivos Principais:
+
+  1. QUICKSTART.md
+     └─ Comece aqui! (5 minutos de setup)
+
+  2. PIPELINE_README.md
+     └─ Documentação completa do pipeline
+
+  3. INTEGRATION_GUIDE.md
+     └─ Como usar no React, Vue, Next.js, etc
+
+Arquivos de Execução:
+
+  1. validate_pipeline.py (EXECUTE PRIMEIRO)
+     └─ Valida dependências antes de rodar pipeline
+     └─ Comando: python validate_pipeline.py
+
+  2. run_pipeline.py (RECOMENDADO)
+     └─ Wrapper que instala dependências automaticamente
+     └─ Comando: python run_pipeline.py
+
+  3. pipeline_images.py
+     └─ Pipeline Python puro (3.7+)
+     └─ Comando: python pipeline_images.py
+
+  4. pipeline-images.js
+     └─ Pipeline Node.js (alternativa)
+     └─ Comando: node pipeline-images.js
+
+Arquivos de Entrada:
+
+  - pdf_extracted.json
+    └─ Metadata bruta de 877 imagens
+    └─ Criado por extração anterior do PDF
+
+  - Apostila Ariane Campolim_2324 (1).pdf
+    └─ PDF original em Oliver-Velez-Metodo/
+    └─ Usado para extrair imagens
+
+Estrutura de Saída (será criada automaticamente):
+
+  apostila_scraped/
+  ├── images-webp/              ← 877 WebP otimizadas
+  ├── images-fallback/          ← 877 PNG fallback
+  └── image-manifest.json       ← Índice com metadados
+
+
+================================================================================
+GUIA RÁPIDO (5 MINUTOS)
+================================================================================
+
+PASSO 1: Validar Setup
+  $ python validate_pipeline.py
+
+  Deve mostrar: ✓ JSON, ✓ PDF, ✓ Dependencies, ✓ Directories
+
+PASSO 2: Instalar Dependências (se necessário)
+  $ pip install pdfplumber pillow
+
+PASSO 3: Executar Pipeline
+  $ python run_pipeline.py
+
+  Processa 877 imagens em 2-5 minutos
+
+PASSO 4: Verificar Resultado
+  ✓ Pasta images-webp/ com 877 arquivos .webp
+  ✓ Pasta images-fallback/ com 877 arquivos .png
+  ✓ Arquivo image-manifest.json válido
+
+PRONTO! Pipeline operacional.
+
+
+================================================================================
+DEPENDÊNCIAS
+================================================================================
+
+Python 3.7+:
+  pip install pdfplumber pillow
+
+Node.js (alternativa):
+  npm install -g sharp
+
+Windows (PowerShell):
+  python --version              # Verificar versão
+  pip install pdfplumber pillow # Instalar
+  python validate_pipeline.py   # Validar
+  python run_pipeline.py        # Executar
+
+
+================================================================================
+WHAT'S INCLUDED
+================================================================================
+
+Scripts de Execução:
+  ✓ validate_pipeline.py      - Testa dependências
+  ✓ run_pipeline.py           - Wrapper automático
+  ✓ pipeline_images.py        - Pipeline Python
+  ✓ pipeline-images.js        - Pipeline Node.js
+
+Documentação:
+  ✓ QUICKSTART.md             - Comece aqui
+  ✓ PIPELINE_README.md        - Documentação técnica
+  ✓ INTEGRATION_GUIDE.md      - Como usar em web apps
+  ✓ 00_LEIA_PRIMEIRO.txt      - Este arquivo
+
+Saída Esperada:
+  ✓ image-manifest.json       - Índice com 877 imagens
+  ✓ images-webp/              - 877 WebP (qualidade 82%)
+  ✓ images-fallback/          - 877 PNG (fallback)
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Erro: "ModuleNotFoundError: No module named 'pdfplumber'"
+  Solução: pip install pdfplumber
+
+Erro: "PDF não encontrado"
+  Solução: Verificar path em pipeline_images.py linha 25
+
+Erro: "sharp not found"
+  Solução: npm install -g sharp
+
+Python não encontrado:
+  Solução: Usar caminho completo ou python3 em lugar de python
+
+
+================================================================================
+PRÓXIMOS PASSOS
+================================================================================
+
+1. Ler QUICKSTART.md para execução rápida
+
+2. Usar image-manifest.json em sua aplicação:
+   - Ver INTEGRATION_GUIDE.md para exemplos
+   - React, Vue, Next.js, Express, etc
+
+3. Estrutura do manifest:
+   {
+     "images": [
+       {
+         "id": "img_001_01",
+         "srcWebp": "images-webp/img_001_01.webp",
+         "srcPng": "images-fallback/img_001_01.png",
+         "type": "chart",
+         "finalWidth": 580,
+         "finalHeight": 340
+       }
+     ]
+   }
+
+4. Usar em HTML com <picture> tag:
+   <picture>
+     <source srcset="images-webp/img_001_01.webp" type="image/webp">
+     <img src="images-fallback/img_001_01.png" alt="..." />
+   </picture>
+
+
+================================================================================
+RESUMO TÉCNICO
+================================================================================
+
+Entrada:        pdf_extracted.json (333 KB, 877 imagens)
+Processamento:  Redimensionar + WebP (82%) + PNG (95%)
+Saída:
+  - images-webp/       ~12 MB (877 WebP otimizadas)
+  - images-fallback/   ~31 MB (877 PNG fallback)
+  - image-manifest.json ~45 KB (índice)
+
+Redução:        De ~56 MB (original) para ~43 MB = 23% no disco
+                De WebP (~12MB) para PNG, economia de 61% vs PNG puro
+
+Tempo:          2-5 minutos para 877 imagens
+Memória:        ~500 MB pico
+CPU:            Usa múltiplos cores se disponível (Sharp)
+
+Tipos Detectados:
+  - icon:        < 350x350 px (máx 300px)
+  - screenshot:  aspect 0.4-0.7 (máx 500px)
+  - chart:       aspect > 1.3 (máx 580px)
+  - default:     outros (máx 800px)
+
+
+================================================================================
+SUPORTE & DOCUMENTAÇÃO
+================================================================================
+
+Ver PIPELINE_README.md para:
+  - Detalhes técnicos completos
+  - Configurações avançadas
+  - Performance tuning
+  - Troubleshooting detalhado
+
+Ver INTEGRATION_GUIDE.md para:
+  - React, Vue, Next.js, Express
+  - Lazy loading
+  - Responsive images
+  - Progressive loading
+
+
+================================================================================
+
+Questões? Ver arquivos .md correspondentes acima.
+Pronto para começar? Execute: python validate_pipeline.py
+
+================================================================================

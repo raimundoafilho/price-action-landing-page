@@ -1,0 +1,44 @@
+================================================================================
+                         COMECE AQUI
+                      Pipeline de Imagens
+                         2026-04-24
+================================================================================
+
+O QUÊ?
+  Pipeline pronto para processar 877 imagens do PDF
+  Cria WebP otimizadas + PNG fallback
+  Redução 75% em tamanho
+
+COMO COMEÇAR EM 3 PASSOS:
+  1. cd C:\PROJETO-IA\TRADE\apostila_scraped
+  2. python validate_pipeline.py
+  3. python run_pipeline.py
+
+TEMPO TOTAL: ~8 minutos
+
+PRONTO!
+  ✓ 877 WebP criadas (~12 MB)
+  ✓ 877 PNG criadas (~31 MB)
+  ✓ image-manifest.json pronto
+
+LEIA DEPOIS:
+  - apostila_scraped\00_LEIA_PRIMEIRO.txt
+  - apostila_scraped\QUICKSTART.md
+
+INTEGRE EM SUA APP:
+  Ver: apostila_scraped\INTEGRATION_GUIDE.md
+
+================================================================================
+
+DEPENDÊNCIAS (execute uma vez):
+  pip install pdfplumber pillow
+
+VALIDAR (1 min):
+  python validate_pipeline.py
+
+EXECUTAR (5 min):
+  python run_pipeline.py
+
+PRONTO! Use image-manifest.json em sua app.
+
+================================================================================

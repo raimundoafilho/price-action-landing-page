@@ -1,0 +1,4158 @@
+
+======================================================================
+PAGINA 1
+======================================================================
+
+AAPPOOSSTTIILLAA DDEE EESSTTUUDDOO
+MENTORIA
+MENTORIA
+1
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 2
+======================================================================
+
+Trajetória
+Conta real
+com 2 contratos
+Consistência 6
+no simulador
+Refino dos 5
+setups
+Reconhecendo 4
+os setups
+Conhecendo 3
+o método
+Conhecimentos 2
+Básicos
+2
+1
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 3
+======================================================================
+
+Módulo Básico 1
+CONHECIMENTOS BÁSICOS
+Bolsa de Valores
+Tipos de Traders
+Corretora
+3
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 4
+======================================================================
+
+Bolsa
+de Valores
+BM&F - Bolsa de Mercadorias e Futuro
+Commodities (café, milho, etc.)
+Contratos Futuros (índice, dólar, etc.)
+B3 - Brasil, Bolsa, Balcão
+IPO - Capital Aberto
+Ações (ITUB4, BBDC4, etc.)
+4
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 5
+======================================================================
+
+Tipos
+de Trader
+Day Trade
+São negociações de compras ou vendas de um ativo, que são encerradas no mesmo dia da entrada.
+A grande vantagem é a alavancagem.
+Swing Trade
+São negociações de compras ou vendas de um ativo, que são encerradas após dias ou até semanas
+após a entrada.
+Position Trade
+São negociações de compras ou vendas de um ativo, na qual o trader fica posicionado por meses
+ou ano.
+5
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 6
+======================================================================
+
+Tipos
+de Análises
+Fundamentalista Grafista
+Negociações baseadas em Negociações baseadas em
+balanços e cenários padrões técnicos na análise de
+econômico. gráficos.
+6
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 7
+======================================================================
+
+Corretora
+Como escolher?
+Boa infraestrutura.
+Qualidade no atendimento.
+Baixo custo.
+Custos de plataforma.
+Custos de Corretagem.
+Margem de garantia.
+7
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 8
+======================================================================
+
+Módulo Básico 2
+INTRODUÇÃO AO MÉTODO
+Análise dos Candles
+Controle de Forças
+Barra Elefante, Lei da Continuidade, Regra dos 2/3
+Tempos Gráficos Analíticos
+Indicadores: Médias Móveis, MACD e Volume
+Lei da Falha de Nova Máxima/Mínima
+Lei de 3,5 e 8 Barras
+Setups à Favor da Tendência
+Setups Contra à Tendência
+8
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 9
+======================================================================
+
+Candles
+O que é um candle
+Entendendo os candles
+Tipos de Barras
+9
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 10
+======================================================================
+
+Análise
+Gráfica - Candlestick
+Máxima Máxima
+Fechamento Abertura
+Abertura Fechamento
+Mínima Mínima
+10
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 11
+======================================================================
+
+Alfabeto
+do Mercado
+As 13 barras
+tamanho
+tipo
+localização
+Importante
+quanto maior o corpo, maior foi a potência daquele time.
+quanto maior o pavio, maior a potência do time contrario em
+anular a potência inicial
+11
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 12
+======================================================================
+
+Controle de
+Forças
+12
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 13
+======================================================================
+
+Controle
+Absoluto
+Controle Absoluto: quando uma barra bem sólida verde (compradora) fecha próximo a sua
+máxima; e uma barra bem sólida vermelha (vendedora) fecha próximo a sua mínima.
+Máxima Máxima
+Mínima Mínima
+13
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 14
+======================================================================
+
+Mantendo
+o Controle
+Regra dos 2/3: O controle se mantém do timo dominante até que 2/3 ou mais da barra tenham
+sido tomados.
+Máxima Máxima
+2/3
+2/3
+Mínima Mínima
+14
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 15
+======================================================================
+
+Controle
+Total
+Controle Total: Quando uma barra sólida recua da máxima, mas o corpo ainda é
+predominantemente verde, os compradores estão no controle total. Quando uma barra sólida
+recua da mínima, mas o corpo ainda é predominantemente vermelho, os vendedores estão no
+controle total.
+Máxima Máxima
+2/3
+2/3
+15
+Mínima Mínima
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 16
+======================================================================
+
+Bom
+Controle
+Bom Controle: Quando uma barra recua bastante do seu extremo, mas não o suficiente para ser
+denominada “fraca” ou “destruída”. Quando ela recua bastante de sua máxima/mínima, mas a
+maior parte da cor do corpo é mantida.
+Máxima Máxima
+2/3
+2/3
+Mínima Mínima 16
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 17
+======================================================================
+
+Controle
+Fraco
+Controle fraco: Quando uma barra solida perde cerca de 1/2 de sua cor, o time até então
+“vencedor” pode estar com problemas. O controle ainda não foi perdido, mas existe a
+possibilidade de uma mudanã no cenário.
+Máxima
+Máxima
+2/3
+2/3
+17
+Mínima Mínima
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 18
+======================================================================
+
+Controle
+Perdido
+Controle perdido: Quando uma barra solida perde cerca de 2/3 ou mais da cor que antes
+possuiu, deixando um pavio como parte dominante da barra. Houve perda do controle.
+Máxima
+Máxima
+2/3
+2/3
+18
+Mínima Mínima
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 19
+======================================================================
+
+Totalmente
+Acabado
+Totalmente acabado: Quanto mais cor, verde ou vermelho, um time produziu, maior foi a sua
+vitória. Quanto mais cor uma barra perde, maior a vitória do time oposto.
+Máxima
+Máxima
+2/3
+2/3
+19
+Mínima Mínima
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 20
+======================================================================
+
+Controle
+Tomado
+Controle tomado: Quanto maior a distância entre a abertura e o fechamento, maior a vitória, e
+quando esse tipo de barra é totalmente apagada, maior a vitória do time oposto.
+Máxima
+Máxima
+20
+Mínima Mínima
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 21
+======================================================================
+
+Controle
+de Força
+21
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 22
+======================================================================
+
+Barra Elefante
+Lei do Momentum
+O que é uma BE
+Tipos de BE
+Lei da Continuídade
+22
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 23
+======================================================================
+
+Lei do
+Momentum
+Em mercados que se movem, os ativos tendem a continuar a barra colorida fechada mais recente,
+80% das vezes;
+Após uma barra sólida, verde ou vermelha, espere que outra continue 80% das vezes;
+Quanto maior a barra, verde ou vermelha, maior a chance de continuação, significando que você verá
+continuidade perto de 90% das vezes;
+23
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 24
+======================================================================
+
+Barras
+Elefantes
+É a barra mais potente que temos no gráfico, para sua formação são necessários bilhões de reais;
+Quanto maior a barra, mais informação temos sobre quem está no domínio;
+Na formação das barras elefantes é onde estão os Big Players;
+São as barras elefantes que nos mostram para onde o mercado tem maior probabilidade de ir;
+24
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 25
+======================================================================
+
+Barras
+Elefantes
+Não é necessário procurar uma BE. Quando ela
+surgir você não terá dúvidas;
+A BE normalmente inicia, e/ou encerra uma
+tendência;
+O maior erro do Trader é insistir em entrar em
+barras pequenas;
+25
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 26
+======================================================================
+
+Barras
+Elefantes
+Barra Elefante de Ignição
+São as barras que iniciam um movimento ou acionam uma nova entrada na continuação de um
+movimento;
+Barra Elefante de Exaustão
+São as barras que aparecem ao final de uma movimentação, e frequentemente, levam a uma
+pausa e/ou mudança do movimento para direção oposta;
+26
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 27
+======================================================================
+
+Barra Elefante
+27
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 28
+======================================================================
+
+Barra Elefante
+28
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 29
+======================================================================
+
+Lei da
+Continudiade
+O mercado nunca realiza nada com
+apenas uma barra. Ele precisa de
+pelo menos duas barras para que
+algo seja considerado real ou
+significativo.
+29
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 30
+======================================================================
+
+Lei da
+Continuidade
+O rompimento, para cima ou para baixo, por uma barra elefante, só é significativo se for continuado
+por uma segunda barra;
+Eventos de uma barra que não produz continuidade, tendem a produzir movimentos fortes na direção
+oposta;
+Uma pequena quantidade de verde ou vermelho não é suficiente para demonstrar continuidade, Mais
+informações são necessárias nesse caso;
+30
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 31
+======================================================================
+
+Exemplo de Continuidade de Rompimento
+Rompeu a base apertada e produziu
+continuidade
+31
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 32
+======================================================================
+
+Exemplo de Continuidade de Rompimento
+Rompeu a lateralização e confirmou o
+rompimento na barra seguinte;
+32
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 33
+======================================================================
+
+Tempos Gráficos
+Analíticos
+33
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 34
+======================================================================
+
+Tempo
+Gráfico Analíticos
+Quanto maior o tempo gráfico, maiores os riscos assumidos;
+Quanto maior o tempo gráfico, maior o tempo de operações e alvos mais longos;
+Quanto menor o tempo gráfico, maiores as oportunidades de entradas;
+Quanto menor o tempo gráfico, mais ruídos existirão;
+Sugestão: indicamos aos iniciantes que comecem a operar no tempo gráfico de 5 minutos, pois
+permite um maior tempo para tomada de decisão e possui menos ruídos;
+34
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 35
+======================================================================
+
+Gráfico de 2 minutos
+35
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 36
+======================================================================
+
+Gráfico de 5 minutos
+36
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 37
+======================================================================
+
+Gráfico de 10 minutos
+37
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 38
+======================================================================
+
+Gráfico
+Diário 1
+Um MASTER TRADER deve entender o comportamento da tendência no diário com suas aplicações no
+intraday, pois isso trará informações muito úteis das melhores épocas para se expor no mercado;
+Um diário bem altista dificulta operações de intraday na ponta vendedora mesmo com o melhor setup
+do método, da mesma forma que um diário bem baixista dificulta operações de intraday na ponta
+compradora mesmo com o melhor setup do método;
+Quando temos um diário com tendência bem definida o trader deve fazer um caixa para conseguir
+sobreviver em épocas adversas;
+Mesmo seguindo todos os setups com primor, existirá épocas adversas que testarão o equilíbrio
+emocional de cada trader e sua confiança em si próprio e no método;
+38
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 39
+======================================================================
+
+Exemplo de Gráfico Diário Altista
+39
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 40
+======================================================================
+
+Exemplo de Gráfico Diário Altista e Intraday Altista
+40
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 41
+======================================================================
+
+Exemplo de Gráfico Diário Altista e Intraday Baixista
+41
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 42
+======================================================================
+
+Gráfico
+Diário 2
+Quando o diário se encontra numa tendência bem definida devemos ficar corajosos em trades nos
+quais há um casamento entre as duas tendências, ou seja, intraday altista com diário altista e aparece
+um set up de compra;
+Isso é de suma importância pois é necessário nessas épocas o trader fazer um caixa para conseguir
+sobreviver em épocas adversas. Mesmo seguindo todos os setups com primor, existiram épocas
+adversas que testarão o equilíbrio emocional de cada trader e sua confiança em si próprio e no
+método;
+É muito comum traders que pulam de método em método sem chegar em lugar algum;
+42
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 43
+======================================================================
+
+Exemplo de Gráfico Diário Baixista
+43
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 44
+======================================================================
+
+Exemplo de Gráfico Diário Baixista e Intraday Baixista
+44
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 45
+======================================================================
+
+Exemplo de Gráfico Diário Baixista e Intraday Altista
+45
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 46
+======================================================================
+
+Gráfico
+Diário 3
+Traders que tenham aceitado um loss menor devem tentar operar pelo menos 80% do tempo a favor
+de duas tendências, ou seja, diário e intra day correlatos. Obviamente isso levará muitas vezes a uma
+grande espera e aflição. São nesses momentos que o controle emocional será indispensável;
+Traders que aceitam um risco maior podem operar contra pelo menos uma tendência sem problemas,
+obviamente seguindo os setups;
+Traders mais experientes e que aceitem grande risco podem operar, algumas vezes, contra as duas
+tendências para aproveitar o máximo do dia, mas isso é aconselhado em somente 20% do tempo e
+não é para todo mundo;
+A grande soma de dinheiro virá em movimentos seguindo as duas tendências;
+46
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 47
+======================================================================
+
+Exemplo de Gráfico Diário Baixista e Intraday Altista
+47
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 48
+======================================================================
+
+Exemplo de Gráfico Diário Altista e Intraday Baixista
+48
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 49
+======================================================================
+
+Gráfico
+Diário 4
+É muito comum que, com a necessidade e a ansiedade dos traders para terem sucesso, acabam se
+expondo muito em épocas ruins, se machucando, e em épocas boas o dinheiro já acabou ou ficou
+muito reduzido;
+Portanto, o conhecimento do diário fornece informações muito úteis das melhores épocas para se
+expor no mercado;
+Isso não quer dizer que não possamos tirar dinheiro em qualquer época do mercado, mas achar que
+sempre é possível arrancar grandes somas de dinheiro do mercado levará invariavelmente a perdas
+desnecessárias;
+49
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 50
+======================================================================
+
+Como se
+Expor no Mercado
+Diário e Intraday correlatos : Trades com lotes maiores e alvos mais longos;
+Diário e intraday opostos: Trades com lotes médios com alvos medianos;
+Diário indefinido: Operar setups e regiões com lotes médios;
+Operando contra a tendência do diário e intraday: Trades com lotes pequenos e alvos curtos;
+50
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 51
+======================================================================
+
+Indicadores
+Médias Móveis
+MACD
+Volume
+51
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 52
+======================================================================
+
+Médias
+Móveis e Tendência
+As médias móveis são indicadores de tendência;
+Médias móveis nós indica as melhores localizações para fazer entradas após o surgimento de um
+evento de potência;
+Utilizamos as médias móveis aritméticas de 8, 20 e 200 períodos;
+52
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 53
+======================================================================
+
+Média Móvel
+de 8 Períodos
+Utilizamos essa média para identificar uma
+das tendências mais poderosas, o trem das
+8, e também, para fazer o trailing stop mais
+efetivo do método. A Ma8 é considerada a
+média mais fraca das três que utilizamos no
+método.
+53
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 54
+======================================================================
+
+Média Móvel
+de 20 Períodos
+Utilizamos a Ma20 para identificar o viés
+direcional do ativo. O preço pode se
+distanciar da Ma20, mas não pode se
+manter distante dela, portanto, a Ma20
+serve como um imã para o preço. Esta
+média é a mais importante para o método,
+porque além das funções anteriores, ela
+revela localizações importantes para fazer
+determinadas operações e serve como
+suporte e resistência também.
+54
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 55
+======================================================================
+
+Média Móvel
+de 20 Períodos
+Opere com as Ma8 e Ma20, não contra elas;
+Use a Ma8 e Ma20 como suporte e resistência;
+Use a Ma20 como uma linha mediana;
+Use a Ma20 como imã;
+55
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 56
+======================================================================
+
+As Poderosas Ma8 e Ma20
+use como imã
+use como resistência
+use como suporte
+56
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 57
+======================================================================
+
+As Poderosas Ma8 e Ma20
+use como resistência
+use como suporte
+57
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 58
+======================================================================
+
+Média Móvel
+de 200 Períodos
+A Ma200 é a mais poderosa das médias, a
+utilizamos para identificar quando o ativo está
+sobrecomprado ou sobrevendido, ou seja,
+quando o preço está muito afastado da Ma200
+ele tende a retornar até ela. Ela também
+funciona como suporte e resistência, além de ter
+o poder de parar os preços. Os melhores trades
+se originam da Ma200.
+58
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 59
+======================================================================
+
+Média Móvel de 200 (Ma200)
+use como resistência
+use como imã
+59
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 60
+======================================================================
+
+Média Móvel de 200 (Ma200)
+use como resistência
+use como suporte
+60
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 61
+======================================================================
+
+A Tendência
+de Alta
+A tendência de alta: A tendência de alta, de longe é a
+mais popular, normalmente é definida como uma série
+de máximas e mínimas mais altas. Nossa definição é um
+pouco mais complexa. Além de máximas e mínimas
+mais altas, queremos que uma tendência de alta tenha
+uma Ma20 subindo suavemente acima da Ma200.
+61
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 62
+======================================================================
+
+A Tendência de Alta
+62
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 63
+======================================================================
+
+A Tendência
+de Baixa
+A Tendência de Baixa: A tendência de baixa, de longe a
+mais temida de todas, é normalmente definida como
+uma série de máximas e mínimas mais baixas. Nossa
+definição é um pouco mais complexa. Além de máximas
+e mínimas mais baixas, queremos que uma tendência
+de baixa tenha uma 20ma descendo suavemente abaixo
+da 200ma.
+63
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 64
+======================================================================
+
+A Tendência de Baixa
+64
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 65
+======================================================================
+
+A Lateralidade
+A Lateralidade: A lateralidade, de longe é a mais
+frustrante, normalmente é definida como uma série de
+máximas e mínimas relativamente iuais. Esse estágio
+pode ser amplo, normalmente quando formado após
+um avanço, ou pode ser pequeno e apertado,
+normalmente quando é apenas uma pausa ou após uma
+queda brusca.
+65
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 66
+======================================================================
+
+A Lateralidade
+66
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 67
+======================================================================
+
+MACD
+É um indicador utilizado para auxiliar o refino das entradas, ajudando a melhorar a assertividade do
+setup;
+Não fazemos entradas baseadas apenas no MACD, é preciso haver um setup claro do método e em boa
+localização para poder acionar a entrada com maior segurança - É A ÚLTIMA COISA A SE OBSERVAR!
+Pode indicar convergência ou divergência;
+Quando o MACD indica divergência e aciona um setup contra à tendência em boa localização, temos a
+segurança para entrar com nosso maior lote , pois as probabilidades à nosso favor aumentam;
+Não é um indicador do método, é apenas um complemento nos setups e localização;
+67
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 68
+======================================================================
+
+MACD - Convergência
+A tendência do gráfico é a mesma da tendência do
+MACD - o gráfico e o MACD estão fazendo topos e
+fundos mais altos, estão subindo, ou estão fazendo
+topos e fundos mais baixos, estão caindo.
+68
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 69
+======================================================================
+
+MACD Convergência - Gráfico de 2 minutos
+69
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 70
+======================================================================
+
+MACD Convergência - Gráfico de 5 minutos
+70
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 71
+======================================================================
+
+MACD Convergência - Gráfico de 10 minutos
+71
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 72
+======================================================================
+
+MACD - Divergência
+A tendência do gráfico é oposta à tendência do
+MACD - o gráfico está fazendo topos e fundos
+mais altos, está subindo, e o MACD está fazendo
+topos e fundos mais baixos, está caindo, ou vice-
+versa.
+72
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 73
+======================================================================
+
+MACD divergência - Gráfico de 2 minutos
+73
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 74
+======================================================================
+
+MACD divergência - Gráfico de 5 minutos
+74
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 75
+======================================================================
+
+MACD divergência - Gráfico de 10 minutos
+75
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 76
+======================================================================
+
+Volume
+Financeiro
+Usamos o Volume Financeiro para indicar final de tendência;
+Usamos o Volume Financeiro para identificar um bom Pullback de continuidade;
+Usamos o Volume Financeiro para identificar boas barras de Ignição;
+76
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 77
+======================================================================
+
+Volume
+Financeiro em Exaustão
+Usamos o Volume Financeiro para
+indicar final de tendência: quando
+após uma tendência temos barras
+elefantes com alto volume
+financeiro, sabemos que está
+existindo realização de lucros, e a
+tendência tende a estar no final.
+77
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 78
+======================================================================
+
+Volume Financeiro em Exaustão
+78
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 79
+======================================================================
+
+Volume Financeiro em Exaustão
+79
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 80
+======================================================================
+
+Volume Financeiro em Exaustão
+80
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 81
+======================================================================
+
+Volume Financeiro em Exaustão
+81
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 82
+======================================================================
+
+Volume
+Financeiro em Pullback
+Usamos o Volume Financeiro para
+indicar um pullbak de qualidade:
+Quando após um evento de
+ignição, o mercado começar uma
+retração, se o volume dessa
+retração estiver diminuindo,
+existe grande probabilidade de
+continuidade na movimentação
+82
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 83
+======================================================================
+
+Volume Financeiro em Pullback
+83
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 84
+======================================================================
+
+Volume Financeiro em Pullback
+84
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 85
+======================================================================
+
+Volume Financeiro em Pullback
+85
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 86
+======================================================================
+
+Volume Financeiro em Pullback
+86
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 87
+======================================================================
+
+Volume
+Financeiro em Ignição
+Usamos o Volume Financeiro para
+identificar quando uma Barra de
+ignição tem qualidade: As
+ignições de qualidade não
+possuem alto volume financeiro.
+87
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 88
+======================================================================
+
+Volume Financeiro em Ignição
+88
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 89
+======================================================================
+
+Volume Financeiro em Ignição
+89
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 90
+======================================================================
+
+Volume Financeiro em Ignição
+90
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 91
+======================================================================
+
+Volume Financeiro em Ignição
+91
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 92
+======================================================================
+
+Lei da Falha de
+Nova Mínima e
+Nova Máxima
+92
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 93
+======================================================================
+
+Lei da
+Falha de Nova Máxima e Mínima
+Quando o ativo falha em fazer uma nova mínima, após ter feito 3 ou mais mínimas mais baixas, ela tem
+uma maior probabilidade de fazer uma nova máxima;
+A primeira tentativa de fazer uma nova mínima que falhar em uma tendência de baixa bem
+estabelecida é o primeiro sinal de que o equilíbrio de poder pode ter mudado dos vendedores para os
+compradores;
+A primeira tentativa de fazer uma nova mínima que falhar em uma tendência de baixa bem
+estabelecida é o primeiro sinal de que o equilíbrio de poder pode ter mudado dos vendedores para os
+compradores;
+93
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 94
+======================================================================
+
+Falha de Nova Máxima e Nova Mínima
+falha em fazer nova máxima
+94
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 95
+======================================================================
+
+Falha de Nova Máxima e Nova Mínima
+falha em fazer nova mínima
+95
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 96
+======================================================================
+
+Lei de 3, 5 e 8
+Barras
+96
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 97
+======================================================================
+
+Lei de
+3, 5 e 8 Barras
+Durante ambientes de mercado normais, os itens negociáveis não podem se over na mesma direção
+por mais do que 5 a 8 barras seguidas;
+A movimentação do mercado tende a ficar presa em ciclos de no máximo 3 a 8 barras em 80% do
+tempo. 20% do tempo, uma ação pode se mover acima e abaixo dessa zona;
+5 barras é o número principal;
+É valido tanto para candles, quanto para pernadas;
+97
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 98
+======================================================================
+
+Lei de 3, 5 e 8 Barras
+1
+3
+2
+2
+3
+1
+98
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 99
+======================================================================
+
+Lei de 3, 5 e 8 Barras
+3
+2
+1
+99
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 100
+======================================================================
+
+Lei de 3, 5 e 8 Barras
+5
+4
+3
+2
+1
+100
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 101
+======================================================================
+
+Lei de 3, 5 e 8 Barras
+1
+2
+3
+4
+5
+6
+7
+8
+101
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 102
+======================================================================
+
+Setups à Favor
+da Tendência
+102
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 103
+======================================================================
+
+Os 7
+Eventos de Entrada
+Barra Elefante Bottoming tail Topping tail Bull 180 e Bear 180 GBTO e RBTO
+GBI e RBI BTTO TTTO DBTTO DTTTO
+103
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 104
+======================================================================
+
+Bull e
+Bear
+Qualidade:
+Entrada por confirmação
+Entrada antecipada MA 20
+Quando ocorre no início da
+tendência;
+Quando cruza as médias de 8 e
+20;
+Próximo a média de 20;
+Entrada antecipada
+MA 20
+Longe das médias (reversão);
+Entrada por confirmação
+104
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 105
+======================================================================
+
+Barra Elefante - Bull
+105
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 106
+======================================================================
+
+Barra Elefante - Bull
+106
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 107
+======================================================================
+
+Barra Elefante - Bear
+107
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 108
+======================================================================
+
+Barra Elefante - Bear
+108
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 109
+======================================================================
+
+Bull 180
+e Bear 180
+Qualidade: Entrada por confirmação
+Entrada antecipada
+Ignição de movimento, negando outra
+barra elefante, próximo as médias;
+Em regiões de fundo / topo;
+Final da tendência, após deslanche
+dos preços, longe das médias
+(reversão);
+109
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 110
+======================================================================
+
+Bull 180
+e Bear 180
+Stop Loss
+Venda
+Compra
+Stop Loss
+110
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 111
+======================================================================
+
+Exemplo de Bull 180
+111
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 112
+======================================================================
+
+Exemplo de Bull 180
+112
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 113
+======================================================================
+
+Exemplo de Bear 180
+113
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 114
+======================================================================
+
+Exemplo de Bear 180
+114
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 115
+======================================================================
+
+Bottoming
+Tail (BT) e Topping Tail (TT)
+A favor da Tendência:
+Qualidade
+Compra
+Pivô de alta ou pivô de baixa;
+perto das médias móveis;
+apoiada na ma20;
+MA 20
+115
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 116
+======================================================================
+
+Exemplo de Barra com Pavio - BT
+116
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 117
+======================================================================
+
+Exemplo de Barra com Pavio - BT
+117
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 118
+======================================================================
+
+Exemplo de Barra com Pavio - TT
+118
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 119
+======================================================================
+
+Exemplo de Barra com Pavio - TT
+119
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 120
+======================================================================
+
+RBTO e
+GBTO
+Red Bar Take Out (RBTO) e Green Bar Take Out (GBTO)
+Qualidade:
+Compra
+RBTO deve se formar acima das médias;
+GBTO deve se formar abaixo médias;
+Características:
+Stop Loss Alto;
+Venda
+Nível de assertividade alto;
+Único Setup que permite utilizar o Stop and Reverse
+120
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 121
+======================================================================
+
+Exemplo de RBTO
+121
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 122
+======================================================================
+
+Exemplo de RBTO
+122
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 123
+======================================================================
+
+Exemplo de GBTO
+123
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 124
+======================================================================
+
+Exemplo de GBTO
+124
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 125
+======================================================================
+
+VBS e
+VSS
+Velez Buy Setup (VBS) e Velez Sell Setup (VSS)
+Qualidade:
+É necessário haver uma subida no caso do VBS ou uma descida no caso do VSS;
+Necessário 2 ou mais candles vermelhos (VBS) ou verdes (VSS);
+Sinal de reversão;
+Apoiado em um suporte (VBS) ou em uma resistência (VSS);
+Apoiado na Ma20;
+Double deep (segundo acionamento);
+Característica:
+Representa um respiro na tendência nos dando oportunidade de entrar ou adicionar;
+125
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 126
+======================================================================
+
+VBS e
+VSS
+Velez Buy Setup (VBS) e Velez Sell Setup (VSS)
+MA 20
+Compra
+Venda
+MA 20
+VBS VSS
+126
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 127
+======================================================================
+
+Exemplo de VBS
+127
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 128
+======================================================================
+
+Exemplo de VBS
+128
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 129
+======================================================================
+
+Exemplo de VSS
+129
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 130
+======================================================================
+
+Exemplo de VSS
+130
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 131
+======================================================================
+
+GIFT
+Qualidade:
+Ocorre após uma Barra elefante;
+É um setup raro;
+Stop Loss alto;
+Qualquer correção dentro de uma barra elefante
+deve ser vigiada em busca do PRESENTE (GIFT)
+etneserP
+ed
+anoZ
+Compra
+131
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 132
+======================================================================
+
+Exemplo de GIFT
+132
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 133
+======================================================================
+
+Exemplo de GIFT
+133
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 134
+======================================================================
+
+Exemplo de GIFT
+134
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 135
+======================================================================
+
+RBI e
+GBI
+Red Bar Ignored (RBI) e Green Bar Ignored (GBI)
+Qualidade:
+Corpo bem pequeno;
+Próximo das médias Ma8 e Ma20;
+Compra
+GBI abaixo da Ma8. RBI acima da Ma8;
+Características:
+Venda
+Como regra geral, espera-se que o movimento
+antes da RBI/GBI será duplicado depois da
+RBI/GBI;
+Setup para adição;
+135
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 136
+======================================================================
+
+Exemplo de RBI
+136
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 137
+======================================================================
+
+Exemplo de RBI
+137
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 138
+======================================================================
+
+Exemplo de RBI oculta
+138
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 139
+======================================================================
+
+Exemplo de RBI oculta
+139
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 140
+======================================================================
+
+Exemplo de GBI
+140
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 141
+======================================================================
+
+Exemplo de GBI
+141
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 142
+======================================================================
+
+Exemplo de GBI oculta
+142
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 143
+======================================================================
+
+Exemplo de GBI oculta
+143
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 144
+======================================================================
+
+NRB
+Narrow Range Bar
+Qualidade:
+Compra
+Candle muito pequeno;
+A favor da tendência;
+Características:
+Operações a favor e contra a tendência;
+Stop Loss Barato;
+144
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 145
+======================================================================
+
+NRB
+Narrow Range Bar
+A favor da Tendência Contra a Tendência
+Vende
+Compra
+Próximo da MA 20 Distante da MA 20
+145
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 146
+======================================================================
+
+Exemplo de NRB
+146
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 147
+======================================================================
+
+Exemplo de NRB
+147
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 148
+======================================================================
+
+Exemplo de NRB
+148
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 149
+======================================================================
+
+BOP e
+BDP
+Breakout Play (BOP) e Breakdown Play (BDP)
+Qualidade:
+Base apertada e pequena;
+NRBs na base;
+Base nos 33% do topo do movimento de alta ou queda anterior;
+Ma8 ainda subindo ou caindo;
+Rompimento ocorre próximo da Ma8 - próximo a ma20, melhor!
+149
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 150
+======================================================================
+
+BOP e
+BDP
+Breakout Play (BOP) e Breakdown Play (BDP)
+MA 20
+Compra
+Venda
+MA 20
+150
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 151
+======================================================================
+
+Exemplo de BOP
+151
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 152
+======================================================================
+
+Exemplo de BOP
+152
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 153
+======================================================================
+
+Exemplo de BDP
+153
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 154
+======================================================================
+
+Exemplo de BDP
+154
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 155
+======================================================================
+
+TTTO e
+BTTO
+Topping Tail Take Out (TTTO) e Bottoming Tail Take Out (BTTO)
+Qualidade:
+Quando está próximo às médias móveis de 20 e de 200
+e após a barra de ignição;
+Quando uma Bottoming tail (BT) é engolida por uma barra
+Elefante Bull ou Bear, temos a TTTO ou BTTO;
+155
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 156
+======================================================================
+
+Exemplo de TTTO
+156
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 157
+======================================================================
+
+Exemplo de TTTO
+157
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 158
+======================================================================
+
+Exemplo de BTTO
+158
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 159
+======================================================================
+
+Exemplo de BTTO
+159
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 160
+======================================================================
+
+DTTTO e
+DBTTO
+Delayed Topping Tail Take Out (DTTTO) e Delayed Bottoming
+Tail Take Out (DBTTO)
+Qualidade:
+Quando está próximo às médias móveis de 20 e de 200
+e após a barra de ignição;
+Quando uma Bottoming tail (BT) ou uma Topping tail (TT) é
+engolida por mais de uma barra temos a DTTO ou DBTTO;
+160
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 161
+======================================================================
+
+Exemplo de DTTTO
+161
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 162
+======================================================================
+
+Exemplo de DTTTO
+162
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 163
+======================================================================
+
+Exemplo de DBTTO
+163
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 164
+======================================================================
+
+Exemplo de DBTTO
+164
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 165
+======================================================================
+
+Simplificando Tudo,
+A REGRA É ESSA:
+Candles VERMELHOS acima da MA8 Candles VERDES abaixo da MA8 e
+e da MA20, enngolfados por um da MA20, engolfados por um candle
+candle VERDE: COMPRE! VERMELHO: VENDA!
+165
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 166
+======================================================================
+
+Setups Contra à
+Tendência
+166
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 167
+======================================================================
+
+Setups Contra à Tendência
+VENDA
+COMPRA
+CAS
+CDB
+PODER DAS DUPLAS
+PODER DAS DUPLAS
+TT
+BT
+TOPO MENOR (TM)
+167
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 168
+======================================================================
+
+Two Levels
+of Space
+Setups CT exigem um rigor maior, e os detalhes
+devem ser observados.
+Espere por duas ondas de movimento no gráfico de 5
+min (nos 2 minutos faz mais ondas);
+Observar o tipo e o tamanho dos candles da 2º onda (
+candles muito grandes e sólidos, cuidado! - grandes
+chances de 3º onda);
+Não compre queda aguda (em uma ângulo próximo de
+90º);
+Melhor localização - longe das médias MM200 E MM20
+(double space);
+168
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 169
+======================================================================
+
+Sinais de Reversão
+REVERSÃO DE COMPRA REVERSÃO DE VENDA
+169
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 170
+======================================================================
+
+CDB
+Compra de Declínio Climático
+Qualidade:
+Se apoiado em região de suporte;
+Se tiver sinal de reversão;
+Após 5 OU MAIS candles de baixa (vermelhos) CONSECUTIVOS temos a possibilidade de inversão da força
+principal podendo gerar um contra fluxo interessante;
+Mais facilmente identificado por um “deslanche” descolando das médias, deixando-as para trás;
+170
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 171
+======================================================================
+
+CDB
+Compra de Declínio Climático
+Longe das médias
+1ª onda
+2ª onda
+Compra
+171
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 172
+======================================================================
+
+Exemplo de CDB
+172
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 173
+======================================================================
+
+Exemplo de CDB
+2ª onda
+173
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 174
+======================================================================
+
+CAS
+Venda de Avanço Climático
+Qualidade:
+Se apoiado em região de resistência;
+Se tiver sinal de reversão;
+Após 5 OU MAIS candles de alta (verdes) CONSECUTIVOS temos a possibilidade de inversão da força
+principal podendo gerar um contra fluxo interessante;
+Mais facilmente identificado por um “deslanche” descolando das médias, deixando-as para trás;
+174
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 175
+======================================================================
+
+CAS
+Venda de Avanço Climático
+2ª onda
+Venda
+1ª onda
+Longe das médias
+175
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 176
+======================================================================
+
+Exemplo de CAS
+176
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 177
+======================================================================
+
+Exemplo de CAS
+177
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 178
+======================================================================
+
+Poder
+das Duplas
+Setup que vai te ajudar a comprar fundo e vender topo;
+Pode ser imediato ou tardio, com fundo/topo duplo;
+Qualidade:
+Quanto maior a quantidade de pavio melhor (maior volatilidade);
+Longe da Ma20;
+Fundo/Topo duplo com sinal de Reversão;
+Pavio de cores contrárias;
+Falha em renovar máx/mín pelo segundo candle deixando pavio é fundamental;
+178
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 179
+======================================================================
+
+Poder
+das Duplas
+Longe das médias
+Venda
+Compra
+Longe das médias
+179
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 180
+======================================================================
+
+Exemplo de Poder das duplas (PD) - Imediato
+180
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 181
+======================================================================
+
+Exemplo de Poder das duplas (PD) - Imediato
+181
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 182
+======================================================================
+
+Exemplo de Poder das duplas (PD) - Tardio
+182
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 183
+======================================================================
+
+Exemplo de Poder das duplas (PD) - Tardio
+183
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 184
+======================================================================
+
+Bottoming
+Tail (BT) e Topping Tail (TT)
+Contra à Tendência
+Qualidade:
+Apoiado na Ma20;
+Abaixo da ma20, após a barra elefante de ignição;
+Regular: Pivô de alta ou pivô de baixa;
+Kamikaze: longe das médias;
+184
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 185
+======================================================================
+
+Bottoming
+Tail (BT)
+Contra à Tendência
+Longe das médias
+Compra
+Compra
+BT regular BT Kamicaze
+185
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 186
+======================================================================
+
+Exemplo de BT Regular
+186
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 187
+======================================================================
+
+Exemplo de BT Regular
+187
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 188
+======================================================================
+
+Exemplo de BT Kamikaze
+188
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 189
+======================================================================
+
+Exemplo de BT Kamikaze
+189
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 190
+======================================================================
+
+Topo
+Menor (TM)
+Pré requisitos para identificação:
+Onda de alta;
+Acha um topo;
+Recuo claro;
+Tenta subir de novo e falha em fazer nova máxima, deixando um topo menor;
+Pré requisitos para execução:
+Acionamento longe da Ma20;
+Acionamento abaixo da Ma20 (MELHOR!);
+190
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 191
+======================================================================
+
+Topo
+Menor (TM)
+Qualidade:
+Candles da última onda estiverem
+Barra Elefante de exaustão;
+Recuo claro - precisa ter tido outro recuo anterior para ser comparado;
+Após poder das duplas, com pavios expressivos;
+191
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 192
+======================================================================
+
+Exemplo de Topo Menor (TM)
+192
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 193
+======================================================================
+
+Exemplo de Topo Menor (TM)
+193
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 194
+======================================================================
+
+Módulo Intermediário 1
+CONHECIMENTO INTERMEDIÁRIO I
+Refino dos Setups
+Mapa das localizações
+Suportes e Resistências
+Localização
+Os 4 Fantásticos - Estratégia de Abertura (FAB4)
+194
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 195
+======================================================================
+
+Refino dos
+Setups
+195
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 196
+======================================================================
+
+Mapa de
+Localizações
+1. Barra Elefante 6. GIFT
+2. RBTO 7. BT
+3. RBI 8. BULL 180
+4. VBS 9. CDB
+5. BOP
+196
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 197
+======================================================================
+
+Suportes e
+Resistências
+197
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 198
+======================================================================
+
+Suporte de Fundo Anterior
+E forma de suporte ocorre quando uma
+queda revisita ou testa um fundo anterior.
+Essencialmente, é uma correção de 100%
+do rali anterior.
+198
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 199
+======================================================================
+
+Exemplo de Suporte de Fundo Anterior
+199
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 200
+======================================================================
+
+Suporte de Topo Anterior
+Ocorre quando uma queda revisita ou testa
+um pico/ máxima anterior.
+Frequentemente, esse ponto de suporte
+coincide com o nível de correção de 50%.
+200
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 201
+======================================================================
+
+Exemplo de Suporte de Topo Anterior
+201
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 202
+======================================================================
+
+Suporte de Média Móvel em Tendência
+Essa forma de suporte ocorre quando uma
+ação em tendência de alta corrige até a
+Ma20 ou Ma8 subindo e estabiliza (forma
+um dos quatro sinais de fundo).
+Frequentemente, esse ponto de suporte
+fica mais forte depois da primeira rebatida
+da Ma20.
+202
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 203
+======================================================================
+
+Exemplo de Suporte de Média Móvel em Tendência
+203
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 204
+======================================================================
+
+Suporte da Ma200 - Plana
+Essa forma de suporte ocorre quando uma
+Ma200 plana abaixo dos preços. É pouco
+frequente que uma ação caindo em uma
+Ma200 plana falhe em pelo menos parar por
+um tempo. O primeiro movimento em
+direção a uma Ma200 plana normalmente
+resultará em alguma forma de retorno,
+mesmo que temporariamente.
+204
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 205
+======================================================================
+
+Exemplo de Suporte da Ma200 - Plana
+205
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 206
+======================================================================
+
+PDC - Preço de Fechamento do Dia Anterior
+Essa forma de suporte / resistência ocorre
+frequentemente, já que o preço de
+fechamento anterior de uma ação é
+lembrada fortemente por traders e
+investidores.
+Se, e quando uma ação romper o
+fechamento do dia anterior, e
+subsequentemente corrigir de volta nesse
+ponto, é muito provável que essa região
+vire um suporte ou resistência.
+206
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 207
+======================================================================
+
+Exemplo de PDC - Região de Suporte
+207
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 208
+======================================================================
+
+Exemplo de PDC - Região de Resistência
+208
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 209
+======================================================================
+
+Resistência de Topo Anterior
+Essa forma de resistência ocorre quando
+uma subida revisita ou testa um topo
+anterior. Essencialmente, é uma correção
+de 100% do rali anterior.
+209
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 210
+======================================================================
+
+Exemplo de Resistência de Topo Anterior
+210
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 211
+======================================================================
+
+Resistência de Fundo Anterior
+Ocorre quando uma subida revisita ou testa
+um fundo anterior. Frequentemente, esse
+ponto de resistência coincide com o nível
+de correção de 50%.
+211
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 212
+======================================================================
+
+Exemplo de Resistência de Fundo Anterior
+212
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 213
+======================================================================
+
+Resistência de Média Móvel em Tendência
+Essa forma de resistência ocorre quando
+uma ação em tendência de baixa corrige
+até a Ma20 ou Ma8 caindo e estabiliza
+(forma um dos quatro sinais de fundo).
+Frequentemente, esse ponto de
+resistência fica mais forte depois da
+primeira rebatida da Ma20.
+213
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 214
+======================================================================
+
+Exemplo de Resistência de Média Móvel em Tendência
+214
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 215
+======================================================================
+
+Resistência da Ma200 - Plana
+Essa forma de resistência ocorre quando
+há uma Ma200 plana acima dos preços. É
+pouco frequente que uma ação subindo em
+uma Ma200 plana falhe em pelo menos
+parar por um tempo. O primeiro movimento
+em direção a uma Ma200 plana
+normalmente resultará em alguma forma
+de retorno, mesmo que temporariamente.
+215
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 216
+======================================================================
+
+Exemplo de Resistência da Ma200- Plana
+216
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 217
+======================================================================
+
+Localização e
+Qualidade
+217
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 218
+======================================================================
+
+Localização
+---
++-+-
++++
+FAB4
+Trap
+---
++-+-
++++
+218
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 219
+======================================================================
+
+Localização
+X Qualidade
+Estado expandido:
+reversão! Ma20
+---
++-+-
+Estado comprimido:
+Espaço Duplo
+continuidade!
++++
+Ma200
+219
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 220
+======================================================================
+
+Os 4 Fantásticos
+Estratégia de
+Abertura
+220
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 221
+======================================================================
+
+FAB4
+Os Quatro Fantásticos
+É um estratégia utilizada para se operar nos primeiros minutos após a abertura do mercado;
+Essa estratégia é baseada no rompimento da primeira barra, posição dos preços em relação ao
+fechamento do dia anterior (PDC), presença de congestão de preços na última hora do dia anterior
+e a localização dos preços em relação às médias móveis de 20 e 200 períodos;
+É mais relacionado a interpretação do mercado, não necessariamente um protocolo;
+221
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 222
+======================================================================
+
+FAB4
+Os Quatro Fantásticos
++
+Média de 200 períodos
+Média de 20 períodos
+PDC - Preço de fechamento do dia anterior
+Última zona de congestão
+-
+222
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 223
+======================================================================
+
+FAB4
+Os Quatro Fantásticos
+Para maior assertividade:
+Não deu match Não Executar
+Deu match Executar
+Aguardar Candle de força a favor da FAB4;
+Candle de maior força está a favor? Maior a
+chance de haver continuidade;
+Aguardar Pullback/Reversão;
+223
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 224
+======================================================================
+
+Exemplo de Abertura (FAB4)
+224
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 225
+======================================================================
+
+Exemplo de Abertura (FAB4)
+225
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 226
+======================================================================
+
+Exemplo de Abertura (FAB4)
+226
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 227
+======================================================================
+
+Exemplo de Abertura (FAB4)
+227
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 228
+======================================================================
+
+Exemplo de Abertura (FAB4)
+Double Space
+228
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 229
+======================================================================
+
+Exemplo de Abertura (FAB4)
+Double Space
+229
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 230
+======================================================================
+
+Estratégia
+da Ma200
+Para operar a estratégia da abertura,
+quando abre em FAB4 de compra, é melhor
+que a 200ma esteja acima da 20ma, caso
+abra em tendência de alta.
+230
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 231
+======================================================================
+
+Estratégia
+da Ma200
+Quanto mais distante o preço abre da
+200ma, e a 200ma estiver acima da 20ma,
+maior a chance de haver uma correção.
+“Quanto mais longe estiver da média, maior
+a chance de voltar pra perto da média”
+231
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 232
+======================================================================
+
+Módulo Intermediário 2
+CONHECIMENTO INTERMEDIÁRIO II
+Tipos de Stop Inicial
+Pegar Lucros
+Gerenciamento de Trade
+232
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 233
+======================================================================
+
+Plano de
+Posições
+Capital Inicial - quanto seu capital suporta?
+Operar somente 1 ativo
+Operar com 2 contratos
+Quanto você pode perder em uma operação?
+Quanto você pode perder em um dia?
+Quantas entradas você consegue fazer sem perder a
+calma?
+233
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 234
+======================================================================
+
+Indo para a
+Conta Real
+START
+Escolha 1 ativo
+Vá para a
+Opere com 2 contratos
+Sim
+Preencha a planilha de 20 trades CONTA REAL
+Índice de assertividade
+maior que 60%?
+Não
+Sim
+Esta ganhando mais
+do que perdendo?
+Não
+Continue no
+simulador
+Repita o
+processo
+234
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 235
+======================================================================
+
+Plano de
+Trade
+Passo 1: Identificação Passo 2: Posição Passo 3: Entrada
+Evento de qualidade Confirmação: no candle
+Passo 4: Stop Inicial
+- - - - - -
+Barra Elefante seguinte, ao confirmar o Setup
+Bull/Bear 180 + - + - + Antecipada: com o candle em
+Evento:
+Tails movimento, violência
++ + + + +
+abaixo/acima do
+RBI/GBI
+motivo de entrada,
+setup
+Passo 7: Gestão Stop Passo 6: Lucros Passo 5: Adição
+MLPT:
+Push
+abaixo/acima da
+Breakeven Novo setup próximo ao evento
+Região
+FAB4 ou Ma200;
+Barra Elefante de ignição, próximo as médias
+Nova máx/mín
+Médias Móveis Tamanho da adição depende da
+Forte movimento
+Barra barra qualidade da localização
+distanciando das
+Pivô RBI, GBI, NRB
+médias
+235
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 236
+======================================================================
+
+Tipos de
+Stop Inicial
+236
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 237
+======================================================================
+
+Stop de
+Evento - Compras
+É o stop utilizado abaixo do seu motivo de
+entrada, podendo ser Barra Elefante, Bull e
+Bear 180, BT, TT, TTO, BTTO, VBS, VSS, RBTO,
+GBTO, BOP, BDP..
+237
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 238
+======================================================================
+
+Stop Inicial de Evento - Bull
+Stop Incial
+238
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 239
+======================================================================
+
+Stop Inicial de Evento - Bull 180
+Stop Incial
+239
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 240
+======================================================================
+
+Stop Inicial de Evento - BT
+Stop Incial
+240
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 241
+======================================================================
+
+Stop Inicial de Evento - RBTO
+Stop Incial
+241
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 242
+======================================================================
+
+Stop Inicial de Evento - VBS
+80%
+Ajuste Stop
+Stop inicial
+242
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 243
+======================================================================
+
+Stop Inicial de Evento - GIFT
+Ajuste Stop
+Stop Inicial
+243
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 244
+======================================================================
+
+Stop Inicial de Evento - BOP
+Stop Inicial
+244
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 245
+======================================================================
+
+Stop Inicial de Evento - TTO
+Stop Inicial
+245
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 246
+======================================================================
+
+Stop de
+Evento - vendas
+É o stop utilizado acima do seu motivo de
+entrada, podendo ser Barra Elefante, TT, Bear
+180, GBTO, BDP, GBI, BTTO;
+246
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 247
+======================================================================
+
+Stop Inicial de Evento - Bear
+Stop Inicial
+247
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 248
+======================================================================
+
+Stop Inicial de Evento - Bear 180
+Stop Inicial
+248
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 249
+======================================================================
+
+Stop Inicial de Evento - TT
+Stop Inicial
+249
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 250
+======================================================================
+
+Stop Inicial de Evento - GBTO
+Stop Inicial
+250
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 251
+======================================================================
+
+Stop Inicial de Evento - VSS
+Stop Inicial
+Ajuste Stop
+80%
+251
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 252
+======================================================================
+
+Stop Inicial de Evento - BDP
+Stop Inicial
+252
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 253
+======================================================================
+
+Stop Inicial de Evento - BTTO
+Stop Inicial
+253
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 254
+======================================================================
+
+Stop de
+MLPT
+(Stop de Perda Máxima por Trade)
+É o stop utilizado obrigatoriamente quando seu evento de entrada está bem perto da 200ma,
+devendo ser determinado por cada trader (sugerido metade do valor da sua perda máxima diária
+permitida);
+254
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 255
+======================================================================
+
+Exemplo de Stop Inicial de Perda Máxima por Trade (MLPT)
+Stop Inicial
+255
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 256
+======================================================================
+
+Exemplo de Stop Inicial de Perda Máxima por Trade (MLPT)
+Stop Inicial
+256
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 257
+======================================================================
+
+Exemplo de Stop Inicial de Perda Máxima por Trade (MLPT)
+Stop Inicial
+257
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 258
+======================================================================
+
+Exemplo de Stop Inicial de Perda Máxima por Trade (MLPT)
+Stop Inicial
+258
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 259
+======================================================================
+
+Pegar
+Lucros
+259
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 260
+======================================================================
+
+Profits
+Pushes: usado quando não faz pullback, apenas candles de respiro:
+Nova máxima / nova mínima: usado quando faz pullback (pivô) ;
+Localização próxima a médias móveis ou regiões (que funcionam como suporte/resistência);
+Regra dos 0,30 0,50 cents - 50/100 Pontos;
+260
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 261
+======================================================================
+
+Exemplo de Pushes
+261
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 262
+======================================================================
+
+Exemplo de Pushes
+262
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 263
+======================================================================
+
+Exemplo de Pushes
+Dica: quanto maior for o pushe, menor a chance de produzir muitos pushes!
+263
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 264
+======================================================================
+
+Exemplo de Pushes
+264
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 265
+======================================================================
+
+Exemplo de Nova Máxima
+Região de
+nova máxima
+265
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 266
+======================================================================
+
+Exemplo de Nova Máxima
+Quando a volta do pullback tiver BE - mais verdes
+estão por vir - não precisa pegar lucro nas novas
+máximas.
+266
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 267
+======================================================================
+
+Exemplo de Nova Mínima
+Região de
+nova mínima
+267
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 268
+======================================================================
+
+Exemplo de Nova Mínima
+Quando a volta do pullback tiver BE - mais
+vermelhos estão por vir - não precisa pegar lucro
+nas novas mínimas.
+268
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 269
+======================================================================
+
+Exemplo de Lucros na Ma20
+Região de
+pegar lucros
+269
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 270
+======================================================================
+
+Exemplo de Lucros na Ma200
+Região de
+pegar lucros
+270
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 271
+======================================================================
+
+Gerenciamento
+do Trade
+271
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 272
+======================================================================
+
+Ajuste Stop
+de Barra Elefante
+É o trailing stop mais utilizado no método,
+visto que possibilita pegar o máximo possível
+em tendências saudáveis;
+Tendências saudáveis honram barras
+elefantes;
+272
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 273
+======================================================================
+
+Ajuste de Stop - Barra Elefante
+273
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 274
+======================================================================
+
+Ajuste de Stop - Barra Elefante
+274
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 275
+======================================================================
+
+Ajuste Stop
+de Ma8
+Depois de você ter identificado que a sua ação
+está em uma tendência de poder, pode usar a
+8ma como ajuste de stop, mas apenas após o
+pullback, ou seja, na segunda fase do trade;
+Ma8
+Ma20
+275
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 276
+======================================================================
+
+Ajuste de Stop - Média Móvel 8 (8ma)
+276
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 277
+======================================================================
+
+Ajuste de Stop - Média Móvel 8 (8ma)
+277
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 278
+======================================================================
+
+Ajuste Stop
+de Pivô
+80%
+É o ajuste de stop utilizado depois de um
+pullback e o preço do ativo recupera 80% da
+retração. O stop é ajustado para baixo do pivô;
+278
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 279
+======================================================================
+
+Ajuste de Stop - Pivô
+279
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 280
+======================================================================
+
+Ajuste de Stop - Pivô
+280
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 281
+======================================================================
+
+Ajuste Stop
+de Break Even
+Você tem o direito, mas não a obrigação, de
+ajustar o seu stop ao Preço de Entrada depois
+dos 3 pushes;
+Ajuste stop breckeven
+281
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 282
+======================================================================
+
+Ajuste de Stop - Break Even
+Ajuste stop breckeven
+282
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 283
+======================================================================
+
+Ajuste de Stop - Break Even
+Ajuste stop breckeven
+283
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 284
+======================================================================
+
+Ajuste Stop
+de Barra Barra
+Este ajuste de stop é utilizado quando o preço do
+ativo está muito longe da 20ma ou longe da nova
+máxima, devendo essa nova máxima acontecer
+após o pullback;
+284
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 285
+======================================================================
+
+Ajuste de Stop - Barra a Barra
+285
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 286
+======================================================================
+
+Ajuste de Stop - Barra a Barra
+286
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 287
+======================================================================
+
+Módulo Avançado
+CONHECIMENTO AVANÇADO
+Tipos de Pernadas e Pausas
+Correções, Tipos de Subidas e Quedas
+Adições
+Barra Sólida sem Continuidade
+Regra das Duas Cores
+Zona Neutra
+Sharp Turn
+287
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 288
+======================================================================
+
+Tipos
+de Pernadas
+Tipo 1 Tipo 2 Tipo 3
+288
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 289
+======================================================================
+
+Tipos de Pernadas
+289
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 290
+======================================================================
+
+Tipos de Pernadas
+290
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 291
+======================================================================
+
+Tipos de Pernadas
+291
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 292
+======================================================================
+
+Tipos
+de Pausas
+Tipo 1 Tipo 2 Tipo 3
+292
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 293
+======================================================================
+
+Tipos de Pausas
+293
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 294
+======================================================================
+
+Tipos de Pausas
+294
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 295
+======================================================================
+
+Correções
+de mercado
+As correções nos mostram qual lado da força do mercado está no comando, juntamente com as
+médias para nos auxiliar a entender melhor seu comportamento;
+Vale para candles grandes ou para pernada;
+Tipos:
+Correção de 1/3 (33%)
+Correção de 1/2 (50%)
+Correção de 2/3 (70%)
+295
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 296
+======================================================================
+
+Correções
+de Mercado
+Determina a extensão mais provável da correção:
+100% - 1/10
+70% - 2/10
+50% - 6/10
+33% - 9/10
+296
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 297
+======================================================================
+
+Correções de Mercado - 33%
+33%
+297
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 298
+======================================================================
+
+Correções de Mercado - 33%
+33%
+33%
+33%
+298
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 299
+======================================================================
+
+Correções de Mercado - 50%
+50%
+299
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 300
+======================================================================
+
+Correções de Mercado - 50%
+50%
+50%
+50%
+300
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 301
+======================================================================
+
+Correções de Mercado - 33 e 50%
+50%
+33%
+301
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 302
+======================================================================
+
+Correções de Mercado - 33 e 50%
+33%
+50%
+302
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 303
+======================================================================
+
+Tipos de
+Subida / Queda
+Subida intensa: ângulo quase de 90º: Espera-se que ele
+venha corrigir apenas ⅓;
+Subida forte: ângulo de 60º, tende a corrigir 50%;
+Subida de poder: ângulo de 45º formada por candles
+pequenos, colados na média, geralmente com forte
+presença de RBI e GBI, sendo comportada pela Ma8;
+Subida fraca: Deu evento do potência, mas não cria
+“momentum”, ângulo menor que 45º, tendendo à fazer
+uma nova mínima;
+303
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 304
+======================================================================
+
+Subida Intensa
+33%
+304
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 305
+======================================================================
+
+Queda Aguda
+33%
+Subida intensa: ângulo quase de 90º:
+Espera-se que ele venha corrigir apenas ⅓;
+305
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 306
+======================================================================
+
+Subida Forte
+50%
+306
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 307
+======================================================================
+
+Queda Forte
+50%
+307
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 308
+======================================================================
+
+Subida de Poder
+308
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 309
+======================================================================
+
+Queda de Poder
+309
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 310
+======================================================================
+
+Subida Fraca
+Subida fraca: Deu evento do potência, mas não cria “momentum”,
+ângulo menor que 45º, tendendo à fazer uma nova mínima;
+310
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 311
+======================================================================
+
+Queda Fraca
+Queda fraca: Deu evento do potência, mas não cria “momentum”,
+311
+ângulo menor que 45º, tendendo à fazer uma nova máxima;
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 312
+======================================================================
+
+Adições
+312
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 313
+======================================================================
+
+Adições
+Quando você já está comprado ou vendido, ou seja, já está no trade, e o mercado te dá uma
+oportunidade para comprar ou vender mais lotes.
+Só fazer adições quando ela ocorrer próximo do seu ponto de entrada;
+Normalmente adicionamos em setups, e os principais são:
+RBI, GBI, VBS, VSS e GIFT
+313
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 314
+======================================================================
+
+Adições de
+GBI e RBI
+ADD
+ADD
+314
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 315
+======================================================================
+
+Adição em RBI
+315
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 316
+======================================================================
+
+Adição em RBI
+RBI oculta
+316
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 317
+======================================================================
+
+Adição em GBI
+317
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 318
+======================================================================
+
+Adição em GBI
+318
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 319
+======================================================================
+
+Adições de
+VBS e VSS
+ADD
+ADD
+319
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 320
+======================================================================
+
+Adição em VBS
+320
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 321
+======================================================================
+
+Adição em VSS
+321
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 322
+======================================================================
+
+Adições de
+GIFT
+ADD
+ADD
+322
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 323
+======================================================================
+
+Adição em GIFT
+323
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 324
+======================================================================
+
+Adição em GIFT
+324
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 325
+======================================================================
+
+Barra Sólida sem
+Continuidade
+325
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 326
+======================================================================
+
+Barra sólida
+sem continuidade
+Uma barra sólida e grande (barra elefante)
+em uma boa localização, chega a ter até
+90% de chances de produzir continuidade.
+Quando ela não produz continuidade e é
+negada, tende a produzir grandes
+movimentações na direção oposta
+326
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 327
+======================================================================
+
+Barras Sólidas sem Continuidade
+327
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 328
+======================================================================
+
+Barras Sólidas sem Continuidade
+328
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 329
+======================================================================
+
+Barras Sólidas sem Continuidade
+329
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 330
+======================================================================
+
+Barras Sólidas sem Continuidade
+330
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 331
+======================================================================
+
+Regra das
+Duas Cores
+331
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 332
+======================================================================
+
+Regra das
+Duas Cores
+Quando duas barras grandes sólidas, mais ou
+menos no mesmo patamar de preços, falham em
+dar continuidade e são eliminadas, acionam
+grandes movimentos na direção oposta;
+Ajuda tanto a entrar no trade, quanto quando sair
+do trade quando estiver posicionado, que
+possivelmente vai haver uma reversão na direção
+oposta;
+332
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 333
+======================================================================
+
+Exemplo de Regra das 2 Cores
+333
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 334
+======================================================================
+
+Exemplo de Regra das 2 Cores
+334
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 335
+======================================================================
+
+Exemplo de Regra das 2 Cores
+335
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 336
+======================================================================
+
+Zona
+Neutra
+336
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 337
+======================================================================
+
+Zona Neutra
+Quando um ativo abre abaixo/acima da Fab4 e
+produz uma barra de poder, o seu stop irá
+acima/abaixo da Fab4 e toda essa região é
+denominada zona neutra, na qual “sua boleta
+está mentindo para você”; Zona Neutra
+Barras muito grandes emitem uma campo de
+força horizontal e toda a sua extensão é
+denominada zona neutra;
+Campo de força produzido
+pela Barra Elefante
+337
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 338
+======================================================================
+
+Exemplo de Zona Neutra
+338
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 339
+======================================================================
+
+Exemplo de Zona Neutra
+339
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 340
+======================================================================
+
+Sharp Turn e
+The Trap
+340
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 341
+======================================================================
+
+Sharp Turn
+É uma região que já foi testada
+anteriormente e teve forte resposta
+de reversão. Quando é novamente
+testada e origina uma força de
+reversão tem altas probabilidades de
+continuidade;
+341
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 342
+======================================================================
+
+Exemplos de Sharp Turn
+342
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 343
+======================================================================
+
+Exemplos de Sharp Turn
+343
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 344
+======================================================================
+
+Exemplos de Sharp Turn
+344
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 345
+======================================================================
+
+Exemplos de Sharp Turn
+345
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 346
+======================================================================
+
+The Trap
+Quando o preço rompe com violência uma
+região que anteriormente serviu como
+suporte/resistência, e essa é
+imediatamente e violentamente negada,
+temos uma TRAP;
+Altas probabilidades de termos um colapso
+nessa direção;
+346
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 347
+======================================================================
+
+Exemplos de Trap
+347
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 348
+======================================================================
+
+Exemplos de Trap
+348
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 349
+======================================================================
+
+Exemplos de Trap
+349
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
+
+======================================================================
+PAGINA 350
+======================================================================
+
+Exemplos de Trap
+350
+Licenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com
+
