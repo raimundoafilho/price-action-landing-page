@@ -168,38 +168,23 @@ function initDOMCache() {
 }
 
 /**
- * CARREGAMENTO DE DADOS COM CACHE E STREAMING
+ * CARREGAMENTO DE DADOS COM CACHE
  */
 async function loadLandingPageData() {
   appState.isLoading = true;
 
   try {
-    // Verificar cache IndexedDB
-    const cached = await getCachedData();
-    if (cached) {
-      appState.landingPageData = cached;
-      calculateTotalSlides();
-      appState.isLoading = false;
-      return true;
-    }
-
-    // Fetch com timeout
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 15000); // 15s timeout
-
-    const response = await fetch('./apostila_scraped/landing-page-data.json', {
-      signal: controller.signal,
-      headers: { 'Accept-Encoding': 'gzip, deflate, br' }
-    });
-    clearTimeout(timeout);
-
+    const response = await fetch('./apostila_scraped/landing-page-data.json');
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
 
     appState.landingPageData = await response.json();
+    window.landingPageData = appState.landingPageData;
+
     calculateTotalSlides();
 
-    // Salvar em cache
-    await saveCachedData(appState.landingPageData);
+    console.log('Landing page data carregado com sucesso');
+    console.log(`Modulos: ${appState.landingPageData.modules?.length || 0}`);
+    console.log(`Total de slides: ${appState.totalSlides}`);
 
     appState.isLoading = false;
     return true;
@@ -209,38 +194,6 @@ async function loadLandingPageData() {
     appState.isLoading = false;
     return false;
   }
-}
-
-// Cache IndexedDB
-async function getCachedData() {
-  return new Promise((resolve) => {
-    const req = indexedDB.open('LandingPageDB', 1);
-    req.onsuccess = (e) => {
-      const db = e.target.result;
-      const store = db.transaction('data', 'readonly').objectStore('data');
-      const getReq = store.get('landingPageData');
-      getReq.onsuccess = () => resolve(getReq.result?.data || null);
-      getReq.onerror = () => resolve(null);
-    };
-    req.onerror = () => resolve(null);
-  });
-}
-
-async function saveCachedData(data) {
-  return new Promise(() => {
-    const req = indexedDB.open('LandingPageDB', 1);
-    req.onupgradeneeded = (e) => {
-      const db = e.target.result;
-      if (!db.objectStoreNames.contains('data')) {
-        db.createObjectStore('data');
-      }
-    };
-    req.onsuccess = (e) => {
-      const db = e.target.result;
-      const store = db.transaction('data', 'readwrite').objectStore('data');
-      store.put({ data }, 'landingPageData');
-    };
-  });
 }
 
 /**
