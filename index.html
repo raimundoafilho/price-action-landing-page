@@ -82,7 +82,10 @@ async function show() {
   document.querySelector('footer').style.display = 'block';
 
   if (!data) {
-    data = await fetch('./apostila_scraped/landing-page-data.json').then(r => r.json());
+    const url = './apostila_scraped/landing-page-data.json?t=' + Date.now();
+    console.log('[Fetch] Carregando:', url);
+    data = await fetch(url).then(r => r.json());
+    console.log('[Fetch] Dados carregados, módulos:', data.modules.length);
   }
 
   renderMods();
