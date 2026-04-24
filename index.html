@@ -51,8 +51,19 @@ let data = null;
 let modIdx = 0, topicIdx = 0, slideIdx = 0;
 
 // LOGIN
+console.log('[Init] Input pwd:', document.getElementById('pwd'));
+console.log('[Init] Button login:', document.getElementById('btnLogin'));
+
 document.getElementById('btnLogin').onclick = login;
-document.getElementById('pwd').onkeypress = e => e.key === 'Enter' && login();
+document.getElementById('pwd').onkeypress = e => {
+  console.log('[Key] Tecla:', e.key, 'Value:', document.getElementById('pwd').value);
+  if (e.key === 'Enter') login();
+};
+
+// Também adicionar oninput para debug
+document.getElementById('pwd').oninput = (e) => {
+  console.log('[Input] Digitado:', e.target.value);
+};
 
 function login() {
   if (document.getElementById('pwd').value === SENHA) {
@@ -160,10 +171,25 @@ document.getElementById('themeToggle').onclick = () => {
   document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
 };
 
-window.onload = () => {
-  if (sessionStorage.auth) show();
-  else document.getElementById('pwd').focus();
-};
+window.addEventListener('DOMContentLoaded', () => {
+  const pwd = document.getElementById('pwd');
+  if (sessionStorage.auth) {
+    show();
+  } else {
+    setTimeout(() => {
+      pwd.focus();
+      pwd.click();
+    }, 100);
+  }
+});
+
+// Forçar foco no input ao clicar em qualquer lugar da tela de login
+document.getElementById('login-screen').addEventListener('click', (e) => {
+  const pwd = document.getElementById('pwd');
+  if (e.target !== pwd) {
+    pwd.focus();
+  }
+});
 </script>
 
 </body>
