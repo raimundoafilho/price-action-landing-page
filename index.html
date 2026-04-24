@@ -88,9 +88,9 @@ async function loadApp() {
 
     appData = await res.json();
     console.log('✓ JSON carregado');
-    console.log('  Módulos:', appData.modules.length);
-    console.log('  Módulo 0 tópicos:', appData.modules[0].topics.length);
-    console.log('  Módulo 0 tópico 0 slides:', appData.modules[0].topics[0].slides.length);
+    if (appData.modules) console.log('  Módulos:', appData.modules.length);
+    if (appData.modules && appData.modules[0] && appData.modules[0].topics)
+      console.log('  Módulo 0 tópicos:', appData.modules[0].topics.length);
 
     // Mostrar UI
     document.querySelector('header').style.display = 'block';
@@ -212,8 +212,14 @@ function renderSlide() {
 
 function goNext() {
   console.log('Próximo...');
+  if (!appData || !appData.modules) return;
+
   const mod = appData.modules[currentModuleIdx];
+  if (!mod || !mod.topics || !mod.topics[currentTopicIdx]) return;
+
   const topic = mod.topics[currentTopicIdx];
+  if (!topic || !topic.slides) return;
+
   const totalSlides = topic.slides.length;
 
   if (currentSlideIdx < totalSlides - 1) {
@@ -230,12 +236,18 @@ function goNext() {
 
 function goPrev() {
   console.log('Anterior...');
+  if (!appData || !appData.modules) return;
+
   if (currentSlideIdx > 0) {
     currentSlideIdx--;
   } else if (currentModuleIdx > 0) {
     currentModuleIdx--;
     const mod = appData.modules[currentModuleIdx];
+    if (!mod || !mod.topics || !mod.topics[0]) return;
+
     const topic = mod.topics[0];
+    if (!topic || !topic.slides) return;
+
     currentSlideIdx = topic.slides.length - 1;
     renderModules();
   }
