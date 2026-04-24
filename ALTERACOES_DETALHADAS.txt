@@ -1,0 +1,385 @@
+════════════════════════════════════════════════════════════════════════════════
+DETALHAMENTO DAS ALTERAÇÕES
+Sistema de Login com Senha "AndreTrader"
+════════════════════════════════════════════════════════════════════════════════
+
+ARQUIVO 1: index.html
+════════════════════════════════════════════════════════════════════════════════
+
+LOCAL: Linhas 17-45 (ADIÇÃO)
+┌────────────────────────────────────────────────────────────────────────────┐
+│ <!-- ==================== LOGIN SCREEN ==================== -->            │
+│ <div id="login-screen" class="login-container" style="display: none;">    │
+│   <div class="login-box">                                                  │
+│     <h1 class="login-title">Método Price Action</h1>                      │
+│     <p class="login-subtitle">Oliver Velez | André Trader</p>             │
+│     <p class="login-description">Plataforma Educacional Restrita</p>      │
+│                                                                             │
+│     <input                                                                  │
+│       type="password"                                                       │
+│       id="passwordInput"                                                    │
+│       class="login-input"                                                   │
+│       placeholder="Digite a senha para acessar"                             │
+│       aria-label="Senha de acesso"                                         │
+│     />                                                                      │
+│                                                                             │
+│     <button                                                                 │
+│       class="login-button"                                                  │
+│       onclick="submitPassword()"                                            │
+│       type="button"                                                         │
+│     >                                                                       │
+│       🔓 Entrar                                                            │
+│     </button>                                                               │
+│                                                                             │
+│     <p id="loginError" class="login-error" aria-live="polite"></p>       │
+│   </div>                                                                    │
+│ </div>                                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+LOCAL: Linhas 31-39 (ADIÇÃO no header)
+┌────────────────────────────────────────────────────────────────────────────┐
+│ <!-- LOGOUT BUTTON -->                                                     │
+│ <button                                                                     │
+│   class="logout-btn"                                                        │
+│   onclick="logout()"                                                        │
+│   title="Sair da plataforma"                                               │
+│   aria-label="Fazer logout"                                                │
+│   type="button"                                                             │
+│ >                                                                           │
+│   🚪 Sair                                                                  │
+│ </button>                                                                   │
+└────────────────────────────────────────────────────────────────────────────┘
+
+RESUMO:
+✓ Login screen com input de senha
+✓ Botão de envio com onclick="submitPassword()"
+✓ Botão Sair no header com onclick="logout()"
+✓ IDs para referência no JavaScript: login-screen, passwordInput, loginError
+
+
+ARQUIVO 2: app.js
+════════════════════════════════════════════════════════════════════════════════
+
+LOCAL: Linhas 27-85 (ADIÇÃO no início do arquivo)
+┌────────────────────────────────────────────────────────────────────────────┐
+│ /**                                                                         │
+│  * ============================================================================ │
+│  * AUTENTICAÇÃO COM SENHA                                                  │
+│  * ============================================================================ │
+│  */                                                                         │
+│ const CORRECT_PASSWORD = 'AndreTrader';  ← ⭐ SENHA CONFIGURADA           │
+│                                                                             │
+│ function submitPassword() {              ← ⭐ VALIDAÇÃO DE SENHA           │
+│   const input = document.getElementById('passwordInput');                  │
+│   const pwd = input.value.trim();                                          │
+│                                                                             │
+│   if (pwd === CORRECT_PASSWORD) {                                          │
+│     sessionStorage.setItem('authenticated', 'true');  ← SALVA EM MEMÓRIA  │
+│     showLandingPage();                                                     │
+│     input.value = '';                                                      │
+│   } else {                                                                  │
+│     const errorElement = document.getElementById('loginError');             │
+│     errorElement.textContent = '❌ Senha incorreta. Tente novamente.';     │
+│     input.value = '';                                                      │
+│     input.focus();                                                          │
+│   }                                                                         │
+│ }                                                                           │
+│                                                                             │
+│ function logout() {                      ← ⭐ FUNÇÃO DE LOGOUT             │
+│   sessionStorage.removeItem('authenticated');                              │
+│   location.reload();                                                        │
+│ }                                                                           │
+│                                                                             │
+│ function showLandingPage() {             ← ⭐ MOSTRA LANDING PAGE          │
+│   const loginScreen = document.getElementById('login-screen');             │
+│   const slideContainer = document.getElementById('slideContainer');        │
+│                                                                             │
+│   if (loginScreen) loginScreen.style.display = 'none';                    │
+│   if (slideContainer) slideContainer.style.display = 'block';             │
+│                                                                             │
+│   initialize();                          ← CARREGA APP                    │
+│ }                                                                           │
+│                                                                             │
+│ function checkAuthentication() {         ← ⭐ VERIFICA AUTENTICAÇÃO        │
+│   const isAuthenticated = sessionStorage.getItem('authenticated') === 'true';
+│   const loginScreen = document.getElementById('login-screen');             │
+│   const slideContainer = document.getElementById('slideContainer');        │
+│                                                                             │
+│   if (isAuthenticated) {                                                    │
+│     if (loginScreen) loginScreen.style.display = 'none';                  │
+│     if (slideContainer) slideContainer.style.display = 'block';           │
+│     showLandingPage();                                                     │
+│   } else {                                                                  │
+│     if (loginScreen) loginScreen.style.display = 'flex';                  │
+│     if (slideContainer) slideContainer.style.display = 'none';            │
+│                                                                             │
+│     const passwordInput = document.getElementById('passwordInput');        │
+│     if (passwordInput) {                                                    │
+│       passwordInput.focus();                                                │
+│                                                                             │
+│       passwordInput.addEventListener('keypress', (e) => {                 │
+│         if (e.key === 'Enter') {                                           │
+│           submitPassword();               ← ENTER PARA ENVIAR             │
+│         }                                                                   │
+│       });                                                                   │
+│     }                                                                       │
+│   }                                                                         │
+│ }                                                                           │
+└────────────────────────────────────────────────────────────────────────────┘
+
+LOCAL: Linhas 659-663 (MODIFICAÇÃO - Função de boot)
+┌────────────────────────────────────────────────────────────────────────────┐
+│ /**                                                                         │
+│  * BOOT                                                                    │
+│  * Primeiro verificar autenticação, depois inicializar                     │
+│  */                                                                         │
+│ if (document.readyState === 'loading') {                                   │
+│   document.addEventListener('DOMContentLoaded', checkAuthentication);      │
+│ } else {                                                                    │
+│   checkAuthentication();                                                    │
+│ }                                                                           │
+└────────────────────────────────────────────────────────────────────────────┘
+
+MUDANÇA:
+- ANTES: document.addEventListener('DOMContentLoaded', initialize);
++ DEPOIS: document.addEventListener('DOMContentLoaded', checkAuthentication);
+
+RESUMO:
+✓ Constante CORRECT_PASSWORD = 'AndreTrader'
+✓ Função submitPassword() - Valida a senha
+✓ Função logout() - Faz logout e recarrega
+✓ Função showLandingPage() - Mostra plataforma
+✓ Função checkAuthentication() - Verifica ao carregar
+✓ Boot modificado para chamar checkAuthentication()
+✓ Suporte a tecla Enter para submeter senha
+
+
+ARQUIVO 3: style.css
+════════════════════════════════════════════════════════════════════════════════
+
+LOCAL: Linhas 1695-1870 (ADIÇÃO no final)
+┌────────────────────────────────────────────────────────────────────────────┐
+│ /* ============================================================================ │
+│    33. LOGIN SCREEN (AUTENTICAÇÃO)                                         │
+│    ============================================================================ */│
+│                                                                             │
+│ .login-container {                      ← TELA DE FUNDO COM GRADIENTE      │
+│     position: fixed;                                                        │
+│     top: 0;                                                                 │
+│     left: 0;                                                                │
+│     right: 0;                                                               │
+│     bottom: 0;                                                              │
+│     background: linear-gradient(135deg, var(--primary-color), #2d5f8d);   │
+│     display: flex;                                                          │
+│     justify-content: center;                                                │
+│     align-items: center;                                                    │
+│     z-index: 9999;                                                          │
+│     animation: fadeIn 0.5s ease-in;                                        │
+│ }                                                                           │
+│                                                                             │
+│ .login-box {                            ← CAIXA CENTRALIZADA               │
+│     background: var(--bg-primary);                                         │
+│     padding: 48px 40px;                                                     │
+│     border-radius: 12px;                                                    │
+│     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);                           │
+│     text-align: center;                                                     │
+│     max-width: 420px;                                                       │
+│     width: 90%;                                                             │
+│     animation: slideUp 0.5s ease-out;                                      │
+│ }                                                                           │
+│                                                                             │
+│ .login-title {                          ← TÍTULO                           │
+│     font-size: var(--font-h1, 32px);                                       │
+│     color: var(--text-primary);                                            │
+│     font-weight: 700;                                                       │
+│ }                                                                           │
+│                                                                             │
+│ .login-input {                          ← CAMPO DE ENTRADA DE SENHA        │
+│     width: 100%;                                                            │
+│     padding: 14px 16px;                                                     │
+│     border: 2px solid var(--border-color);                                 │
+│     border-radius: 8px;                                                     │
+│     font-size: 16px;                                                        │
+│     background: var(--bg-secondary);                                       │
+│     color: var(--text-primary);                                            │
+│     transition: all 0.3s;                                                   │
+│ }                                                                           │
+│                                                                             │
+│ .login-input:focus {                    ← FOCO NO INPUT                    │
+│     outline: none;                                                          │
+│     border-color: var(--accent-color);                                     │
+│     box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.1);                        │
+│ }                                                                           │
+│                                                                             │
+│ .login-button {                         ← BOTÃO DE ENVIO                   │
+│     width: 100%;                                                            │
+│     padding: 14px;                                                          │
+│     background: var(--primary-color);                                      │
+│     color: white;                                                           │
+│     border: none;                                                           │
+│     border-radius: 8px;                                                     │
+│     font-size: 16px;                                                        │
+│     font-weight: 600;                                                       │
+│     cursor: pointer;                                                        │
+│     transition: all 0.3s;                                                   │
+│ }                                                                           │
+│                                                                             │
+│ .login-button:hover {                   ← HOVER DO BOTÃO                   │
+│     background: var(--accent-color);                                       │
+│     transform: translateY(-2px);                                           │
+│     box-shadow: 0 8px 16px rgba(243, 156, 18, 0.3);                       │
+│ }                                                                           │
+│                                                                             │
+│ .login-error {                          ← MENSAGEM DE ERRO                 │
+│     color: #e74c3c;                                                        │
+│     font-size: 14px;                                                        │
+│     margin-top: 12px;                                                       │
+│ }                                                                           │
+│                                                                             │
+│ .logout-btn {                           ← BOTÃO DE LOGOUT                  │
+│     background: rgba(231, 76, 60, 0.2);                                    │
+│     color: #e74c3c;                                                        │
+│     border: 1px solid #e74c3c;                                             │
+│     padding: 8px 16px;                                                      │
+│     border-radius: 6px;                                                     │
+│     cursor: pointer;                                                        │
+│     font-size: 14px;                                                        │
+│     margin-right: 12px;                                                     │
+│     transition: all 0.3s;                                                   │
+│ }                                                                           │
+│                                                                             │
+│ .logout-btn:hover {                     ← HOVER DO BOTÃO SAIR              │
+│     background: #e74c3c;                                                   │
+│     color: white;                                                           │
+│ }                                                                           │
+│                                                                             │
+│ /* Animações */                                                             │
+│ @keyframes fadeIn { ... }               ← APARECIMENTO                     │
+│ @keyframes slideUp { ... }              ← DESLIZAR PARA CIMA               │
+│                                                                             │
+│ /* Dark theme para login */                                                 │
+│ [data-theme="dark"] .login-container { ... }  ← SUPORTE DARK MODE          │
+│                                                                             │
+│ /* Responsivo para mobile */                                                │
+│ @media (max-width: 768px) { ... }       ← ADAPTA PARA MOBILE               │
+│                                                                             │
+└────────────────────────────────────────────────────────────────────────────┘
+
+RESUMO:
+✓ 176 linhas de CSS novo
+✓ Estilos para .login-container (fundo com gradiente)
+✓ Estilos para .login-box (caixa centralizada)
+✓ Estilos para input, botão, erro
+✓ Botão logout com cores de aviso (vermelho)
+✓ Animações fadeIn e slideUp
+✓ Suporte para dark theme
+✓ Responsividade para mobile (media query)
+✓ Acessibilidade (focus visible, min-height para touch targets)
+
+
+RESUMO GERAL DAS ALTERAÇÕES
+════════════════════════════════════════════════════════════════════════════════
+
+📝 ARQUIVO: index.html
+   Linhas adicionadas: 45
+   Novo conteúdo: Login screen + Botão logout
+   Status: ✅ Completo
+
+📝 ARQUIVO: app.js
+   Linhas adicionadas: 85 (funções de autenticação)
+   Linhas modificadas: 4 (boot)
+   Novo conteúdo: 5 funções + 1 constante
+   Status: ✅ Completo
+
+📝 ARQUIVO: style.css
+   Linhas adicionadas: 176
+   Novo conteúdo: 13 classes CSS + 2 animações + dark theme + responsivo
+   Status: ✅ Completo
+
+
+FLUXO DE EXECUÇÃO PASSO A PASSO
+════════════════════════════════════════════════════════════════════════════════
+
+1. DOMContentLoaded
+   └─> checkAuthentication() [app.js, linha 670]
+
+2. checkAuthentication()
+   ├─ sessionStorage.getItem('authenticated') === 'true'?
+   │
+   ├─ SIM (Autenticado)
+   │  ├─ Oculta: login-screen (display: none)
+   │  ├─ Mostra: slideContainer (display: block)
+   │  ├─ Chama: showLandingPage()
+   │  └─ Chama: initialize() (landing page carrega)
+   │
+   └─ NÃO (Não autenticado)
+      ├─ Mostra: login-screen (display: flex)
+      ├─ Oculta: slideContainer (display: none)
+      ├─ Foca: passwordInput
+      └─ Aguarda: Enter ou clique no botão
+
+3. Usuário digita "AndreTrader" + Enter ou clica "Entrar"
+   └─> submitPassword() [app.js, linha 35]
+
+4. submitPassword()
+   ├─ Lê: document.getElementById('passwordInput').value
+   ├─ Valida: if (pwd === 'AndreTrader')
+   │
+   ├─ SIM (Correto)
+   │  ├─ sessionStorage.setItem('authenticated', 'true')
+   │  ├─ Chama: showLandingPage()
+   │  └─ Limpa: input.value
+   │
+   └─ NÃO (Errado)
+      ├─ Exibe: "❌ Senha incorreta. Tente novamente."
+      ├─ Limpa: input.value
+      └─ Foca: passwordInput
+
+5. showLandingPage()
+   ├─ Oculta: login-screen
+   ├─ Mostra: slideContainer
+   └─ Chama: initialize() (carrega plataforma)
+
+6. initialize()
+   ├─ Inicializa DOM cache
+   ├─ Inicializa tema
+   ├─ Carrega dados
+   ├─ Renderiza módulos e slides
+   └─ Mostra landing page normal
+
+7. Usuário clica "🚪 Sair"
+   └─> logout() [app.js, linha 56]
+
+8. logout()
+   ├─ sessionStorage.removeItem('authenticated')
+   └─ location.reload() (recarrega página)
+
+9. Volta ao passo 1 (checkAuthentication é chamado novamente)
+
+
+VALIDAÇÕES IMPLEMENTADAS
+════════════════════════════════════════════════════════════════════════════════
+
+✅ Validação 1: Case-sensitive
+   if (pwd === CORRECT_PASSWORD)
+   → 'AndreTrader' ≠ 'andretrader'
+   → 'AndreTrader' ≠ 'ANDRETRADER'
+
+✅ Validação 2: Trim de espaços
+   const pwd = input.value.trim();
+   → Remove espaços do início e fim
+
+✅ Validação 3: Verificação de autenticação
+   sessionStorage.getItem('authenticated') === 'true'
+   → Sem autenticação: undefined
+   → Com autenticação: 'true'
+
+✅ Validação 4: Suporte a Enter
+   if (e.key === 'Enter') { submitPassword(); }
+   → Usuário pode pressionar Enter
+
+✅ Validação 5: Foco automático
+   passwordInput.focus();
+   → Teclado abre automaticamente no mobile
+
+════════════════════════════════════════════════════════════════════════════════
