@@ -26,7 +26,15 @@
       "Bash(python3 *)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit -m 'Projeto Landing Page Price Action - Versão 1.0 Completa *)"
+      "Bash(git commit -m 'Projeto Landing Page Price Action - Versão 1.0 Completa *)",
+      "Bash(start *)",
+      "Bash(netstat -ano)",
+      "Bash(gh repo *)",
+      "Bash(gh api *)",
+      "Bash(curl *)",
+      "Bash(awk '{print \" \" $9 \" \\(\" $5 \"\\)\"}')",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }

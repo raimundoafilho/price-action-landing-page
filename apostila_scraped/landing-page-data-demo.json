@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-04-24T17:29:28.420Z",
+  "modules": [
+    {
+      "id": "mod-basic-1",
+      "number": 1,
+      "title": "Módulo Básico 1",
+      "subtitle": "Conhecimentos Básicos",
+      "topics": [
+        {
+          "id": "bolsa",
+          "title": "Bolsa de Valores",
+          "pageNumber": 4
+        },
+        {
+          "id": "traders",
+          "title": "Tipos de Traders",
+          "pageNumber": 5
+        },
+        {
+          "id": "corretora",
+          "title": "Corretora",
+          "pageNumber": 7
+        }
+      ]
+    },
+    {
+      "id": "mod-basic-2",
+      "number": 2,
+      "title": "Módulo Básico 2",
+      "subtitle": "Introdução ao Método",
+      "topics": [
+        {
+          "id": "candles",
+          "title": "Análise dos Candles",
+          "pageNumber": 9
+        },
+        {
+          "id": "candlestick",
+          "title": "Análise Gráfica - Candlestick",
+          "pageNumber": 10
+        },
+        {
+          "id": "alphabet",
+          "title": "Alfabeto do Mercado",
+          "pageNumber": 11
+        }
+      ]
+    }
+  ],
+  "slides": {
+    "1": {
+      "slideNumber": 1,
+      "title": "AAPPOOSSTTIILLAA DDEE EESSTTUUDDOO",
+      "content": "AAPPOOSSTTIILLAA DDEE EESSTTUUDDOO\nMENTORIA\nMENTORIA\n1\nLicenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com",
+      "images": [
+        {
+          "index": 1,
+          "x0": 259.43998919,
+          "top": 517.9199910899998,
+          "width": 535.91997767,
+          "height": 195.35999186000004
+        },
+        {
+          "index": 2,
+          "x0": 798.1475667438499,
+          "top": -64.66791263550306,
+          "width": 680.9999236250019,
+          "height": 880.5000113124979
+        }
+      ],
+      "tables": [
+        [
+          [
+            null,
+            "",
+            null
+          ],
+          [
+            "AAPPOOSSTTIILLAA DDEE EESSTTUUDDOO\nMENTORIA\nMENTORIA\n1\nLicenciado para - Raimundo Araujo Filho | raimundoaraujo.filho@hotmail.com | 37833839272 - 37833839272 - Protegido por Eduzz.com",
+            null,
+            ""
+          ]
+        ],
+        [
+          [
+            null,
+            "",
+            null
+          ],
+          [
+            "AAPP",
+            "OOSSTTIILLAA DDEE EESSTT",
+            "UUDDOO"
+          ]
+        ]
+      ]
+    },
+    "2": {
+]}
