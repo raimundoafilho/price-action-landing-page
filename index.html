@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div id="login-screen" class="login-container" style="display: flex; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; right: 0; bottom: 0;">
+<div id="login-screen" class="login-container" style="display: flex; align-items: center; justify-content: center; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999;">
   <div class="login-box">
     <h1 class="login-title">Método Price Action</h1>
     <p class="login-subtitle">Oliver Velez | André Trader</p>
@@ -32,92 +32,224 @@
   </aside>
   <main class="content-area">
     <article class="slide-container" id="slideContainer">
-      <div class="slide-content" id="slideContent"></div>
+      <div class="slide-content" id="slideContent">
+        <p>Selecione um módulo para começar</p>
+      </div>
     </article>
   </main>
 </div>
 
+<footer class="footer" style="display: none;">
+  <nav class="footer-nav">
+    <button id="btnPrev" type="button" class="nav-button nav-button--prev">← Anterior</button>
+    <span id="slideInfo">Slide 1</span>
+    <button id="btnNext" type="button" class="nav-button nav-button--next">Próximo →</button>
+  </nav>
+</footer>
+
 <script>
-console.log('Script iniciado');
+console.log('=== SCRIPT INICIADO ===');
 
 const SENHA = 'AndreTrader';
+let appData = null;
+let currentModuleIdx = 0;
+let currentTopicIdx = 0;
+let currentSlideIdx = 0;
 
-document.getElementById('btnLogin').addEventListener('click', function() {
-  console.log('Botão clicado');
+// LOGIN
+document.getElementById('btnLogin').addEventListener('click', doLogin);
+document.getElementById('pwd').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') doLogin();
+});
+
+function doLogin() {
   const pwd = document.getElementById('pwd').value;
-  console.log('Senha digitada:', pwd);
+  console.log('Login tentado com:', pwd);
 
   if (pwd === SENHA) {
-    console.log('Senha correta!');
+    console.log('✓ Senha correta!');
     sessionStorage.setItem('auth', 'true');
     document.getElementById('login-screen').style.display = 'none';
     loadApp();
   } else {
-    console.log('Senha errada');
+    console.log('✗ Senha errada');
     document.getElementById('err').textContent = 'Senha incorreta';
     document.getElementById('pwd').value = '';
     document.getElementById('pwd').focus();
   }
-});
-
-document.getElementById('pwd').addEventListener('keypress', function(e) {
-  if (e.key === 'Enter') {
-    document.getElementById('btnLogin').click();
-  }
-});
+}
 
 async function loadApp() {
-  console.log('Carregando app...');
+  console.log('Carregando aplicação...');
 
   try {
     const res = await fetch('./apostila_scraped/landing-page-data.json');
-    const data = await res.json();
+    if (!res.ok) throw new Error('HTTP ' + res.status);
 
-    console.log('JSON carregado, módulos:', data.modules.length);
+    appData = await res.json();
+    console.log('✓ JSON carregado');
+    console.log('  Módulos:', appData.modules.length);
+    console.log('  Módulo 0 tópicos:', appData.modules[0].topics.length);
+    console.log('  Módulo 0 tópico 0 slides:', appData.modules[0].topics[0].slides.length);
 
+    // Mostrar UI
     document.querySelector('header').style.display = 'block';
     document.querySelector('.main-layout').style.display = 'flex';
+    document.querySelector('footer').style.display = 'block';
 
     // Renderizar módulos
-    const list = document.getElementById('modulesList');
-    data.modules.forEach((m, i) => {
-      const li = document.createElement('li');
-      li.className = 'module-item';
-      li.innerHTML = '<button onclick="selectModule(' + i + ')">' + m.title + '</button>';
-      list.appendChild(li);
-    });
+    renderModules();
 
     // Carregar primeiro slide
-    selectModule(0);
+    renderSlide();
+
+    // Event listeners
+    document.getElementById('btnNext').addEventListener('click', goNext);
+    document.getElementById('btnPrev').addEventListener('click', goPrev);
+    document.getElementById('btnLogout').addEventListener('click', logout);
+    document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 
   } catch(e) {
-    console.error('Erro:', e);
-    document.getElementById('slideContent').innerHTML = '<p style="color: red;">Erro: ' + e.message + '</p>';
+    console.error('✗ Erro:', e);
+    document.querySelector('.main-layout').style.display = 'flex';
+    document.getElementById('slideContent').innerHTML = '<p style="color: red; font-size: 18px;">Erro: ' + e.message + '</p>';
   }
 }
 
-function selectModule(idx) {
-  console.log('Selecionando módulo:', idx);
-  const res = fetch('./apostila_scraped/landing-page-data.json');
-  res.then(r => r.json()).then(data => {
-    const mod = data.modules[idx];
-    const topic = mod.topics[0];
-    const slide = topic.slides[0];
+function renderModules() {
+  console.log('Renderizando módulos...');
+  const list = document.getElementById('modulesList');
+  list.innerHTML = '';
 
-    document.getElementById('slideContent').innerHTML =
-      '<h2>' + slide.title + '</h2><div>' + slide.content + '</div>';
+  appData.modules.forEach((m, i) => {
+    const li = document.createElement('li');
+    li.className = 'module-item' + (i === currentModuleIdx ? ' active' : '');
+
+    const btn = document.createElement('button');
+    btn.textContent = m.title;
+    btn.onclick = function() {
+      console.log('Clicado módulo:', i, m.title);
+      currentModuleIdx = i;
+      currentTopicIdx = 0;
+      currentSlideIdx = 0;
+      renderModules();
+      renderSlide();
+    };
+
+    li.appendChild(btn);
+    list.appendChild(li);
   });
+
+  console.log('✓ Módulos renderizados:', appData.modules.length);
 }
 
-// Verificar se já está autenticado
+function renderSlide() {
+  console.log('Renderizando slide...');
+  console.log('  Módulo:', currentModuleIdx, 'Tópico:', currentTopicIdx, 'Slide:', currentSlideIdx);
+
+  if (!appData || !appData.modules[currentModuleIdx]) {
+    console.error('Módulo inválido');
+    return;
+  }
+
+  const mod = appData.modules[currentModuleIdx];
+  console.log('  Módulo:', mod.title);
+
+  if (!mod.topics || !mod.topics[currentTopicIdx]) {
+    console.error('Tópico inválido');
+    return;
+  }
+
+  const topic = mod.topics[currentTopicIdx];
+  console.log('  Tópico:', topic.title);
+
+  if (!topic.slides || !topic.slides[currentSlideIdx]) {
+    console.error('Slide inválido');
+    return;
+  }
+
+  const slide = topic.slides[currentSlideIdx];
+  console.log('  Slide:', slide.title);
+
+  // Renderizar conteúdo
+  const content = document.getElementById('slideContent');
+  content.innerHTML = `
+    <h2>${slide.title}</h2>
+    <div class="slide-body">${slide.content || '(sem conteúdo)'}</div>
+  `;
+
+  // Atualizar info
+  const totalSlides = topic.slides.length;
+  document.getElementById('slideInfo').textContent =
+    `${mod.title} - ${slide.title} (${currentSlideIdx + 1}/${totalSlides})`;
+
+  // Desabilitar botões
+  document.getElementById('btnPrev').disabled = (currentSlideIdx === 0 && currentModuleIdx === 0);
+  document.getElementById('btnNext').disabled =
+    (currentSlideIdx === totalSlides - 1 && currentModuleIdx === appData.modules.length - 1);
+
+  console.log('✓ Slide renderizado');
+}
+
+function goNext() {
+  console.log('Próximo...');
+  const mod = appData.modules[currentModuleIdx];
+  const topic = mod.topics[currentTopicIdx];
+  const totalSlides = topic.slides.length;
+
+  if (currentSlideIdx < totalSlides - 1) {
+    currentSlideIdx++;
+  } else if (currentModuleIdx < appData.modules.length - 1) {
+    currentModuleIdx++;
+    currentTopicIdx = 0;
+    currentSlideIdx = 0;
+    renderModules();
+  }
+
+  renderSlide();
+}
+
+function goPrev() {
+  console.log('Anterior...');
+  if (currentSlideIdx > 0) {
+    currentSlideIdx--;
+  } else if (currentModuleIdx > 0) {
+    currentModuleIdx--;
+    const mod = appData.modules[currentModuleIdx];
+    const topic = mod.topics[0];
+    currentSlideIdx = topic.slides.length - 1;
+    renderModules();
+  }
+
+  renderSlide();
+}
+
+function logout() {
+  if (confirm('Sair?')) {
+    sessionStorage.removeItem('auth');
+    location.reload();
+  }
+}
+
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+}
+
+// Verificar autenticação ao carregar
 window.addEventListener('DOMContentLoaded', function() {
   console.log('DOM carregado');
   if (sessionStorage.getItem('auth') === 'true') {
+    console.log('Usuário já autenticado, carregando app...');
+    document.getElementById('login-screen').style.display = 'none';
     loadApp();
+  } else {
+    console.log('Usuário não autenticado, mostrando login');
+    document.getElementById('pwd').focus();
   }
 });
 
-console.log('Script pronto');
+console.log('=== SCRIPT PRONTO ===');
 </script>
 
 </body>
