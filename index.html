@@ -147,25 +147,44 @@ function renderSlide() {
   console.log('Renderizando slide...');
   console.log('  Módulo:', currentModuleIdx, 'Tópico:', currentTopicIdx, 'Slide:', currentSlideIdx);
 
-  if (!appData || !appData.modules[currentModuleIdx]) {
-    console.error('Módulo inválido');
+  if (!appData) {
+    console.error('appData não carregado');
+    return;
+  }
+
+  if (!appData.modules || currentModuleIdx >= appData.modules.length) {
+    console.error('Módulo inválido, idx:', currentModuleIdx);
     return;
   }
 
   const mod = appData.modules[currentModuleIdx];
   console.log('  Módulo:', mod.title);
+  console.log('  Módulo tem topics?', mod.topics !== undefined);
+  console.log('  Topics length:', mod.topics ? mod.topics.length : 'N/A');
 
-  if (!mod.topics || !mod.topics[currentTopicIdx]) {
-    console.error('Tópico inválido');
+  if (!mod.topics || mod.topics.length === 0) {
+    console.error('Módulo sem tópicos');
+    document.getElementById('slideContent').innerHTML = '<p>Módulo sem conteúdo</p>';
     return;
+  }
+
+  if (currentTopicIdx >= mod.topics.length) {
+    currentTopicIdx = 0;
   }
 
   const topic = mod.topics[currentTopicIdx];
   console.log('  Tópico:', topic.title);
+  console.log('  Tópico tem slides?', topic.slides !== undefined);
+  console.log('  Slides length:', topic.slides ? topic.slides.length : 'N/A');
 
-  if (!topic.slides || !topic.slides[currentSlideIdx]) {
-    console.error('Slide inválido');
+  if (!topic.slides || topic.slides.length === 0) {
+    console.error('Tópico sem slides');
+    document.getElementById('slideContent').innerHTML = '<p>Tópico sem slides</p>';
     return;
+  }
+
+  if (currentSlideIdx >= topic.slides.length) {
+    currentSlideIdx = 0;
   }
 
   const slide = topic.slides[currentSlideIdx];
