@@ -34,7 +34,16 @@
       "Bash(curl *)",
       "Bash(awk '{print \" \" $9 \" \\(\" $5 \"\\)\"}')",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git restore *)",
+      "Bash(git rm *)",
+      "Bash(powershell *)",
+      "Bash(awk '{print $2}')",
+      "Bash(xargs kill *)",
+      "Bash(pkill -f \"http.server\")",
+      "Bash(python -m http.server 8000)",
+      "Bash(pkill *)",
+      "Bash(taskkill /F /IM python.exe)"
     ]
   }
 }

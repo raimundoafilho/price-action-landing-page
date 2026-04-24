@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Debug</title>
+  <style>
+    body { font-family: monospace; padding: 20px; background: #1e1e1e; color: #d4d4d4; line-height: 1.6; }
+    .box { background: #252526; padding: 15px; margin: 10px 0; border-left: 3px solid #007acc; }
+    .ok { color: #4ec9b0; }
+    .err { color: #f48771; }
+    .info { color: #9cdcfe; }
+  </style>
+</head>
+<body>
+
+<h2>🔍 Debug - Status da Página</h2>
+
+<div class="box">
+  <div class="info">▶ Verificando elementos HTML...</div>
+  <div id="status1"></div>
+</div>
+
+<div class="box">
+  <div class="info">▶ Carregando JSON...</div>
+  <div id="status2"></div>
+</div>
+
+<div class="box">
+  <div class="info">▶ Testando Login...</div>
+  <div id="status3"></div>
+</div>
+
+<script>
+async function debug() {
+  // 1. Verificar elementos
+  const loginScreen = document.getElementById('login-screen');
+  const slideContainer = document.getElementById('slideContainer');
+  const passwordInput = document.getElementById('passwordInput');
+
+  document.getElementById('status1').innerHTML = loginScreen
+    ? '<span class="ok">✓ login-screen encontrado</span>'
+    : '<span class="err">✗ login-screen NÃO encontrado</span>';
+
+  // 2. Carregar JSON
+  try {
+    const res = await fetch('./apostila_scraped/landing-page-data.json');
+    const data = await res.json();
+    document.getElementById('status2').innerHTML =
+      `<span class="ok">✓ JSON carregado</span><br/>Módulos: ${data.modules.length}`;
+  } catch (e) {
+    document.getElementById('status2').innerHTML =
+      `<span class="err">✗ Erro: ${e.message}</span>`;
+  }
+
+  // 3. Testar login
+  if (passwordInput && loginScreen) {
+    passwordInput.value = 'AndreTrader';
+
+    // Chamar função de submissão se existir
+    if (typeof submitPassword === 'function') {
+      submitPassword();
+      document.getElementById('status3').innerHTML = '<span class="ok">✓ submitPassword() executado</span>';
+    } else {
+      document.getElementById('status3').innerHTML = '<span class="err">✗ submitPassword() não encontrado</span>';
+    }
+  }
+}
+
+window.addEventListener('DOMContentLoaded', debug);
+</script>
+
+</body>
+</html>
