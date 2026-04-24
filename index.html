@@ -6,108 +6,210 @@
   <title>Método Price Action - Oliver Velez</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    #login-screen { display: flex !important; }
+    #login-screen { display: flex !important; align-items: center; justify-content: center; }
     #slideContainer { display: none !important; }
   </style>
 </head>
 <body>
 
-<!-- LOGIN SCREEN -->
 <div id="login-screen" class="login-container">
   <div class="login-box">
     <h1 class="login-title">Método Price Action</h1>
     <p class="login-subtitle">Oliver Velez | André Trader</p>
     <p class="login-description">Plataforma Educacional Restrita</p>
-
-    <input
-      type="password"
-      id="passwordInput"
-      class="login-input"
-      placeholder="Digite a senha para acessar"
-    />
-
-    <button class="login-button" onclick="submitPassword()" type="button">
-      🔓 Entrar
-    </button>
-
+    <input type="password" id="passwordInput" class="login-input" placeholder="Digite a senha para acessar" autofocus>
+    <button class="login-button" onclick="submitPassword()" type="button">🔓 Entrar</button>
     <p id="loginError" class="login-error"></p>
   </div>
 </div>
 
-<!-- HEADER -->
-<header class="header" role="banner">
+<header class="header">
   <div class="header-container">
     <div class="logo-section">
       <h1 class="logo-title">Método Price Action</h1>
       <p class="logo-subtitle">Oliver Velez | André Trader</p>
     </div>
     <div class="header-controls">
-      <button class="logout-btn" onclick="logout()" type="button">
-        🚪 Sair
-      </button>
-      <button class="theme-toggle" id="themeToggle" type="button">
-        <span class="theme-icon">🌙</span>
-      </button>
+      <button class="logout-btn" onclick="logout()" type="button">🚪 Sair</button>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" type="button"><span class="theme-icon">🌙</span></button>
       <div class="progress-global">
         <span class="progress-text" id="progressText">Módulo 1 de 7</span>
-        <div class="progress-bar">
-          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
-        </div>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
       </div>
     </div>
   </div>
 </header>
 
-<!-- MAIN LAYOUT -->
 <div class="main-layout">
-  <aside class="sidebar" id="sidebar">
-    <button class="sidebar-toggle" id="sidebarToggle" type="button">☰</button>
+  <aside class="sidebar">
+    <button class="sidebar-toggle" onclick="toggleSidebar()" type="button">☰</button>
     <nav class="sidebar-nav">
       <h2 class="sidebar-title">Módulos</h2>
       <ul class="modules-list" id="modulesList">
-        <li class="loading"><span>Carregando módulos...</span></li>
+        <li class="loading"><span>Carregando...</span></li>
       </ul>
     </nav>
   </aside>
 
   <main class="content-area">
     <article class="slide-container" id="slideContainer">
-      <div class="slide-loading" id="slideLoading">
-        <div class="spinner"></div>
-        <p>Carregando conteúdo...</p>
-      </div>
-      <div class="slide-content" id="slideContent"></div>
-      <div class="slide-error" id="slideError"></div>
+      <div class="slide-content" id="slideContent"><p>Carregando...</p></div>
     </article>
   </main>
 </div>
 
-<!-- FOOTER -->
 <footer class="footer">
   <nav class="footer-nav">
     <div class="footer-container">
-      <button class="nav-button nav-button--prev" id="prevButton" type="button" disabled>
-        ← Anterior
-      </button>
+      <button class="nav-button nav-button--prev" id="prevButton" onclick="goToPrevious()" type="button">← Anterior</button>
       <div class="slide-info">
-        <span id="slideIndicator">Slide 1 de 5</span>
-        <span id="topicIndicator">Módulo: Intro</span>
+        <span id="slideIndicator">Slide 1 de 1</span>
+        <span id="topicIndicator">Módulo: -</span>
       </div>
-      <button class="nav-button nav-button--next" id="nextButton" type="button">
-        Próximo →
-      </button>
+      <button class="nav-button nav-button--next" id="nextButton" onclick="goToNext()" type="button">Próximo →</button>
     </div>
   </nav>
   <div class="footer-credits">
-    <p class="credit-method">
-      Método desenvolvido por <strong>Oliver Velez</strong> |
-      Apresentação compilada por <strong>André Trader</strong>
-    </p>
-    <p class="credit-version" id="versionInfo">v1.0.0</p>
+    <p>Método desenvolvido por <strong>Oliver Velez</strong> | Apresentação compilada por <strong>André Trader</strong></p>
   </div>
 </footer>
 
-<script src="app.js" defer></script>
+<script>
+const CORRECT_PASSWORD = 'AndreTrader';
+let appData = null;
+let currentModule = 0;
+let currentTopic = 0;
+let currentSlide = 0;
+
+async function loadData() {
+  try {
+    const res = await fetch('./apostila_scraped/landing-page-data.json');
+    if (!res.ok) throw new Error('Erro HTTP ' + res.status);
+    appData = await res.json();
+    console.log('JSON ok, módulos:', appData.modules.length);
+    return true;
+  } catch(e) {
+    console.error('Erro:', e);
+    document.getElementById('slideContent').innerHTML = '<p style="color:red">Erro ao carregar dados: ' + e.message + '</p>';
+    return false;
+  }
+}
+
+function submitPassword() {
+  const pwd = document.getElementById('passwordInput').value;
+  if (pwd === CORRECT_PASSWORD) {
+    sessionStorage.setItem('authenticated', 'true');
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('slideContainer').style.display = 'block';
+    init();
+  } else {
+    document.getElementById('loginError').textContent = 'Senha incorreta';
+    document.getElementById('passwordInput').value = '';
+    document.getElementById('passwordInput').focus();
+  }
+}
+
+async function init() {
+  console.log('init...');
+  if (!appData) {
+    const ok = await loadData();
+    if (!ok) return;
+  }
+  render();
+}
+
+function render() {
+  console.log('render, module:', currentModule);
+  if (!appData || !appData.modules[currentModule]) {
+    console.error('Dados inválidos');
+    return;
+  }
+
+  // Módulos
+  const list = document.getElementById('modulesList');
+  list.innerHTML = '';
+  appData.modules.forEach((m, i) => {
+    const li = document.createElement('li');
+    li.className = 'module-item' + (i === currentModule ? ' active' : '');
+    li.innerHTML = '<button onclick="currentModule=' + i + ';currentTopic=0;currentSlide=0;render()">' + m.title + '</button>';
+    list.appendChild(li);
+  });
+
+  // Slide
+  const mod = appData.modules[currentModule];
+  const topics = mod.topics || [];
+  const topic = topics[currentTopic] || topics[0];
+  if (!topic) return;
+
+  const slides = topic.slides || [];
+  const slide = slides[currentSlide] || slides[0];
+  if (!slide) return;
+
+  document.getElementById('slideContent').innerHTML = '<h2>' + slide.title + '</h2><div>' + slide.content + '</div>';
+  document.getElementById('slideIndicator').textContent = 'Slide ' + (currentSlide + 1) + ' de ' + slides.length;
+  document.getElementById('topicIndicator').textContent = mod.title;
+  document.getElementById('progressText').textContent = 'Módulo ' + (currentModule + 1) + ' de ' + appData.modules.length;
+  document.getElementById('prevButton').disabled = currentSlide === 0 && currentModule === 0;
+  document.getElementById('nextButton').disabled = currentSlide === slides.length - 1 && currentModule === appData.modules.length - 1;
+}
+
+function goToPrevious() {
+  const mod = appData.modules[currentModule];
+  const slides = (mod.topics[currentTopic].slides || []);
+  if (currentSlide > 0) {
+    currentSlide--;
+  } else if (currentModule > 0) {
+    currentModule--;
+    const prevSlides = (appData.modules[currentModule].topics[0].slides || []);
+    currentSlide = prevSlides.length - 1;
+  }
+  render();
+}
+
+function goToNext() {
+  const mod = appData.modules[currentModule];
+  const slides = (mod.topics[currentTopic].slides || []);
+  if (currentSlide < slides.length - 1) {
+    currentSlide++;
+  } else if (currentModule < appData.modules.length - 1) {
+    currentModule++;
+    currentSlide = 0;
+  }
+  render();
+}
+
+function logout() {
+  if (confirm('Sair?')) {
+    sessionStorage.removeItem('authenticated');
+    location.reload();
+  }
+}
+
+function toggleTheme() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+  document.querySelector('.theme-icon').textContent = isDark ? '🌙' : '☀️';
+}
+
+function toggleSidebar() {
+  document.querySelector('.sidebar').classList.toggle('active');
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'light');
+  if (sessionStorage.getItem('authenticated') === 'true') {
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('slideContainer').style.display = 'block';
+    init();
+  } else {
+    document.getElementById('passwordInput').focus();
+  }
+  document.getElementById('passwordInput').addEventListener('keypress', e => {
+    if (e.key === 'Enter') submitPassword();
+  });
+});
+</script>
 
 </body>
 </html>
