@@ -168,35 +168,79 @@ function initDOMCache() {
 }
 
 /**
- * CARREGAMENTO DE DADOS
+ * CARREGAMENTO DE DADOS COM CACHE E STREAMING
  */
 async function loadLandingPageData() {
   appState.isLoading = true;
 
   try {
-    const response = await fetch('./apostila_scraped/landing-page-data.json');
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+    // Verificar cache IndexedDB
+    const cached = await getCachedData();
+    if (cached) {
+      appState.landingPageData = cached;
+      calculateTotalSlides();
+      appState.isLoading = false;
+      return true;
     }
 
-    appState.landingPageData = await response.json();
-    window.landingPageData = appState.landingPageData; // Exposição global
+    // Fetch com timeout
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000); // 15s timeout
 
-    // Calcular total de slides
+    const response = await fetch('./apostila_scraped/landing-page-data.json', {
+      signal: controller.signal,
+      headers: { 'Accept-Encoding': 'gzip, deflate, br' }
+    });
+    clearTimeout(timeout);
+
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    appState.landingPageData = await response.json();
     calculateTotalSlides();
 
-    console.log('✓ Landing page data carregado com sucesso');
-    console.log(`  Módulos: ${appState.landingPageData.modules?.length || 0}`);
-    console.log(`  Total de slides: ${appState.totalSlides}`);
+    // Salvar em cache
+    await saveCachedData(appState.landingPageData);
 
     appState.isLoading = false;
     return true;
   } catch (error) {
-    console.error('✗ Erro ao carregar landing-page-data.json:', error);
-    showError(`Erro ao carregar dados: ${error.message}`);
+    console.error('Erro ao carregar dados:', error.message);
+    showError(`Erro ao carregar: ${error.message}`);
     appState.isLoading = false;
     return false;
   }
+}
+
+// Cache IndexedDB
+async function getCachedData() {
+  return new Promise((resolve) => {
+    const req = indexedDB.open('LandingPageDB', 1);
+    req.onsuccess = (e) => {
+      const db = e.target.result;
+      const store = db.transaction('data', 'readonly').objectStore('data');
+      const getReq = store.get('landingPageData');
+      getReq.onsuccess = () => resolve(getReq.result?.data || null);
+      getReq.onerror = () => resolve(null);
+    };
+    req.onerror = () => resolve(null);
+  });
+}
+
+async function saveCachedData(data) {
+  return new Promise(() => {
+    const req = indexedDB.open('LandingPageDB', 1);
+    req.onupgradeneeded = (e) => {
+      const db = e.target.result;
+      if (!db.objectStoreNames.contains('data')) {
+        db.createObjectStore('data');
+      }
+    };
+    req.onsuccess = (e) => {
+      const db = e.target.result;
+      const store = db.transaction('data', 'readwrite').objectStore('data');
+      store.put({ data }, 'landingPageData');
+    };
+  });
 }
 
 /**
@@ -436,31 +480,37 @@ function escapeHtml(text) {
  */
 function setupLazyLoading() {
   const images = document.querySelectorAll('.lazy-image');
-
   if (!images.length) return;
 
-  // Disconnect anterior observer se existir
-  if (appState.imageObserver) {
-    appState.imageObserver.disconnect();
-  }
+  if (appState.imageObserver) appState.imageObserver.disconnect();
 
+  // Carregar imagens visíveis primeiro (eager)
+  images.forEach((img, idx) => {
+    if (idx < 3 || img.getBoundingClientRect().top < window.innerHeight) {
+      const src = img.dataset.src;
+      if (src) {
+        img.src = src;
+        img.onload = () => img.classList.add('loaded');
+        img.onerror = () => img.classList.add('error');
+      }
+    }
+  });
+
+  // Observer para resto (lazy)
   appState.imageObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const img = entry.target;
         const src = img.dataset.src;
-
-        img.onload = () => img.classList.add('loaded');
-        img.onerror = () => {
-          img.src = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="400" height="300"%3E%3Crect fill="%23ddd" width="400" height="300"/%3E%3Ctext x="50%25" y="50%25" fill="%23999" text-anchor="middle" dy="0.3em"%3EImagem não encontrada%3C/text%3E%3C/svg%3E';
-          img.classList.add('error');
-        };
-
-        img.src = src;
-        appState.imageObserver.unobserve(img);
+        if (src && !img.src) {
+          img.src = src;
+          img.onload = () => img.classList.add('loaded');
+          img.onerror = () => img.classList.add('error');
+          appState.imageObserver.unobserve(img);
+        }
       }
     });
-  }, { rootMargin: '50px' });
+  }, { rootMargin: '100px' });
 
   images.forEach(img => appState.imageObserver.observe(img));
 }
