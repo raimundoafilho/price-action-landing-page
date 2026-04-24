@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test JSON</title>
+  <style>
+    body { font-family: monospace; padding: 20px; background: #1e1e1e; color: #0f0; }
+    .box { background: #2d2d2d; padding: 10px; margin: 10px 0; border-left: 3px solid #0f0; }
+    .err { color: #f00; }
+    .ok { color: #0f0; }
+  </style>
+</head>
+<body>
+
+<div class="box"><strong>== TESTE DE JSON ==</strong></div>
+
+<div class="box" id="status"></div>
+
+<script>
+async function test() {
+  const status = document.getElementById('status');
+  let html = '';
+
+  try {
+    html += '<span class="ok">▶ Buscando JSON...</span><br>';
+    const res = await fetch('./apostila_scraped/landing-page-data.json');
+
+    if (!res.ok) {
+      html += `<span class="err">✗ HTTP ${res.status}</span><br>`;
+      status.innerHTML = html;
+      return;
+    }
+
+    html += '<span class="ok">✓ JSON encontrado</span><br>';
+
+    const data = await res.json();
+
+    html += `<span class="ok">✓ JSON válido</span><br>`;
+    html += `<span class="ok">  Módulos: ${data.modules ? data.modules.length : 'FALTA'}</span><br>`;
+
+    if (data.modules && data.modules.length > 0) {
+      html += `<span class="ok">✓ Módulo 0: ${data.modules[0].title}</span><br>`;
+
+      if (data.modules[0].topics) {
+        html += `<span class="ok">  Topics: ${data.modules[0].topics.length}</span><br>`;
+
+        if (data.modules[0].topics[0]) {
+          const topic = data.modules[0].topics[0];
+          html += `<span class="ok">  Topic 0: ${topic.title}</span><br>`;
+
+          if (topic.slides) {
+            html += `<span class="ok">    Slides: ${topic.slides.length}</span><br>`;
+
+            if (topic.slides[0]) {
+              html += `<span class="ok">    Slide 0: ${topic.slides[0].title}</span><br>`;
+              html += `<span class="ok">    Content: ${topic.slides[0].content.substring(0, 50)}...</span><br>`;
+            }
+          }
+        }
+      }
+
+      html += '<br><span class="ok">▶ Listando todos os módulos:</span><br>';
+      data.modules.forEach((m, i) => {
+        html += `  ${i + 1}. ${m.title}<br>`;
+      });
+    }
+
+    html += '<br><span class="ok">✓✓✓ TUDO OK! ✓✓✓</span>';
+
+  } catch(e) {
+    html += `<span class="err">✗ ERRO: ${e.message}</span><br>`;
+    html += `<span class="err">Stack: ${e.stack}</span>`;
+  }
+
+  status.innerHTML = html;
+}
+
+test();
+</script>
+
+</body>
+</html>
