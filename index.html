@@ -346,9 +346,18 @@ async function showApp() {
   document.getElementById('app').style.display = 'flex';
 
   if (!data) {
-    const url = './apostila_scraped/landing-page-data.json?t=' + Date.now();
-    data = await fetch(url).then(r => r.json());
-    renderTopics();
+    try {
+      const url = './apostila_scraped/landing-page-data.json?t=' + Date.now();
+      console.log('Carregando JSON de:', url);
+      const res = await fetch(url);
+      console.log('Resposta HTTP:', res.status, res.statusText);
+      data = await res.json();
+      console.log('JSON carregado:', { topics: data.topics ? data.topics.length : 'FALTA' });
+      renderTopics();
+    } catch(e) {
+      console.error('ERRO ao carregar JSON:', e);
+      alert('Erro ao carregar conteúdo: ' + e.message);
+    }
   }
 }
 
