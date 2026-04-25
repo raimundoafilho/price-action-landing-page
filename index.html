@@ -4,37 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Método Price Action - Oliver Velez</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { width: 100%; height: 100%; }
-    body { font-family: Arial, sans-serif; }
-  </style>
 </head>
 <body>
 
-<div id="login-screen" style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;z-index:9999;">
+<div id="login-screen">
   <div style="background:white;padding:40px;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,0.2);width:90%;max-width:400px;">
     <h1 style="font-size:28px;margin-bottom:10px;color:#333;">Método Price Action</h1>
     <p style="font-size:14px;color:#666;margin:5px 0;">Oliver Velez | André Trader</p>
-    <input type="password" id="pwd" placeholder="Senha" style="width:100%;padding:12px;margin:20px 0;border:2px solid #ddd;border-radius:4px;font-size:16px;">
-    <button id="btnLogin" style="width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;">Entrar</button>
-    <p id="err" style="color:red;margin-top:10px;font-size:14px;"></p>
+    <input type="text" id="pwd" placeholder="Senha">
+    <button id="btnLogin">Entrar</button>
+    <p id="err"></p>
   </div>
 </div>
 
-<div id="app" style="display:none;height:100vh;flex-direction:column;flex:1;">
-  <div style="background:#333;color:white;padding:15px;display:flex;justify-content:space-between;align-items:center;">
+<div id="app" style="display:none;">
+  <div style="background:#333;color:white;padding:15px;">
     <h1>Método Price Action</h1>
-    <button id="btnLogout" style="background:#667eea;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Sair</button>
+    <button id="btnLogout">Sair</button>
   </div>
 
-  <div style="display:flex;flex:1;overflow:hidden;">
+  <div style="display:flex;flex:1;">
     <div id="sidebar" style="width:280px;background:#f9f9f9;border-right:1px solid #ddd;overflow-y:auto;"></div>
     <div id="content" style="flex:1;overflow-y:auto;padding:20px;">
       <p>Selecione um tópico</p>
     </div>
   </div>
 </div>
+
+<style>
+#login-screen { position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;z-index:9999; }
+#pwd { width:100%;padding:12px;margin:20px 0;border:2px solid #ddd;border-radius:4px;font-size:16px; }
+#btnLogin { width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer; }
+#err { color:red;margin-top:10px;font-size:14px; }
+#app { height:100vh;flex-direction:column; }
+</style>
 
 <script>
 const SENHA = 'AndreTrader';
@@ -51,10 +54,8 @@ document.getElementById('btnLogin').onclick = () => {
   }
 };
 
-document.getElementById('pwd').onkeypress = (e) => {
-  if (e.key === 'Enter') {
-    document.getElementById('btnLogin').click();
-  }
+document.getElementById('pwd').oninput = function(e) {
+  console.log('Digitado:', e.target.value);
 };
 
 async function showApp() {
@@ -85,8 +86,6 @@ function renderTopics() {
     header.style.fontWeight = '500';
     header.style.background = '#fff';
     header.textContent = '+ ' + topic.title;
-    header.onmouseover = () => header.style.background = '#f0f0f0';
-    header.onmouseout = () => header.style.background = '#fff';
 
     const list = document.createElement('ul');
     list.style.listStyle = 'none';
@@ -110,11 +109,7 @@ function renderTopics() {
       li.style.cursor = 'pointer';
       li.style.borderBottom = '1px solid #eee';
       li.textContent = sub.title;
-      li.onmouseover = () => li.style.background = '#f0f0f0';
-      li.onmouseout = () => li.style.background = 'white';
       li.onclick = () => {
-        document.querySelectorAll('li').forEach(s => s.style.background = 'white');
-        li.style.background = '#e3f2fd';
         document.getElementById('content').innerHTML = '<h2>' + sub.title + '</h2><p>' + (sub.content || 'Sem conteúdo') + '</p>';
       };
       list.appendChild(li);
@@ -133,9 +128,7 @@ document.getElementById('btnLogout').onclick = () => {
 
 window.onload = () => {
   if (sessionStorage.auth) showApp();
-  else {
-    setTimeout(() => document.getElementById('pwd').focus(), 100);
-  }
+  else document.getElementById('pwd').focus();
 };
 </script>
 
