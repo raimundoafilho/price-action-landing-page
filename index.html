@@ -77,11 +77,18 @@ document.getElementById('pwd').addEventListener('keypress', (e) => {
 });
 
 function login() {
-  if (document.getElementById('pwd').value === SENHA) {
+  const pwd = document.getElementById('pwd').value.trim();
+  const correta = SENHA;
+
+  console.log('Digitado: [' + pwd + '] (' + pwd.length + ' chars)');
+  console.log('Esperado: [' + correta + '] (' + correta.length + ' chars)');
+  console.log('Match: ' + (pwd === correta));
+
+  if (pwd === correta) {
     sessionStorage.auth = 1;
     showApp();
   } else {
-    document.getElementById('err').textContent = 'Senha incorreta';
+    document.getElementById('err').textContent = 'Senha incorreta. Digitou: [' + pwd + ']';
     document.getElementById('pwd').value = '';
     document.getElementById('pwd').focus();
   }
