@@ -205,11 +205,86 @@
       word-wrap: break-word;
     }
 
+    .slide-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .slide-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .slide-text {
+      overflow-y: auto;
+      max-height: 600px;
+      padding-right: 15px;
+    }
+
+    .slide-text h4 {
+      color: #667eea;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .slide-text p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .slide-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f9fafb;
+      border-radius: 8px;
+      padding: 20px;
+      min-height: 500px;
+    }
+
+    .slide-image img {
+      max-width: 100%;
+      max-height: 600px;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 1024px) {
+      .slide-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .slide-image {
+        min-height: 300px;
+      }
+
+      .slide-image img {
+        max-height: 400px;
+      }
+    }
+
     @media (max-width: 768px) {
       .main-layout { flex-direction: column; }
       #sidebar { width: 100%; max-height: 200px; }
       #content { padding: 20px; }
       .header { flex-direction: column; gap: 10px; }
+
+      .slide-text {
+        max-height: none;
+      }
+
+      .slide-image {
+        min-height: 200px;
+      }
     }
   </style>
 </head>
@@ -333,29 +408,44 @@ function showSlide() {
   if (!currentSubtopic || !data) return;
 
   const { topicIdx, subIdx, slideIdx } = currentSubtopic;
-  const topic = data.topics[topicIdx];
-  const sub = topic.subtopics[subIdx];
-  const slides = sub.slides || [];
-  const slide = slides[slideIdx] || slides[0];
+  const slide = data.topics[topicIdx].subtopics[subIdx].slides[slideIdx];
 
-  let html = '<h2>' + sub.title + '</h2>';
-  if (slide && slide.title) html += '<h3 style="color:#667eea;margin-bottom:15px;">' + slide.title + '</h3>';
-  if (slide && slide.content) {
+  let html = '<div class="slide-container">';
+  html += '<h2>' + slide.title + '</h2>';
+
+  // Conteúdo em duas colunas: texto + imagem
+  html += '<div class="slide-content">';
+
+  // Coluna esquerda: texto
+  html += '<div class="slide-text">';
+  if (slide.content) {
     const content = slide.content
       .split('\n')
       .map(line => {
         line = line.trim();
         if (!line) return '';
-        if (line.length > 0 && line === line.toUpperCase() && line.length > 3) {
-          return '<h4 style="color:#764ba2;margin-top:10px;margin-bottom:8px;">' + line + '</h4>';
+        if (line === line.toUpperCase() && line.length > 3) {
+          return '<h4>' + line + '</h4>';
         }
         return '<p>' + line + '</p>';
       })
       .join('');
     html += content;
   }
+  html += '</div>';
 
+  // Coluna direita: imagem
+  if (slide.image) {
+    html += '<div class="slide-image">';
+    html += '<img src="' + slide.image + '" alt="' + slide.title + '" />';
+    html += '</div>';
+  }
+
+  html += '</div></div>';
   document.getElementById('content').innerHTML = html;
+
+  // Atualizar info de slides
+  const slides = data.topics[topicIdx].subtopics[subIdx].slides || [];
   document.getElementById('slideInfo').textContent = 'Slide ' + (slideIdx + 1) + ' de ' + slides.length;
   document.getElementById('prevBtn').style.opacity = slideIdx === 0 ? '0.5' : '1';
   document.getElementById('prevBtn').style.cursor = slideIdx === 0 ? 'not-allowed' : 'pointer';

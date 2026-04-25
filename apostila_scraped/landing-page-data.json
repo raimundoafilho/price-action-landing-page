@@ -1,40 +1,627 @@
 {
   "title": "Método Price Action - Oliver Velez",
+  "author": "Oliver Velez",
+  "compiler": "André Trader",
   "topics": [
     {
-      "title": "1. CONHECIMENTOS BÁSICOS",
+      "id": "modulo_basico_1",
+      "title": "MÓDULO BÁSICO 1 - CONHECIMENTOS BÁSICOS",
+      "pages": "3-7",
       "subtopics": [
         {
+          "id": "bolsa_de_valores",
           "title": "Bolsa de Valores",
           "slides": [
-            {"num": 1, "title": "O que é Bolsa de Valores", "content": "BOLSA DE VALORES\n\nA Bolsa é um mercado organizado onde se negociam ativos (ações, futuros, commodities).\n\nPrincipais bolsas no Brasil:\n• B3 (Brasil, Bolsa, Balcão) - Ações e derivativos\n• BM&F - Mercadorias e Futuros\n\nFunção: Permitir que investidores comprem e vendam ativos com liquidez e segurança."},
-            {"num": 2, "title": "Tipos de Mercados", "content": "TIPOS DE MERCADOS NA BOLSA\n\nMercado de Ações:\n• Negociação de participações em empresas\n• Exemplos: ITUB4, BBDC4\n\nMercado de Futuros:\n• Commodities (café, milho, ouro)\n• Índices (IBOVESPA)\n• Dólar\n\nMercado de Renda Fixa:\n• Títulos e debêntures\n• Menor risco que ações"}
+            {
+              "page": 4,
+              "title": "Bolsa de Valores",
+              "content": "Bolsa de Valores BM&F - Bolsa de Mercadorias e Futuro Commodities (café, milho, etc.) Contratos Futuros (índice, dólar, etc.) B3 - Brasil, Bolsa, Balcão IPO - Capital Aberto Ações (ITUB4, BBDC4, etc.)",
+              "image": "apostila_scraped/images/page_004.png"
+            }
           ]
         },
         {
+          "id": "tipos_de_traders",
           "title": "Tipos de Traders",
           "slides": [
-            {"num": 1, "title": "Day Trade", "content": "DAY TRADE\n\nOperações ABERTAS E FECHADAS no MESMO DIA.\n\nCaracterísticas:\n• Muito rápido (minutos a poucas horas)\n• Alto risco e alta recompensa\n• Requer atenção constante\n• Usa alta alavancagem\n\nVantagem: Não carrega risco overnight"},
-            {"num": 2, "title": "Swing Trade", "content": "SWING TRADE\n\nOperações mantidas por DIAS OU SEMANAS.\n\nCaracterísticas:\n• Moderado em velocidade\n• Captura movimentos maiores\n• Menos exigente que day trade\n• Risco moderado\n\nVantagem: Melhor relação risco/retorno"},
-            {"num": 3, "title": "Position Trade", "content": "POSITION TRADE\n\nOperações mantidas por MESES OU ANOS.\n\nCaracterísticas:\n• Segue tendência de longo prazo\n• Baixa frequência\n• Menor alavancagem\n• Risco conhecido\n\nVantagem: Compatível com trabalho em tempo integral"}
+            {
+              "page": 5,
+              "title": "Tipos de Traders",
+              "content": "Tipos de Trader Day Trade São negociações de compras ou vendas de um ativo, que são encerradas no mesmo dia da entrada. A grande vantagem é a alavancagem. Swing Trade São negociações de compras ou vendas de um ativo, que são encerradas após dias ou até semanas após a entrada. Position Trade São negociações de compras ou vendas de um ativo, na qual o trader fica posicionado por meses ou ano.",
+              "image": "apostila_scraped/images/page_005.png"
+            }
+          ]
+        },
+        {
+          "id": "tipos_de_analises",
+          "title": "Tipos de Análises",
+          "slides": [
+            {
+              "page": 6,
+              "title": "Tipos de Análises",
+              "content": "Tipos de Análises Fundamentalista Grafista Negociações baseadas em Negociações baseadas em balanços e cenários padrões técnicos na análise de econômico. gráficos.",
+              "image": "apostila_scraped/images/page_006.png"
+            }
+          ]
+        },
+        {
+          "id": "corretora",
+          "title": "Corretora",
+          "slides": [
+            {
+              "page": 7,
+              "title": "Corretora",
+              "content": "Corretora Como escolher? Boa infraestrutura. Qualidade no atendimento. Baixo custo. Custos de plataforma. Custos de Corretagem. Margem de garantia.",
+              "image": "apostila_scraped/images/page_007.png"
+            }
           ]
         }
       ]
     },
     {
-      "title": "2. ANÁLISE TÉCNICA",
+      "id": "modulo_basico_2",
+      "title": "MÓDULO BÁSICO 2 - INTRODUÇÃO AO MÉTODO",
+      "pages": "8-193",
       "subtopics": [
         {
-          "title": "Candles",
+          "id": "analise_dos_candles",
+          "title": "Análise dos Candles",
           "slides": [
-            {"num": 1, "title": "Estrutura", "content": "CANDLE\n\n┌─ Abertura (Open)\n├─ Fechamento (Close)\n├─ Máxima (High)\n└─ Mínima (Low)\n\nCorpo = |Close - Open|\nMechas = |High - Low|"},
-            {"num": 2, "title": "Alta vs Baixa", "content": "CANDLE DE ALTA (Bullish)\n• Fechamento > Abertura\n• Cor verde/branco\n\nCANDLE DE BAIXA (Bearish)\n• Fechamento < Abertura\n• Cor vermelho/preto"}
+            {
+              "page": 9,
+              "title": "Análise dos Candles",
+              "content": "Candles O que é um candle Entendendo os candles Tipos de Barras",
+              "image": "apostila_scraped/images/page_009.png"
+            },
+            {
+              "page": 10,
+              "title": "Análise dos Candles",
+              "content": "Análise Gráfica - Candlestick Máxima Máxima Fechamento Abertura Abertura Fechamento Mínima Mínima",
+              "image": "apostila_scraped/images/page_010.png"
+            },
+            {
+              "page": 11,
+              "title": "Análise dos Candles",
+              "content": "Alfabeto do Mercado As 13 barras tamanho tipo localização Importante quanto maior o corpo, maior foi a potência daquele time. quanto maior o pavio, maior a potência do time contrario em anular a potência inicial",
+              "image": "apostila_scraped/images/page_011.png"
+            },
+            {
+              "page": 12,
+              "title": "Análise dos Candles",
+              "content": "Controle de Forças",
+              "image": "apostila_scraped/images/page_012.png"
+            },
+            {
+              "page": 13,
+              "title": "Análise dos Candles",
+              "content": "Controle Absoluto Controle Absoluto: quando uma barra bem sólida verde (compradora) fecha próximo a sua máxima; e uma barra bem sólida vermelha (vendedora) fecha próximo a sua mínima. Máxima Máxima Mínima Mínima",
+              "image": "apostila_scraped/images/page_013.png"
+            }
           ]
         },
         {
-          "title": "Tendências",
+          "id": "alfabeto_do_mercado",
+          "title": "Alfabeto do Mercado",
           "slides": [
-            {"num": 1, "title": "Identificando", "content": "TENDÊNCIA DE ALTA\n• Máximas crescentes\n• Mínimas crescentes\n• Preço acima das MAs\n\nTENDÊNCIA DE BAIXA\n• Máximas decrescentes\n• Mínimas decrescentes\n• Preço abaixo das MAs"}
+            {
+              "page": 11,
+              "title": "Alfabeto do Mercado",
+              "content": "Alfabeto do Mercado As 13 barras tamanho tipo localização Importante quanto maior o corpo, maior foi a potência daquele time. quanto maior o pavio, maior a potência do time contrario em anular a potência inicial",
+              "image": "apostila_scraped/images/page_011.png"
+            }
+          ]
+        },
+        {
+          "id": "controle_de_forcas",
+          "title": "Controle de Forças",
+          "slides": [
+            {
+              "page": 12,
+              "title": "Controle de Forças",
+              "content": "Controle de Forças",
+              "image": "apostila_scraped/images/page_012.png"
+            },
+            {
+              "page": 13,
+              "title": "Controle de Forças",
+              "content": "Controle Absoluto Controle Absoluto: quando uma barra bem sólida verde (compradora) fecha próximo a sua máxima; e uma barra bem sólida vermelha (vendedora) fecha próximo a sua mínima. Máxima Máxima Mínima Mínima",
+              "image": "apostila_scraped/images/page_013.png"
+            },
+            {
+              "page": 14,
+              "title": "Controle de Forças",
+              "content": "Mantendo o Controle Regra dos 2/3: O controle se mantém do timo dominante até que 2/3 ou mais da barra tenham sido tomados. Máxima Máxima 2/3 2/3 Mínima Mínima",
+              "image": "apostila_scraped/images/page_014.png"
+            },
+            {
+              "page": 15,
+              "title": "Controle de Forças",
+              "content": "Controle Total Controle Total: Quando uma barra sólida recua da máxima, mas o corpo ainda é predominantemente verde, os compradores estão no controle total. Quando uma barra sólida recua da mínima, mas o corpo ainda é predominantemente vermelho, os vendedores estão no controle total. Máxima Máxima 2/3 2/3 Mínima Mínima",
+              "image": "apostila_scraped/images/page_015.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modulo_intermediario_1",
+      "title": "MÓDULO INTERMEDIÁRIO 1 - CONHECIMENTO INTERMEDIÁRIO I",
+      "pages": "194-230",
+      "subtopics": [
+        {
+          "id": "modelos_de_entry",
+          "title": "Modelos de Entry",
+          "slides": [
+            {
+              "page": 194,
+              "title": "Modelos de Entry",
+              "content": "Módulo Intermediário 1 CONHECIMENTO INTERMEDIÁRIO I Refino dos Setups Mapa das localizações Suportes e Resistências Localização Os 4 Fantásticos - Estratégia de Abertura (FAB4)",
+              "image": "apostila_scraped/images/page_194.png"
+            },
+            {
+              "page": 195,
+              "title": "Modelos de Entry",
+              "content": "Refino dos Setups",
+              "image": "apostila_scraped/images/page_195.png"
+            },
+            {
+              "page": 196,
+              "title": "Modelos de Entry",
+              "content": "Mapa de Localizações 1. Barra Elefante 6. GIFT 2. RBTO 7. BT 3. RBI 8. BULL 180 4. VBS 9. CDB 5. BOP",
+              "image": "apostila_scraped/images/page_196.png"
+            },
+            {
+              "page": 197,
+              "title": "Modelos de Entry",
+              "content": "Suportes e Resistências",
+              "image": "apostila_scraped/images/page_197.png"
+            },
+            {
+              "page": 198,
+              "title": "Modelos de Entry",
+              "content": "Suporte de Fundo Anterior E forma de suporte ocorre quando uma queda revisita ou testa um fundo anterior. Essencialmente, é uma correção de 100% do rali anterior.",
+              "image": "apostila_scraped/images/page_198.png"
+            },
+            {
+              "page": 199,
+              "title": "Modelos de Entry",
+              "content": "Exemplo de Suporte de Fundo Anterior",
+              "image": "apostila_scraped/images/page_199.png"
+            },
+            {
+              "page": 200,
+              "title": "Modelos de Entry",
+              "content": "Suporte de Topo Anterior Ocorre quando uma queda revisita ou testa um pico/ máxima anterior. Frequentemente, esse ponto de suporte coincide com o nível de correção de 50%.",
+              "image": "apostila_scraped/images/page_200.png"
+            }
+          ]
+        },
+        {
+          "id": "setup_1",
+          "title": "Setup 1 - Consolidação Forte",
+          "slides": [
+            {
+              "page": 201,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Exemplo de Suporte de Topo Anterior",
+              "image": "apostila_scraped/images/page_201.png"
+            },
+            {
+              "page": 202,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Suporte de Média Móvel em Tendência Essa forma de suporte ocorre quando uma ação em tendência de alta corrige até a Ma20 ou Ma8 subindo e estabiliza (forma um dos quatro sinais de fundo). Frequentemente, esse ponto de suporte fica mais forte depois da primeira rebatida da Ma20.",
+              "image": "apostila_scraped/images/page_202.png"
+            },
+            {
+              "page": 203,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Exemplo de Suporte de Média Móvel em Tendência",
+              "image": "apostila_scraped/images/page_203.png"
+            },
+            {
+              "page": 204,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Suporte da Ma200 - Plana Essa forma de suporte ocorre quando uma Ma200 plana abaixo dos preços. É pouco frequente que uma ação caindo em uma Ma200 plana falhe em pelo menos parar por um tempo. O primeiro movimento em direção a uma Ma200 plana normalmente resultará em alguma forma de retorno, mesmo que temporariamente.",
+              "image": "apostila_scraped/images/page_204.png"
+            },
+            {
+              "page": 205,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Exemplo de Suporte da Ma200 - Plana",
+              "image": "apostila_scraped/images/page_205.png"
+            },
+            {
+              "page": 206,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "PDC - Preço de Fechamento do Dia Anterior Essa forma de suporte / resistência ocorre frequentemente, já que o preço de fechamento anterior de uma ação é lembrada fortemente por traders e investidores. Se, e quando uma ação romper o fechamento do dia anterior, e subsequentemente corrigir de volta nesse ponto, é muito provável que essa região vire um suporte ou resistência.",
+              "image": "apostila_scraped/images/page_206.png"
+            },
+            {
+              "page": 207,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Exemplo de PDC - Região de Suporte",
+              "image": "apostila_scraped/images/page_207.png"
+            },
+            {
+              "page": 208,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Exemplo de PDC - Região de Resistência",
+              "image": "apostila_scraped/images/page_208.png"
+            },
+            {
+              "page": 209,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Resistência de Topo Anterior Essa forma de resistência ocorre quando uma subida revisita ou testa um topo anterior. Essencialmente, é uma correção de 100% do rali anterior.",
+              "image": "apostila_scraped/images/page_209.png"
+            },
+            {
+              "page": 210,
+              "title": "Setup 1 - Consolidação Forte",
+              "content": "Exemplo de Resistência de Topo Anterior",
+              "image": "apostila_scraped/images/page_210.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modulo_intermediario_2",
+      "title": "MÓDULO INTERMEDIÁRIO 2 - CONHECIMENTO INTERMEDIÁRIO II",
+      "pages": "231-286",
+      "subtopics": [
+        {
+          "id": "refinamento",
+          "title": "Refinamento dos Setups",
+          "slides": [
+            {
+              "page": 231,
+              "title": "Refinamento dos Setups",
+              "content": "Estratégia da Ma200 Quanto mais distante o preço abre da 200ma, e a 200ma estiver acima da 20ma, maior a chance de haver uma correção. “Quanto mais longe estiver da média, maior a chance de voltar pra perto da média”",
+              "image": "apostila_scraped/images/page_231.png"
+            },
+            {
+              "page": 232,
+              "title": "Refinamento dos Setups",
+              "content": "Módulo Intermediário 2 CONHECIMENTO INTERMEDIÁRIO II Tipos de Stop Inicial Pegar Lucros Gerenciamento de Trade",
+              "image": "apostila_scraped/images/page_232.png"
+            },
+            {
+              "page": 233,
+              "title": "Refinamento dos Setups",
+              "content": "Plano de Posições Capital Inicial - quanto seu capital suporta? Operar somente 1 ativo Operar com 2 contratos Quanto você pode perder em uma operação? Quanto você pode perder em um dia? Quantas entradas você consegue fazer sem perder a calma?",
+              "image": "apostila_scraped/images/page_233.png"
+            },
+            {
+              "page": 234,
+              "title": "Refinamento dos Setups",
+              "content": "Indo para a Conta Real START Escolha 1 ativo Vá para a Opere com 2 contratos Sim Preencha a planilha de 20 trades CONTA REAL Índice de assertividade maior que 60%? Não Sim Esta ganhando mais do que perdendo? Não Continue no simulador Repita o processo",
+              "image": "apostila_scraped/images/page_234.png"
+            },
+            {
+              "page": 235,
+              "title": "Refinamento dos Setups",
+              "content": "Plano de Trade Passo 1: Identificação Passo 2: Posição Passo 3: Entrada Evento de qualidade Confirmação: no candle Passo 4: Stop Inicial - - - - - - Barra Elefante seguinte, ao confirmar o Setup Bull/Bear 180 + - + - + Antecipada: com o candle em Evento: Tails movimento, violência + + + + + abaixo/acima do RBI/GBI motivo de entrada, setup Passo 7: Gestão Stop Passo 6: Lucros Passo 5: Adição MLPT: Push abaixo/acima da Breakeven Novo setup próximo ao evento Região FAB4 ou Ma200; Barra Elefante de ...",
+              "image": "apostila_scraped/images/page_235.png"
+            },
+            {
+              "page": 236,
+              "title": "Refinamento dos Setups",
+              "content": "Tipos de Stop Inicial",
+              "image": "apostila_scraped/images/page_236.png"
+            },
+            {
+              "page": 237,
+              "title": "Refinamento dos Setups",
+              "content": "Stop de Evento - Compras É o stop utilizado abaixo do seu motivo de entrada, podendo ser Barra Elefante, Bull e Bear 180, BT, TT, TTO, BTTO, VBS, VSS, RBTO, GBTO, BOP, BDP..",
+              "image": "apostila_scraped/images/page_237.png"
+            },
+            {
+              "page": 238,
+              "title": "Refinamento dos Setups",
+              "content": "Stop Inicial de Evento - Bull Stop Incial",
+              "image": "apostila_scraped/images/page_238.png"
+            },
+            {
+              "page": 239,
+              "title": "Refinamento dos Setups",
+              "content": "Stop Inicial de Evento - Bull 180 Stop Incial",
+              "image": "apostila_scraped/images/page_239.png"
+            },
+            {
+              "page": 240,
+              "title": "Refinamento dos Setups",
+              "content": "Stop Inicial de Evento - BT Stop Incial",
+              "image": "apostila_scraped/images/page_240.png"
+            }
+          ]
+        },
+        {
+          "id": "confirmacoes",
+          "title": "Confirmações",
+          "slides": [
+            {
+              "page": 241,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - RBTO Stop Incial",
+              "image": "apostila_scraped/images/page_241.png"
+            },
+            {
+              "page": 242,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - VBS 80% Ajuste Stop Stop inicial",
+              "image": "apostila_scraped/images/page_242.png"
+            },
+            {
+              "page": 243,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - GIFT Ajuste Stop Stop Inicial",
+              "image": "apostila_scraped/images/page_243.png"
+            },
+            {
+              "page": 244,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - BOP Stop Inicial",
+              "image": "apostila_scraped/images/page_244.png"
+            },
+            {
+              "page": 245,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - TTO Stop Inicial",
+              "image": "apostila_scraped/images/page_245.png"
+            },
+            {
+              "page": 246,
+              "title": "Confirmações",
+              "content": "Stop de Evento - vendas É o stop utilizado acima do seu motivo de entrada, podendo ser Barra Elefante, TT, Bear 180, GBTO, BDP, GBI, BTTO;",
+              "image": "apostila_scraped/images/page_246.png"
+            },
+            {
+              "page": 247,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - Bear Stop Inicial",
+              "image": "apostila_scraped/images/page_247.png"
+            },
+            {
+              "page": 248,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - Bear 180 Stop Inicial",
+              "image": "apostila_scraped/images/page_248.png"
+            },
+            {
+              "page": 249,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - TT Stop Inicial",
+              "image": "apostila_scraped/images/page_249.png"
+            },
+            {
+              "page": 250,
+              "title": "Confirmações",
+              "content": "Stop Inicial de Evento - GBTO Stop Inicial",
+              "image": "apostila_scraped/images/page_250.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modulo_avancado",
+      "title": "MÓDULO AVANÇADO - CONHECIMENTO AVANÇADO",
+      "pages": "287-350",
+      "subtopics": [
+        {
+          "id": "gerenciamento_risco",
+          "title": "Gerenciamento de Risco",
+          "slides": [
+            {
+              "page": 287,
+              "title": "Gerenciamento de Risco",
+              "content": "Módulo Avançado CONHECIMENTO AVANÇADO Tipos de Pernadas e Pausas Correções, Tipos de Subidas e Quedas Adições Barra Sólida sem Continuidade Regra das Duas Cores Zona Neutra Sharp Turn",
+              "image": "apostila_scraped/images/page_287.png"
+            },
+            {
+              "page": 288,
+              "title": "Gerenciamento de Risco",
+              "content": "Tipos de Pernadas Tipo 1 Tipo 2 Tipo 3",
+              "image": "apostila_scraped/images/page_288.png"
+            },
+            {
+              "page": 289,
+              "title": "Gerenciamento de Risco",
+              "content": "Tipos de Pernadas",
+              "image": "apostila_scraped/images/page_289.png"
+            },
+            {
+              "page": 290,
+              "title": "Gerenciamento de Risco",
+              "content": "Tipos de Pernadas",
+              "image": "apostila_scraped/images/page_290.png"
+            },
+            {
+              "page": 291,
+              "title": "Gerenciamento de Risco",
+              "content": "Tipos de Pernadas",
+              "image": "apostila_scraped/images/page_291.png"
+            },
+            {
+              "page": 292,
+              "title": "Gerenciamento de Risco",
+              "content": "Tipos de Pausas Tipo 1 Tipo 2 Tipo 3",
+              "image": "apostila_scraped/images/page_292.png"
+            },
+            {
+              "page": 293,
+              "title": "Gerenciamento de Risco",
+              "content": "Tipos de Pausas",
+              "image": "apostila_scraped/images/page_293.png"
+            },
+            {
+              "page": 294,
+              "title": "Gerenciamento de Risco",
+              "content": "Tipos de Pausas",
+              "image": "apostila_scraped/images/page_294.png"
+            },
+            {
+              "page": 295,
+              "title": "Gerenciamento de Risco",
+              "content": "Correções de mercado As correções nos mostram qual lado da força do mercado está no comando, juntamente com as médias para nos auxiliar a entender melhor seu comportamento; Vale para candles grandes ou para pernada; Tipos: Correção de 1/3 (33%) Correção de 1/2 (50%) Correção de 2/3 (70%)",
+              "image": "apostila_scraped/images/page_295.png"
+            },
+            {
+              "page": 296,
+              "title": "Gerenciamento de Risco",
+              "content": "Correções de Mercado Determina a extensão mais provável da correção: 100% - 1/10 70% - 2/10 50% - 6/10 33% - 9/10",
+              "image": "apostila_scraped/images/page_296.png"
+            },
+            {
+              "page": 297,
+              "title": "Gerenciamento de Risco",
+              "content": "Correções de Mercado - 33% 33%",
+              "image": "apostila_scraped/images/page_297.png"
+            },
+            {
+              "page": 298,
+              "title": "Gerenciamento de Risco",
+              "content": "Correções de Mercado - 33% 33% 33% 33%",
+              "image": "apostila_scraped/images/page_298.png"
+            },
+            {
+              "page": 299,
+              "title": "Gerenciamento de Risco",
+              "content": "Correções de Mercado - 50% 50%",
+              "image": "apostila_scraped/images/page_299.png"
+            },
+            {
+              "page": 300,
+              "title": "Gerenciamento de Risco",
+              "content": "Correções de Mercado - 50% 50% 50% 50%",
+              "image": "apostila_scraped/images/page_300.png"
+            }
+          ]
+        },
+        {
+          "id": "psicologia_trading",
+          "title": "Psicologia do Trading",
+          "slides": [
+            {
+              "page": 301,
+              "title": "Psicologia do Trading",
+              "content": "Correções de Mercado - 33 e 50% 50% 33%",
+              "image": "apostila_scraped/images/page_301.png"
+            },
+            {
+              "page": 302,
+              "title": "Psicologia do Trading",
+              "content": "Correções de Mercado - 33 e 50% 33% 50%",
+              "image": "apostila_scraped/images/page_302.png"
+            },
+            {
+              "page": 303,
+              "title": "Psicologia do Trading",
+              "content": "Tipos de Subida / Queda Subida intensa: ângulo quase de 90º: Espera-se que ele venha corrigir apenas ⅓; Subida forte: ângulo de 60º, tende a corrigir 50%; Subida de poder: ângulo de 45º formada por candles pequenos, colados na média, geralmente com forte presença de RBI e GBI, sendo comportada pela Ma8; Subida fraca: Deu evento do potência, mas não cria “momentum”, ângulo menor que 45º, tendendo à fazer uma nova mínima;",
+              "image": "apostila_scraped/images/page_303.png"
+            },
+            {
+              "page": 304,
+              "title": "Psicologia do Trading",
+              "content": "Subida Intensa 33%",
+              "image": "apostila_scraped/images/page_304.png"
+            },
+            {
+              "page": 305,
+              "title": "Psicologia do Trading",
+              "content": "Queda Aguda 33% Subida intensa: ângulo quase de 90º: Espera-se que ele venha corrigir apenas ⅓;",
+              "image": "apostila_scraped/images/page_305.png"
+            },
+            {
+              "page": 306,
+              "title": "Psicologia do Trading",
+              "content": "Subida Forte 50%",
+              "image": "apostila_scraped/images/page_306.png"
+            },
+            {
+              "page": 307,
+              "title": "Psicologia do Trading",
+              "content": "Queda Forte 50%",
+              "image": "apostila_scraped/images/page_307.png"
+            },
+            {
+              "page": 308,
+              "title": "Psicologia do Trading",
+              "content": "Subida de Poder",
+              "image": "apostila_scraped/images/page_308.png"
+            },
+            {
+              "page": 309,
+              "title": "Psicologia do Trading",
+              "content": "Queda de Poder",
+              "image": "apostila_scraped/images/page_309.png"
+            },
+            {
+              "page": 310,
+              "title": "Psicologia do Trading",
+              "content": "Subida Fraca Subida fraca: Deu evento do potência, mas não cria “momentum”, ângulo menor que 45º, tendendo à fazer uma nova mínima;",
+              "image": "apostila_scraped/images/page_310.png"
+            },
+            {
+              "page": 311,
+              "title": "Psicologia do Trading",
+              "content": "Queda Fraca Queda fraca: Deu evento do potência, mas não cria “momentum”, ângulo menor que 45º, tendendo à fazer uma nova máxima;",
+              "image": "apostila_scraped/images/page_311.png"
+            },
+            {
+              "page": 312,
+              "title": "Psicologia do Trading",
+              "content": "Adições",
+              "image": "apostila_scraped/images/page_312.png"
+            },
+            {
+              "page": 313,
+              "title": "Psicologia do Trading",
+              "content": "Adições Quando você já está comprado ou vendido, ou seja, já está no trade, e o mercado te dá uma oportunidade para comprar ou vender mais lotes. Só fazer adições quando ela ocorrer próximo do seu ponto de entrada; Normalmente adicionamos em setups, e os principais são: RBI, GBI, VBS, VSS e GIFT",
+              "image": "apostila_scraped/images/page_313.png"
+            },
+            {
+              "page": 314,
+              "title": "Psicologia do Trading",
+              "content": "Adições de GBI e RBI ADD ADD",
+              "image": "apostila_scraped/images/page_314.png"
+            },
+            {
+              "page": 315,
+              "title": "Psicologia do Trading",
+              "content": "Adição em RBI",
+              "image": "apostila_scraped/images/page_315.png"
+            },
+            {
+              "page": 316,
+              "title": "Psicologia do Trading",
+              "content": "Adição em RBI RBI oculta",
+              "image": "apostila_scraped/images/page_316.png"
+            },
+            {
+              "page": 317,
+              "title": "Psicologia do Trading",
+              "content": "Adição em GBI",
+              "image": "apostila_scraped/images/page_317.png"
+            },
+            {
+              "page": 318,
+              "title": "Psicologia do Trading",
+              "content": "Adição em GBI",
+              "image": "apostila_scraped/images/page_318.png"
+            },
+            {
+              "page": 319,
+              "title": "Psicologia do Trading",
+              "content": "Adições de VBS e VSS ADD ADD",
+              "image": "apostila_scraped/images/page_319.png"
+            },
+            {
+              "page": 320,
+              "title": "Psicologia do Trading",
+              "content": "Adição em VBS",
+              "image": "apostila_scraped/images/page_320.png"
+            }
           ]
         }
       ]

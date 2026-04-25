@@ -51,7 +51,10 @@
       "Bash(where snagit *)",
       "Bash(grep -n \"^PAGINA\\\\|^Módulo\\\\|^[A-Z][A-Z ]*$\" \"C:\\\\PROJETO-IA\\\\TRADE\\\\apostila_scraped\\\\pdf_texto_completo.txt\")",
       "Bash(grep -E \"^[A-Z][a-z ]+$\")",
-      "Bash(find *)"
+      "Bash(find *)",
+      "Bash(where pdftoppm *)",
+      "Bash(choco install *)",
+      "PowerShell(choco install *)"
     ]
   }
 }

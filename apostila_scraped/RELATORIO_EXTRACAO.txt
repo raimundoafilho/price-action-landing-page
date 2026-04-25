@@ -1,0 +1,62 @@
+RELATORIO DE EXTRACAO DE MIDIA - APOSTILA OLIVER VELEZ
+=======================================================
+
+DATA DE EXECUCAO: 2026-04-24
+
+ARQUIVO FONTE:
+  Caminho: C:\PROJETO-IA\TRADE\Oliver-Velez-Metodo\Apostila Ariane Campolim_2324 (1).pdf
+  Tipo: Apostila educacional de Trading (Price Action - iFund Traders)
+  Páginas: 350
+
+METODO DE EXTRACAO:
+  Biblioteca: PyMuPDF (fitz) v1.x
+  Formato saida: PNG
+  Resolucao (DPI): 150
+  Qualidade: Balanceada entre qualidade e tamanho de arquivo
+
+RESULTADOS:
+  Total de imagens extraidas: 350 arquivos
+  Localizacao: C:\PROJETO-IA\TRADE\apostila_scraped\images\
+  Tamanho total: 53 MB
+  Nomeacao: page_001.png ate page_350.png
+  Dimensoes padrao: 1440x810 pixels
+
+ARQUIVO DE MAPEAMENTO:
+  Arquivo: image_mapping.json
+  Tamanho: 139.5 KB
+  Entradas: 350 páginas mapeadas
+  Campos por página:
+    - page_number: número da página (1-350)
+    - image_file: nome do arquivo PNG
+    - section: seção do conteúdo
+    - subsection: subseção
+    - description: primeiros 200 caracteres do texto OCR
+    - width: largura em pixels (1440)
+    - height: altura em pixels (810)
+
+ESTRUTURA DE SAIDA:
+  apostila_scraped/
+  ├── images/
+  │   ├── page_001.png
+  │   ├── page_002.png
+  │   └── ... (até page_350.png)
+  ├── image_mapping.json
+  └── RELATORIO_EXTRACAO.txt (este arquivo)
+
+STATUS: SUCESSO
+
+OBSERVACOES:
+  - PDF contém estrutura com problemas menores (warnings MuPDF sobre 
+    "No common ancestor in structure tree") mas isso NAO afetou a extracao
+  - Nenhum índice estruturado (TOC) encontrado no PDF
+  - Todas as 350 páginas foram convertidas com sucesso
+  - Texto extraído para mapping é automático (primeiros 200 caracteres)
+
+PROXIMOS PASSOS:
+  1. Revisar conteúdo das imagens em apostila_scraped/images/
+  2. Refinar image_mapping.json com descrições semânticas customizadas
+  3. Integrar com sistema de indexação (ElasticSearch, etc)
+  4. Implementar busca por imagem/conteúdo
+
+=======================================================
+Missão Crítica - OPÇÃO B: COMPLETADA
