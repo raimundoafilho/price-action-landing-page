@@ -1,4 +1,7 @@
-{
+import json
+
+# Estrutura correta: 5 tópicos principais com poucos subtópicos cada
+data = {
   "title": "Método Price Action - Oliver Velez",
   "topics": [
     {
@@ -88,3 +91,8 @@
     }
   ]
 }
+
+with open('apostila_scraped/landing-page-data.json', 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=2)
+
+print("OK - JSON reconstruido com conteudo organizado!")

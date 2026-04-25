@@ -306,13 +306,19 @@ function renderTopics() {
 
         let html = '<h2>' + sub.title + '</h2>';
         if (sub.content) {
-          let content = sub.content.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-          content = content.split('\n').map(line => {
-            line = line.trim();
-            if (!line) return '';
-            if (line.match(/^[A-Z\s]+$/)) return '<h3>' + line + '</h3>';
-            return '<p>' + line + '</p>';
-          }).join('');
+          // Converte quebras de linha em parágrafos
+          const content = sub.content
+            .split('\n')
+            .map(line => {
+              line = line.trim();
+              if (!line) return '';
+              // Linhas com LETRAS MAIÚSCULAS se tornam subtítulos
+              if (line.length > 0 && line === line.toUpperCase() && line.length > 3) {
+                return '<h3 style="color:#667eea;margin-top:15px;margin-bottom:10px;">' + line + '</h3>';
+              }
+              return '<p>' + line + '</p>';
+            })
+            .join('');
           html += content;
         } else {
           html += '<p>Sem conteúdo</p>';
