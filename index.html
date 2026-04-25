@@ -233,12 +233,12 @@
 
   <div class="main-layout">
     <div id="sidebar"></div>
-    <div id="content-wrapper" style="flex:1;display:flex;flex-direction:column;">
+    <div id="content-wrapper" style="flex:1;display:flex;flex-direction:column;overflow:hidden;">
       <div id="content" style="flex:1;overflow-y:auto;padding:40px;background:white;"><p>👈 Selecione um tópico para começar</p></div>
-      <div id="controls" style="background:#f9fafb;padding:20px;border-top:1px solid #ddd;display:none;text-align:center;">
-        <button id="prevBtn" style="padding:10px 20px;background:#667eea;color:white;border:none;border-radius:4px;cursor:pointer;margin:0 10px;">⬅ Anterior</button>
-        <span id="slideInfo" style="margin:0 20px;font-weight:600;color:#333;"></span>
-        <button id="nextBtn" style="padding:10px 20px;background:#667eea;color:white;border:none;border-radius:4px;cursor:pointer;margin:0 10px;">Próximo ➡</button>
+      <div id="controls" style="background:#f9fafb;padding:20px;border-top:1px solid #ddd;text-align:center;">
+        <button id="prevBtn" style="padding:10px 20px;background:#667eea;color:white;border:none;border-radius:4px;cursor:pointer;margin:0 10px;font-weight:600;">⬅ Anterior</button>
+        <span id="slideInfo" style="margin:0 20px;font-weight:600;color:#333;display:inline-block;">Selecione um slide</span>
+        <button id="nextBtn" style="padding:10px 20px;background:#667eea;color:white;border:none;border-radius:4px;cursor:pointer;margin:0 10px;font-weight:600;">Próximo ➡</button>
       </div>
     </div>
   </div>
@@ -356,19 +356,24 @@ function showSlide() {
 
   document.getElementById('content').innerHTML = html;
   document.getElementById('slideInfo').textContent = 'Slide ' + (slideIdx + 1) + ' de ' + slides.length;
-  document.getElementById('controls').style.display = slides.length > 1 ? 'block' : 'none';
-  document.getElementById('prevBtn').disabled = slideIdx === 0;
-  document.getElementById('nextBtn').disabled = slideIdx === slides.length - 1;
+  document.getElementById('prevBtn').style.opacity = slideIdx === 0 ? '0.5' : '1';
+  document.getElementById('prevBtn').style.cursor = slideIdx === 0 ? 'not-allowed' : 'pointer';
+  document.getElementById('nextBtn').style.opacity = slideIdx === slides.length - 1 ? '0.5' : '1';
+  document.getElementById('nextBtn').style.cursor = slideIdx === slides.length - 1 ? 'not-allowed' : 'pointer';
 }
 
 document.getElementById('prevBtn').onclick = () => {
-  if (currentSubtopic && currentSubtopic.slideIdx > 0) {
+  if (!currentSubtopic) return;
+  const { topicIdx, subIdx, slideIdx } = currentSubtopic;
+  const slides = data.topics[topicIdx].subtopics[subIdx].slides || [];
+  if (slideIdx > 0) {
     currentSubtopic.slideIdx--;
     showSlide();
   }
 };
 
 document.getElementById('nextBtn').onclick = () => {
+  if (!currentSubtopic) return;
   const { topicIdx, subIdx, slideIdx } = currentSubtopic;
   const slides = data.topics[topicIdx].subtopics[subIdx].slides || [];
   if (slideIdx < slides.length - 1) {
