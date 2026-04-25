@@ -7,54 +7,57 @@
 </head>
 <body>
 
-<div id="login-screen">
+<div id="login-screen" style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;z-index:9999;">
   <div style="background:white;padding:40px;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,0.2);width:90%;max-width:400px;">
     <h1 style="font-size:28px;margin-bottom:10px;color:#333;">Método Price Action</h1>
     <p style="font-size:14px;color:#666;margin:5px 0;">Oliver Velez | André Trader</p>
     <input type="password" id="pwd" placeholder="Senha">
-    <button id="btnLogin">Entrar</button>
-    <p id="err"></p>
+    <button id="btnLogin" style="width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;">Entrar</button>
+    <p id="err" style="color:red;margin-top:10px;font-size:14px;"></p>
   </div>
 </div>
 
-<div id="app" style="display:none;">
-  <div style="background:#333;color:white;padding:15px;">
+<div id="app" style="display:none;height:100vh;flex-direction:column;">
+  <div style="background:#333;color:white;padding:15px;display:flex;justify-content:space-between;align-items:center;">
     <h1>Método Price Action</h1>
-    <button id="btnLogout">Sair</button>
+    <button id="btnLogout" style="background:#667eea;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Sair</button>
   </div>
 
-  <div style="display:flex;flex:1;">
+  <div style="display:flex;flex:1;overflow:hidden;">
     <div id="sidebar" style="width:280px;background:#f9f9f9;border-right:1px solid #ddd;overflow-y:auto;"></div>
-    <div id="content" style="flex:1;overflow-y:auto;padding:20px;">
-      <p>Selecione um tópico</p>
-    </div>
+    <div id="content" style="flex:1;overflow-y:auto;padding:20px;"><p>Selecione um tópico</p></div>
   </div>
 </div>
-
-<style>
-#login-screen { position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;z-index:9999; }
-#btnLogin { width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer; }
-#err { color:red;margin-top:10px;font-size:14px; }
-#app { height:100vh;flex-direction:column; }
-</style>
 
 <script>
 const SENHA = 'AndreTrader';
 let data = null;
 
-document.getElementById('btnLogin').onclick = () => {
-  const pwd = document.getElementById('pwd').value;
+const pwdInput = document.getElementById('pwd');
+const btnLogin = document.getElementById('btnLogin');
+const errMsg = document.getElementById('err');
+
+// Debug: log quando digita
+pwdInput.onkeyup = (e) => {
+  console.log('Digitado:', e.target.value);
+};
+
+btnLogin.onclick = () => {
+  const pwd = pwdInput.value;
+  console.log('Tentando senha:', pwd);
   if (pwd === SENHA) {
     sessionStorage.auth = 1;
     showApp();
   } else {
-    document.getElementById('err').textContent = 'Incorreto';
-    document.getElementById('pwd').value = '';
+    errMsg.textContent = 'Incorreto';
+    pwdInput.value = '';
   }
 };
 
-document.getElementById('pwd').oninput = function(e) {
-  console.log('Digitado:', e.target.value);
+pwdInput.onkeypress = (e) => {
+  if (e.key === 'Enter') {
+    btnLogin.click();
+  }
 };
 
 async function showApp() {
@@ -127,7 +130,7 @@ document.getElementById('btnLogout').onclick = () => {
 
 window.onload = () => {
   if (sessionStorage.auth) showApp();
-  else document.getElementById('pwd').focus();
+  else pwdInput.focus();
 };
 </script>
 
