@@ -6,59 +6,31 @@
   <title>Método Price Action - Oliver Velez</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #f5f5f5; }
-
-    #login-screen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; z-index: 9999; }
-    .login-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); width: 90%; max-width: 400px; }
-    .login-box h1 { font-size: 28px; margin-bottom: 10px; color: #333; }
-    .login-box p { font-size: 14px; color: #666; margin: 5px 0; }
-
-    #pwd { width: 100%; padding: 12px; margin: 20px 0; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-shadow: none !important; outline: none !important; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: white; color: black; }
-    #pwd:focus { border: 2px solid #667eea; outline: none; }
-    #btnLogin { width: 100%; padding: 12px; background: #667eea; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-    #btnLogin:hover { background: #5568d3; }
-    #err { color: red; margin-top: 10px; font-size: 14px; }
-
-    #app { display: none; height: 100vh; flex-direction: column; }
-    .header { background: #333; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
-    .main-layout { display: flex; flex: 1; overflow: hidden; }
-    .sidebar { width: 280px; background: #f9f9f9; border-right: 1px solid #ddd; overflow-y: auto; }
-    .content { flex: 1; overflow-y: auto; padding: 20px; }
-  </style>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .topic { border-bottom: 1px solid #ddd; }
-    .topic-header { padding: 12px; cursor: pointer; font-weight: 500; background: #fff; }
-    .topic-header:hover { background: #f0f0f0; }
-    .subtopic-list { list-style: none; padding: 0; margin: 0; display: none; }
-    .subtopic-item { padding: 10px 20px; cursor: pointer; border-bottom: 1px solid #eee; }
-    .subtopic-item:hover { background: #f0f0f0; }
-    .subtopic-item.active { background: #e3f2fd; border-left: 3px solid #2196F3; }
+    html, body { width: 100%; height: 100%; }
+    body { font-family: Arial, sans-serif; }
   </style>
 </head>
 <body>
 
-<div id="login-screen">
-  <div class="login-box">
-    <h1>Método Price Action</h1>
-    <p>Oliver Velez | André Trader</p>
-    <input type="password" id="pwd" placeholder="Senha">
-    <button id="btnLogin">Entrar</button>
-    <p id="err"></p>
+<div id="login-screen" style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;z-index:9999;">
+  <div style="background:white;padding:40px;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,0.2);width:90%;max-width:400px;">
+    <h1 style="font-size:28px;margin-bottom:10px;color:#333;">Método Price Action</h1>
+    <p style="font-size:14px;color:#666;margin:5px 0;">Oliver Velez | André Trader</p>
+    <input type="password" id="pwd" placeholder="Senha" style="width:100%;padding:12px;margin:20px 0;border:2px solid #ddd;border-radius:4px;font-size:16px;">
+    <button id="btnLogin" style="width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;">Entrar</button>
+    <p id="err" style="color:red;margin-top:10px;font-size:14px;"></p>
   </div>
 </div>
 
-<div id="app">
-  <div class="header">
+<div id="app" style="display:none;height:100vh;flex-direction:column;flex:1;">
+  <div style="background:#333;color:white;padding:15px;display:flex;justify-content:space-between;align-items:center;">
     <h1>Método Price Action</h1>
-    <button id="btnLogout">Sair</button>
+    <button id="btnLogout" style="background:#667eea;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Sair</button>
   </div>
 
-  <div class="main-layout">
-    <div class="sidebar">
-      <div id="topics-container"></div>
-    </div>
-    <div class="content" id="content">
+  <div style="display:flex;flex:1;overflow:hidden;">
+    <div id="sidebar" style="width:280px;background:#f9f9f9;border-right:1px solid #ddd;overflow-y:auto;"></div>
+    <div id="content" style="flex:1;overflow-y:auto;padding:20px;">
       <p>Selecione um tópico</p>
     </div>
   </div>
@@ -68,10 +40,7 @@
 const SENHA = 'AndreTrader';
 let data = null;
 
-document.getElementById('btnLogin').onclick = () => login();
-document.getElementById('pwd').onkeypress = (e) => e.key === 'Enter' && login();
-
-function login() {
+document.getElementById('btnLogin').onclick = () => {
   const pwd = document.getElementById('pwd').value;
   if (pwd === SENHA) {
     sessionStorage.auth = 1;
@@ -80,7 +49,13 @@ function login() {
     document.getElementById('err').textContent = 'Incorreto';
     document.getElementById('pwd').value = '';
   }
-}
+};
+
+document.getElementById('pwd').onkeypress = (e) => {
+  if (e.key === 'Enter') {
+    document.getElementById('btnLogin').click();
+  }
+};
 
 async function showApp() {
   document.getElementById('login-screen').style.display = 'none';
@@ -95,20 +70,31 @@ async function showApp() {
 }
 
 function renderTopics() {
-  const container = document.getElementById('topics-container');
-  container.innerHTML = '';
+  const sidebar = document.getElementById('sidebar');
+  sidebar.innerHTML = '';
 
   if (!data || !data.topics) return;
 
-  data.topics.forEach((topic, idx) => {
+  data.topics.forEach((topic) => {
     const topicDiv = document.createElement('div');
-    topicDiv.className = 'topic';
+    topicDiv.style.borderBottom = '1px solid #ddd';
 
     const header = document.createElement('div');
-    header.className = 'topic-header';
+    header.style.padding = '12px';
+    header.style.cursor = 'pointer';
+    header.style.fontWeight = '500';
+    header.style.background = '#fff';
     header.textContent = '+ ' + topic.title;
+    header.onmouseover = () => header.style.background = '#f0f0f0';
+    header.onmouseout = () => header.style.background = '#fff';
+
+    const list = document.createElement('ul');
+    list.style.listStyle = 'none';
+    list.style.padding = '0';
+    list.style.margin = '0';
+    list.style.display = 'none';
+
     header.onclick = () => {
-      const list = topicDiv.querySelector('.subtopic-list');
       if (list.style.display === 'none') {
         list.style.display = 'block';
         header.textContent = '− ' + topic.title;
@@ -118,25 +104,25 @@ function renderTopics() {
       }
     };
 
-    topicDiv.appendChild(header);
-
-    const list = document.createElement('ul');
-    list.className = 'subtopic-list';
-
     (topic.subtopics || []).forEach(sub => {
       const li = document.createElement('li');
-      li.className = 'subtopic-item';
+      li.style.padding = '10px 20px';
+      li.style.cursor = 'pointer';
+      li.style.borderBottom = '1px solid #eee';
       li.textContent = sub.title;
+      li.onmouseover = () => li.style.background = '#f0f0f0';
+      li.onmouseout = () => li.style.background = 'white';
       li.onclick = () => {
-        document.querySelectorAll('.subtopic-item').forEach(s => s.classList.remove('active'));
-        li.classList.add('active');
+        document.querySelectorAll('li').forEach(s => s.style.background = 'white');
+        li.style.background = '#e3f2fd';
         document.getElementById('content').innerHTML = '<h2>' + sub.title + '</h2><p>' + (sub.content || 'Sem conteúdo') + '</p>';
       };
       list.appendChild(li);
     });
 
+    topicDiv.appendChild(header);
     topicDiv.appendChild(list);
-    container.appendChild(topicDiv);
+    sidebar.appendChild(topicDiv);
   });
 }
 
@@ -147,7 +133,9 @@ document.getElementById('btnLogout').onclick = () => {
 
 window.onload = () => {
   if (sessionStorage.auth) showApp();
-  setTimeout(() => document.getElementById('pwd').focus(), 100);
+  else {
+    setTimeout(() => document.getElementById('pwd').focus(), 100);
+  }
 };
 </script>
 
