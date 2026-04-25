@@ -384,11 +384,15 @@ function renderTopics() {
       li.className = 'subtopic-item';
       li.textContent = sub.title;
       li.onclick = () => {
-        console.log('Clicou em:', sub.title, '| Slides:', (sub.slides || []).length);
+        console.log('DEBUG:', { topicIdx, subIdx, slides: (sub.slides || []).length, sub });
         document.querySelectorAll('.subtopic-item').forEach(s => s.classList.remove('active'));
         li.classList.add('active');
         currentSubtopic = { topicIdx, subIdx, slideIdx: 0 };
-        showSlide();
+        try {
+          showSlide();
+        } catch(e) {
+          console.error('ERRO em showSlide:', e);
+        }
       };
       list.appendChild(li);
     });
