@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Método Price Action</title>
+  <title>Método Price Action - Oliver Velez</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .topics-tree { list-style: none; padding: 0; }
+    .topic-item { margin: 0; }
+    .topic-header { padding: 12px; cursor: pointer; display: flex; align-items: center; background: #f5f5f5; border-bottom: 1px solid #ddd; user-select: none; }
+    .topic-header:hover { background: #e8e8e8; }
+    .topic-toggle { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; margin-right: 8px; font-weight: bold; }
+    .subtopics { list-style: none; padding-left: 20px; }
+    .subtopic-item { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #eee; }
+    .subtopic-item:hover { background: #f9f9f9; }
+    .subtopic-item.active { background: #e3f2fd; border-left: 3px solid #2196F3; }
+    #content { padding: 20px; line-height: 1.6; }
+  </style>
 </head>
 <body>
 
@@ -12,155 +24,111 @@
   <div class="login-box">
     <h1 class="login-title">Método Price Action</h1>
     <p class="login-subtitle">Oliver Velez | André Trader</p>
-    <input type="password" id="pwd" class="login-input" placeholder="Digite: AndreTrader" autofocus>
+    <input type="password" id="pwd" class="login-input" placeholder="Digite a senha" autofocus>
     <button class="login-button" id="btnLogin" type="button">🔓 Entrar</button>
     <p id="err" class="login-error"></p>
   </div>
 </div>
 
-<header class="header" style="display: none;">
-  <div class="header-container">
-    <h1 class="logo-title">Método Price Action</h1>
-    <button class="theme-toggle" id="themeToggle" type="button"><span class="theme-icon">🌙</span></button>
-    <button class="logout-btn" id="btnLogout" type="button">🚪 Sair</button>
-  </div>
-</header>
-
-<div class="main-layout" style="display: none;">
-  <aside class="sidebar">
-    <ul class="modules-list" id="modulesList"></ul>
-  </aside>
-  <main class="content-area">
-    <article class="slide-container" id="slideContainer">
-      <div class="slide-content" id="slideContent">
-        <p>Selecione um módulo</p>
+<div style="display: none; height: 100vh; display: flex; flex-direction: column;" id="app">
+  <header class="header">
+    <div class="header-container">
+      <h1 class="logo-title">Método Price Action</h1>
+      <div>
+        <button id="themeToggle" type="button" class="theme-toggle"><span class="theme-icon">🌙</span></button>
+        <button id="btnLogout" type="button" class="logout-btn">🚪 Sair</button>
       </div>
-    </article>
-  </main>
-</div>
+    </div>
+  </header>
 
-<footer class="footer" style="display: none;">
-  <button id="btnPrev" class="nav-button nav-button--prev">← Anterior</button>
-  <span id="slideInfo">Slide 1</span>
-  <button id="btnNext" class="nav-button nav-button--next">Próximo →</button>
-</footer>
+  <div style="display: flex; flex: 1; overflow: hidden;">
+    <aside class="sidebar" style="width: 300px; overflow-y: auto; border-right: 1px solid #ddd;">
+      <ul class="topics-tree" id="topicsList"></ul>
+    </aside>
+
+    <main style="flex: 1; overflow-y: auto;">
+      <div id="content">
+        <p>Selecione um tópico para começar</p>
+      </div>
+    </main>
+  </div>
+</div>
 
 <script>
 const SENHA = 'AndreTrader';
 let data = null;
-let modIdx = 0, topicIdx = 0, slideIdx = 0;
-
-// LOGIN
-console.log('[Init] Input pwd:', document.getElementById('pwd'));
-console.log('[Init] Button login:', document.getElementById('btnLogin'));
 
 document.getElementById('btnLogin').onclick = login;
-document.getElementById('pwd').onkeypress = e => {
-  console.log('[Key] Tecla:', e.key, 'Value:', document.getElementById('pwd').value);
-  if (e.key === 'Enter') login();
-};
-
-// Também adicionar oninput para debug
-document.getElementById('pwd').oninput = (e) => {
-  console.log('[Input] Digitado:', e.target.value);
-};
+document.getElementById('pwd').onkeypress = e => e.key === 'Enter' && login();
 
 function login() {
   if (document.getElementById('pwd').value === SENHA) {
     sessionStorage.auth = 1;
-    show();
+    showApp();
   } else {
-    document.getElementById('err').textContent = 'Errado';
+    document.getElementById('err').textContent = 'Senha incorreta';
     document.getElementById('pwd').value = '';
   }
 }
 
-async function show() {
+async function showApp() {
   document.getElementById('login-screen').style.display = 'none';
-  document.querySelector('header').style.display = 'block';
-  document.querySelector('.main-layout').style.display = 'flex';
-  document.querySelector('footer').style.display = 'block';
+  document.getElementById('app').style.display = 'flex';
 
   if (!data) {
     const url = './apostila_scraped/landing-page-data.json?t=' + Date.now();
-    console.log('[Fetch] Carregando:', url);
     data = await fetch(url).then(r => r.json());
-    console.log('[Fetch] Dados carregados, módulos:', data.modules.length);
   }
 
-  renderMods();
-  renderSlide();
+  renderTopics();
 }
 
-function renderMods() {
-  const list = document.getElementById('modulesList');
+function renderTopics() {
+  const list = document.getElementById('topicsList');
   list.innerHTML = '';
 
-  data.modules.forEach((m, i) => {
-    const li = document.createElement('li');
-    li.className = 'module-item' + (i === modIdx ? ' active' : '');
+  if (!data || !data.topics) return;
 
-    const btn = document.createElement('button');
-    btn.textContent = m.title;
-    btn.onclick = () => {
-      modIdx = i;
-      topicIdx = 0;
-      slideIdx = 0;
-      renderMods();
-      renderSlide();
+  data.topics.forEach((topic, idx) => {
+    const li = document.createElement('li');
+    li.className = 'topic-item';
+
+    const header = document.createElement('div');
+    header.className = 'topic-header';
+    header.innerHTML = `<span class="topic-toggle">${topic.subtopics && topic.subtopics.length > 0 ? '+' : ''}</span><span>${topic.title}</span>`;
+
+    header.onclick = () => {
+      topic.expanded = !topic.expanded;
+      const toggle = header.querySelector('.topic-toggle');
+      toggle.textContent = topic.expanded ? '−' : '+';
+      subtopicsList.style.display = topic.expanded ? 'block' : 'none';
     };
 
-    li.appendChild(btn);
+    li.appendChild(header);
+
+    if (topic.subtopics && topic.subtopics.length > 0) {
+      const subtopicsList = document.createElement('ul');
+      subtopicsList.className = 'subtopics';
+      subtopicsList.style.display = 'none';
+
+      topic.subtopics.forEach((sub, sidx) => {
+        const sli = document.createElement('li');
+        sli.className = 'subtopic-item';
+        sli.textContent = sub.title || `Subtópico ${sidx + 1}`;
+        sli.onclick = () => {
+          document.querySelectorAll('.subtopic-item').forEach(s => s.classList.remove('active'));
+          sli.classList.add('active');
+          document.getElementById('content').innerHTML = `<h2>${sub.title}</h2><div>${sub.content || 'Sem conteúdo'}</div>`;
+        };
+        subtopicsList.appendChild(sli);
+      });
+
+      li.appendChild(subtopicsList);
+    }
+
     list.appendChild(li);
   });
 }
-
-function renderSlide() {
-  if (!data || !data.modules) return;
-
-  const mod = data.modules[modIdx];
-  if (!mod || !mod.topics || !mod.topics[topicIdx]) return;
-
-  const topic = mod.topics[topicIdx];
-  if (!topic || !topic.slides || !topic.slides[slideIdx]) return;
-
-  const slide = topic.slides[slideIdx];
-
-  document.getElementById('slideContent').innerHTML =
-    '<h2>' + slide.title + '</h2><div class="slide-body">' + slide.content + '</div>';
-
-  document.getElementById('slideInfo').textContent =
-    mod.title + ' - ' + slide.title;
-
-  document.getElementById('btnPrev').disabled = modIdx === 0 && slideIdx === 0;
-  document.getElementById('btnNext').disabled =
-    modIdx === data.modules.length - 1 && slideIdx === topic.slides.length - 1;
-}
-
-document.getElementById('btnNext').onclick = () => {
-  const topic = data.modules[modIdx].topics[topicIdx];
-  if (slideIdx < topic.slides.length - 1) {
-    slideIdx++;
-  } else if (modIdx < data.modules.length - 1) {
-    modIdx++;
-    topicIdx = 0;
-    slideIdx = 0;
-    renderMods();
-  }
-  renderSlide();
-};
-
-document.getElementById('btnPrev').onclick = () => {
-  if (slideIdx > 0) {
-    slideIdx--;
-  } else if (modIdx > 0) {
-    modIdx--;
-    const topic = data.modules[modIdx].topics[0];
-    slideIdx = topic.slides.length - 1;
-    renderMods();
-  }
-  renderSlide();
-};
 
 document.getElementById('btnLogout').onclick = () => {
   if (confirm('Sair?')) {
@@ -174,25 +142,10 @@ document.getElementById('themeToggle').onclick = () => {
   document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
 };
 
-window.addEventListener('DOMContentLoaded', () => {
-  const pwd = document.getElementById('pwd');
-  if (sessionStorage.auth) {
-    show();
-  } else {
-    setTimeout(() => {
-      pwd.focus();
-      pwd.click();
-    }, 100);
-  }
-});
-
-// Forçar foco no input ao clicar em qualquer lugar da tela de login
-document.getElementById('login-screen').addEventListener('click', (e) => {
-  const pwd = document.getElementById('pwd');
-  if (e.target !== pwd) {
-    pwd.focus();
-  }
-});
+window.onload = () => {
+  if (sessionStorage.auth) showApp();
+  else document.getElementById('pwd').focus();
+};
 </script>
 
 </body>
