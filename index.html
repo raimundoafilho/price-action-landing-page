@@ -14,7 +14,7 @@
     <p style="color:#666;margin:0 0 20px 0;font-size:14px;">Oliver Velez | André Trader</p>
 
     <form id="loginForm" onsubmit="return handleLogin(event)">
-      <input type="password" id="pwd" placeholder="Senha" required>
+      <input type="password" id="pwd" placeholder="Senha" required autofocus>
       <button type="submit" style="width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;margin-top:10px;">Entrar</button>
     </form>
 
@@ -134,9 +134,6 @@ function logout() {
 
 window.onload = () => {
   if (sessionStorage.auth) showApp();
-  else {
-    setTimeout(() => document.getElementById('pwd').focus(), 100);
-  }
 };
 </script>
 
