@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Landing page educacional do Método Price Action de Oliver Velez, apresentado por André Trader">
+  <meta name="keywords" content="Price Action, Oliver Velez, Trading, Análise Técnica, Educação">
+  <meta name="author" content="André Trader, Oliver Velez">
+  <meta property="og:title" content="Método Price Action - Oliver Velez">
+  <meta property="og:description" content="Plataforma educacional do Método Price Action para traders">
+  <meta property="og:type" content="website">
+
+  <title>Método Price Action - Oliver Velez | Educação FIMATHE</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ==================== LOGIN SCREEN ==================== -->
+<div id="login-screen" class="login-container" role="dialog" aria-labelledby="login-title">
+  <div class="login-box">
+    <h1 class="login-title">Método Price Action</h1>
+    <p class="login-subtitle">Oliver Velez | André Trader</p>
+    <p class="login-description">Plataforma Educacional Restrita</p>
+
+    <input
+      type="password"
+      id="passwordInput"
+      class="login-input"
+      placeholder="Digite a senha para acessar"
+      aria-label="Senha de acesso"
+    />
+
+    <button
+      class="login-button"
+      onclick="submitPassword()"
+      type="button"
+    >
+      🔓 Entrar
+    </button>
+
+    <p id="loginError" class="login-error" aria-live="polite"></p>
+  </div>
+</div>
+
+<!-- ==================== HEADER STICKY ==================== -->
+<header class="header" role="banner">
+  <div class="header-container">
+
+    <!-- LOGO / BRANDING -->
+    <div class="logo-section">
+      <h1 class="logo-title">Método Price Action</h1>
+      <p class="logo-subtitle">Oliver Velez | André Trader</p>
+    </div>
+
+    <!-- HEADER CONTROLS (Tema + Progresso + Logout) -->
+    <div class="header-controls">
+
+      <!-- LOGOUT BUTTON -->
+      <button
+        class="logout-btn"
+        onclick="logout()"
+        title="Sair da plataforma"
+        aria-label="Fazer logout"
+        type="button"
+      >
+        🚪 Sair
+      </button>
+
+      <!-- THEME TOGGLE BUTTON -->
+      <button
+        class="theme-toggle"
+        id="themeToggle"
+        aria-label="Alternar tema (claro/escuro)"
+        aria-pressed="false"
+        type="button"
+      >
+        <span class="theme-icon" aria-hidden="true">🌙</span>
+        <span class="sr-only">Tema atual: Claro</span>
+      </button>
+
+      <!-- PROGRESS INDICATOR -->
+      <div class="progress-global" aria-label="Progresso global do módulo">
+        <span class="progress-text" id="progressText">Módulo 1 de 7</span>
+        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</header>
+
+<!-- ==================== MAIN LAYOUT ==================== -->
+<div class="main-layout">
+
+  <!-- ==================== SIDEBAR ==================== -->
+  <aside class="sidebar" id="sidebar" role="complementary" aria-label="Menu de navegação lateral">
+
+    <!-- MOBILE SIDEBAR TOGGLE -->
+    <button
+      class="sidebar-toggle"
+      id="sidebarToggle"
+      aria-label="Abrir/Fechar menu de navegação"
+      aria-expanded="false"
+      aria-controls="sidebarNav"
+      type="button"
+    >
+      <span class="hamburger-icon" aria-hidden="true">☰</span>
+    </button>
+
+    <!-- SIDEBAR NAVIGATION -->
+    <nav class="sidebar-nav" id="sidebarNav" aria-label="Módulos e tópicos">
+      <h2 class="sidebar-title">Módulos</h2>
+
+      <ul class="modules-list" id="modulesList">
+        <!-- Preenchido dinamicamente via JavaScript -->
+        <li class="module-item loading">
+          <span class="loading-text">Carregando módulos...</span>
+        </li>
+      </ul>
+
+    </nav>
+
+  </aside>
+
+  <!-- ==================== CONTENT AREA ==================== -->
+  <main class="content-area" role="main" aria-label="Conteúdo educacional">
+
+    <article class="slide-container" id="slideContainer" role="article" style="display: none;">
+      <!-- Slide renderizado dinamicamente via JavaScript -->
+
+      <div class="slide-loading" id="slideLoading">
+        <div class="spinner" aria-hidden="true"></div>
+        <p>Carregando conteúdo...</p>
+      </div>
+
+      <div class="slide-content" id="slideContent">
+        <!-- Preenchido dinamicamente -->
+      </div>
+
+      <div class="slide-error" id="slideError" style="display: none;" role="alert">
+        <!-- Mensagem de erro se houver -->
+      </div>
+
+    </article>
+
+  </main>
+
+</div>
+
+<!-- ==================== FOOTER / NAVIGATION CONTROLS ==================== -->
+<footer class="footer" role="contentinfo">
+
+  <!-- NAVIGATION CONTROLS -->
+  <nav class="footer-nav" aria-label="Navegação entre slides">
+    <div class="footer-container">
+
+      <!-- PREVIOUS BUTTON -->
+      <button
+        class="nav-button nav-button--prev"
+        id="prevButton"
+        aria-label="Ir para o slide anterior"
+        type="button"
+        disabled
+      >
+        <span aria-hidden="true">←</span>
+        <span class="button-text">Anterior</span>
+      </button>
+
+      <!-- SLIDE INFO -->
+      <div class="slide-info">
+        <div class="slide-counter">
+          <span id="slideIndicator" aria-live="polite" aria-label="Indicador de slide">
+            Slide 1 de 5
+          </span>
+        </div>
+        <div class="topic-name">
+          <span id="topicIndicator" aria-live="polite" aria-label="Nome do tópico atual">
+            Tópico: Introdução
+          </span>
+        </div>
+      </div>
+
+      <!-- NEXT BUTTON -->
+      <button
+        class="nav-button nav-button--next"
+        id="nextButton"
+        aria-label="Ir para o próximo slide"
+        type="button"
+      >
+        <span class="button-text">Próximo</span>
+        <span aria-hidden="true">→</span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- CREDITS / METADATA -->
+  <div class="footer-credits">
+    <div class="credits-text">
+      <p class="credit-method">
+        Método desenvolvido por <strong>Oliver Velez</strong> |
+        Apresentação compilada por <strong>André Trader</strong>
+      </p>
+      <p class="credit-institution">
+        Material educacional — <strong>FIMATHE Trading Education</strong>
+      </p>
+      <p class="credit-version" id="versionInfo">
+        <!-- Versão preenchida dinamicamente -->
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+<!-- ==================== SKIP LINKS ==================== -->
+<a href="#slideContent" class="skip-link">Pular para o conteúdo principal</a>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script>
+  // Verificação de disponibilidade de dados (fallback para desenvolvimento)
+  if (!window.landingPageData) {
+    console.warn('landingPageData não carregado — usando modo desenvolvimento');
+  }
+</script>
+<script src="app.js" defer></script>
+
+</body>
+</html>

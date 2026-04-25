@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Método Price Action - Oliver Velez</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: Arial, sans-serif; background: #f5f5f5; }
@@ -14,8 +13,10 @@
     .login-box h1 { font-size: 28px; margin-bottom: 10px; color: #333; }
     .login-box p { font-size: 14px; color: #666; margin: 5px 0; }
 
-    #pwd { width: 100%; padding: 12px; margin: 20px 0; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; }
+    #pwd { width: 100%; padding: 12px; margin: 20px 0; border: 2px solid #ddd; border-radius: 4px; font-size: 16px; box-shadow: none !important; outline: none !important; -webkit-appearance: none; -moz-appearance: none; appearance: none; background: white; color: black; }
+    #pwd:focus { border: 2px solid #667eea; outline: none; }
     #btnLogin { width: 100%; padding: 12px; background: #667eea; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
+    #btnLogin:hover { background: #5568d3; }
     #err { color: red; margin-top: 10px; font-size: 14px; }
 
     #app { display: none; height: 100vh; flex-direction: column; }
@@ -23,7 +24,9 @@
     .main-layout { display: flex; flex: 1; overflow: hidden; }
     .sidebar { width: 280px; background: #f9f9f9; border-right: 1px solid #ddd; overflow-y: auto; }
     .content { flex: 1; overflow-y: auto; padding: 20px; }
-
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <style>
     .topic { border-bottom: 1px solid #ddd; }
     .topic-header { padding: 12px; cursor: pointer; font-weight: 500; background: #fff; }
     .topic-header:hover { background: #f0f0f0; }
@@ -144,7 +147,7 @@ document.getElementById('btnLogout').onclick = () => {
 
 window.onload = () => {
   if (sessionStorage.auth) showApp();
-  else document.getElementById('pwd').focus();
+  setTimeout(() => document.getElementById('pwd').focus(), 100);
 };
 </script>
 

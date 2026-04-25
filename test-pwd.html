@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Password Input</title>
+  <style>
+    body { font-family: Arial; padding: 50px; }
+    input { width: 300px; padding: 12px; font-size: 16px; margin: 10px 0; }
+    button { padding: 10px 20px; font-size: 16px; }
+    .log { margin-top: 20px; padding: 10px; background: #f0f0f0; }
+  </style>
+</head>
+<body>
+
+<h1>Teste Input Password</h1>
+<input type="password" id="pwd" placeholder="Digite aqui...">
+<button onclick="test()">Ver Valor</button>
+<div class="log" id="log"></div>
+
+<script>
+const pwd = document.getElementById('pwd');
+pwd.focus();
+
+pwd.oninput = (e) => {
+  document.getElementById('log').innerHTML += '<p>Input recebido: ' + e.target.value + '</p>';
+};
+
+function test() {
+  alert('Valor digitado: ' + pwd.value);
+}
+
+setTimeout(() => pwd.focus(), 100);
+</script>
+
+</body>
+</html>
