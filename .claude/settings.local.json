@@ -44,7 +44,8 @@
       "Bash(python -m http.server 8000)",
       "Bash(pkill *)",
       "Bash(taskkill /F /IM python.exe)",
-      "Bash(dir C:\\\\PROJETO-IA\\\\TRADE\\\\apostila_scraped\\\\\" | findstr landing-page\" *)"
+      "Bash(dir C:\\\\PROJETO-IA\\\\TRADE\\\\apostila_scraped\\\\\" | findstr landing-page\" *)",
+      "Bash(reg query *)"
     ]
   }
 }

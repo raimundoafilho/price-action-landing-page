@@ -1,72 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Debug</title>
-  <style>
-    body { font-family: monospace; padding: 20px; background: #1e1e1e; color: #d4d4d4; line-height: 1.6; }
-    .box { background: #252526; padding: 15px; margin: 10px 0; border-left: 3px solid #007acc; }
-    .ok { color: #4ec9b0; }
-    .err { color: #f48771; }
-    .info { color: #9cdcfe; }
-  </style>
+  <title>Debug Input</title>
 </head>
 <body>
 
-<h2>🔍 Debug - Status da Página</h2>
+<h1>Debug - Qual evento funciona?</h1>
 
-<div class="box">
-  <div class="info">▶ Verificando elementos HTML...</div>
-  <div id="status1"></div>
-</div>
+<h2>Input 1: oninput</h2>
+<input type="password" id="test1" placeholder="Digite aqui">
+<p id="log1"></p>
 
-<div class="box">
-  <div class="info">▶ Carregando JSON...</div>
-  <div id="status2"></div>
-</div>
+<h2>Input 2: onkeydown</h2>
+<input type="password" id="test2" placeholder="Digite aqui">
+<p id="log2"></p>
 
-<div class="box">
-  <div class="info">▶ Testando Login...</div>
-  <div id="status3"></div>
-</div>
+<h2>Input 3: onkeyup</h2>
+<input type="password" id="test3" placeholder="Digite aqui">
+<p id="log3"></p>
+
+<h2>Input 4: sem eventos (só value)</h2>
+<input type="password" id="test4" placeholder="Digite aqui">
+<button onclick="alert('test4: ' + document.getElementById('test4').value)">Ver valor</button>
 
 <script>
-async function debug() {
-  // 1. Verificar elementos
-  const loginScreen = document.getElementById('login-screen');
-  const slideContainer = document.getElementById('slideContainer');
-  const passwordInput = document.getElementById('passwordInput');
+document.getElementById('test1').oninput = (e) => {
+  document.getElementById('log1').textContent = 'oninput: ' + e.target.value;
+};
 
-  document.getElementById('status1').innerHTML = loginScreen
-    ? '<span class="ok">✓ login-screen encontrado</span>'
-    : '<span class="err">✗ login-screen NÃO encontrado</span>';
+document.getElementById('test2').onkeydown = (e) => {
+  document.getElementById('log2').textContent = 'onkeydown: ' + e.key;
+};
 
-  // 2. Carregar JSON
-  try {
-    const res = await fetch('./apostila_scraped/landing-page-data.json');
-    const data = await res.json();
-    document.getElementById('status2').innerHTML =
-      `<span class="ok">✓ JSON carregado</span><br/>Módulos: ${data.modules.length}`;
-  } catch (e) {
-    document.getElementById('status2').innerHTML =
-      `<span class="err">✗ Erro: ${e.message}</span>`;
-  }
-
-  // 3. Testar login
-  if (passwordInput && loginScreen) {
-    passwordInput.value = 'AndreTrader';
-
-    // Chamar função de submissão se existir
-    if (typeof submitPassword === 'function') {
-      submitPassword();
-      document.getElementById('status3').innerHTML = '<span class="ok">✓ submitPassword() executado</span>';
-    } else {
-      document.getElementById('status3').innerHTML = '<span class="err">✗ submitPassword() não encontrado</span>';
-    }
-  }
-}
-
-window.addEventListener('DOMContentLoaded', debug);
+document.getElementById('test3').onkeyup = (e) => {
+  document.getElementById('log3').textContent = 'onkeyup: ' + e.target.value;
+};
 </script>
 
 </body>

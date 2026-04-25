@@ -303,7 +303,22 @@ function renderTopics() {
       li.onclick = () => {
         document.querySelectorAll('.subtopic-item').forEach(s => s.classList.remove('active'));
         li.classList.add('active');
-        document.getElementById('content').innerHTML = '<h2>' + sub.title + '</h2><p>' + (sub.content || 'Sem conteúdo') + '</p>';
+
+        let html = '<h2>' + sub.title + '</h2>';
+        if (sub.content) {
+          let content = sub.content.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          content = content.split('\n').map(line => {
+            line = line.trim();
+            if (!line) return '';
+            if (line.match(/^[A-Z\s]+$/)) return '<h3>' + line + '</h3>';
+            return '<p>' + line + '</p>';
+          }).join('');
+          html += content;
+        } else {
+          html += '<p>Sem conteúdo</p>';
+        }
+
+        document.getElementById('content').innerHTML = html;
       };
       list.appendChild(li);
     });

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Debug</title>
+</head>
+<body>
+
+<input type="password" id="pwd" placeholder="Senha" autofocus>
+<p id="log"></p>
+
+<script>
+const log = document.getElementById('log');
+const pwd = document.getElementById('pwd');
+
+// Log eventos de focus
+pwd.onfocus = () => {
+  log.textContent += '\n[FOCUS] Input foi focado';
+};
+
+pwd.onblur = () => {
+  log.textContent += '\n[BLUR] Input perdeu foco';
+};
+
+// Log todas as teclas
+document.addEventListener('keydown', (e) => {
+  log.textContent += '\n[KEYDOWN] Tecla: ' + e.key + ' | Código: ' + e.code;
+});
+
+// Log input
+pwd.oninput = (e) => {
+  log.textContent += '\n[INPUT] Valor: ' + e.target.value;
+};
+
+// Verifica se está focado ao carregar
+setTimeout(() => {
+  const isFocused = document.activeElement === pwd;
+  log.textContent += '\n[INIT] Input focado? ' + isFocused + ' | Active element: ' + document.activeElement.id;
+}, 100);
+</script>
+
+</body>
+</html>

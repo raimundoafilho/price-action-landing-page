@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test Login Only</title>
+</head>
+<body style="margin:0;padding:0;">
+
+<div style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;">
+  <div style="background:white;padding:40px;border-radius:8px;width:90%;max-width:400px;">
+    <h1>Teste Login</h1>
+    
+    <form onsubmit="return test(event)">
+      <input type="password" id="pwd" placeholder="Senha" required autofocus>
+      <button type="submit">Entrar</button>
+    </form>
+    
+    <p id="result"></p>
+  </div>
+</div>
+
+<script>
+function test(event) {
+  event.preventDefault();
+  const pwd = document.getElementById('pwd').value;
+  document.getElementById('result').textContent = 'Você digitou: ' + pwd;
+  console.log('Valor do input:', pwd);
+  return false;
+}
+</script>
+
+</body>
+</html>

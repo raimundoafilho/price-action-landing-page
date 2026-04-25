@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minimal Test</title>
+</head>
+<body>
+
+<h1>Teste Mínimo</h1>
+<input type="text" id="test" placeholder="Digite aqui">
+<button onclick="alert('Você digitou: ' + document.getElementById('test').value)">Ver</button>
+
+<p id="log"></p>
+
+<script>
+document.getElementById('test').oninput = function(e) {
+  document.getElementById('log').textContent = 'Digitado: ' + e.target.value;
+};
+</script>
+
+</body>
+</html>
