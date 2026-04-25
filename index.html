@@ -5,22 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Método Price Action - Oliver Velez</title>
 </head>
-<body>
+<body style="margin:0;padding:0;font-family:Arial;">
 
-<div id="login-screen" style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;z-index:9999;">
-  <div style="background:white;padding:40px;border-radius:8px;box-shadow:0 10px 40px rgba(0,0,0,0.2);width:90%;max-width:400px;">
-    <h1 style="font-size:28px;margin-bottom:10px;color:#333;">Método Price Action</h1>
-    <p style="font-size:14px;color:#666;margin:5px 0;">Oliver Velez | André Trader</p>
-    <input type="password" id="pwd" placeholder="Senha">
-    <button id="btnLogin" style="width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;">Entrar</button>
-    <p id="err" style="color:red;margin-top:10px;font-size:14px;"></p>
+<!-- TELA DE LOGIN -->
+<div id="login-screen" style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;">
+  <div style="background:white;padding:40px;border-radius:8px;width:90%;max-width:400px;">
+    <h1 style="color:#333;margin:0 0 5px 0;">Método Price Action</h1>
+    <p style="color:#666;margin:0 0 20px 0;font-size:14px;">Oliver Velez | André Trader</p>
+
+    <form id="loginForm" onsubmit="return handleLogin(event)">
+      <input type="password" id="pwd" placeholder="Senha" required>
+      <button type="submit" style="width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;margin-top:10px;">Entrar</button>
+    </form>
+
+    <p id="err" style="color:red;margin:10px 0 0 0;font-size:14px;"></p>
   </div>
 </div>
 
+<!-- TELA DO APP -->
 <div id="app" style="display:none;height:100vh;flex-direction:column;">
   <div style="background:#333;color:white;padding:15px;display:flex;justify-content:space-between;align-items:center;">
-    <h1>Método Price Action</h1>
-    <button id="btnLogout" style="background:#667eea;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Sair</button>
+    <h1 style="margin:0;">Método Price Action</h1>
+    <button onclick="logout()" style="background:#667eea;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Sair</button>
   </div>
 
   <div style="display:flex;flex:1;overflow:hidden;">
@@ -33,43 +39,35 @@
 const SENHA = 'AndreTrader';
 let data = null;
 
-const pwdInput = document.getElementById('pwd');
-const btnLogin = document.getElementById('btnLogin');
-const errMsg = document.getElementById('err');
+function handleLogin(event) {
+  event.preventDefault();
+  const pwd = document.getElementById('pwd').value;
+  console.log('Senha digitada:', pwd, 'Esperado:', SENHA, 'Match:', pwd === SENHA);
 
-// Debug: log quando digita
-pwdInput.onkeyup = (e) => {
-  console.log('Digitado:', e.target.value);
-};
-
-btnLogin.onclick = () => {
-  const pwd = pwdInput.value;
-  console.log('Tentando senha:', pwd);
   if (pwd === SENHA) {
     sessionStorage.auth = 1;
     showApp();
   } else {
-    errMsg.textContent = 'Incorreto';
-    pwdInput.value = '';
+    document.getElementById('err').textContent = 'Senha incorreta';
+    document.getElementById('pwd').value = '';
   }
-};
-
-pwdInput.onkeypress = (e) => {
-  if (e.key === 'Enter') {
-    btnLogin.click();
-  }
-};
+  return false;
+}
 
 async function showApp() {
   document.getElementById('login-screen').style.display = 'none';
   document.getElementById('app').style.display = 'flex';
 
   if (!data) {
-    const url = './apostila_scraped/landing-page-data.json?t=' + Date.now();
-    data = await fetch(url).then(r => r.json());
+    try {
+      const url = './apostila_scraped/landing-page-data.json?t=' + Date.now();
+      const res = await fetch(url);
+      data = await res.json();
+      renderTopics();
+    } catch (e) {
+      console.error('Erro ao carregar JSON:', e);
+    }
   }
-
-  renderTopics();
 }
 
 function renderTopics() {
@@ -87,7 +85,10 @@ function renderTopics() {
     header.style.cursor = 'pointer';
     header.style.fontWeight = '500';
     header.style.background = '#fff';
+    header.style.userSelect = 'none';
     header.textContent = '+ ' + topic.title;
+    header.onmouseover = () => header.style.background = '#f0f0f0';
+    header.onmouseout = () => header.style.background = '#fff';
 
     const list = document.createElement('ul');
     list.style.listStyle = 'none';
@@ -110,7 +111,10 @@ function renderTopics() {
       li.style.padding = '10px 20px';
       li.style.cursor = 'pointer';
       li.style.borderBottom = '1px solid #eee';
+      li.style.userSelect = 'none';
       li.textContent = sub.title;
+      li.onmouseover = () => li.style.background = '#f0f0f0';
+      li.onmouseout = () => li.style.background = 'white';
       li.onclick = () => {
         document.getElementById('content').innerHTML = '<h2>' + sub.title + '</h2><p>' + (sub.content || 'Sem conteúdo') + '</p>';
       };
@@ -123,14 +127,16 @@ function renderTopics() {
   });
 }
 
-document.getElementById('btnLogout').onclick = () => {
+function logout() {
   delete sessionStorage.auth;
   location.reload();
-};
+}
 
 window.onload = () => {
   if (sessionStorage.auth) showApp();
-  else pwdInput.focus();
+  else {
+    setTimeout(() => document.getElementById('pwd').focus(), 100);
+  }
 };
 </script>
 
