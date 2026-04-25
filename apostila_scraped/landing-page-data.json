@@ -1,11 +1,330 @@
 {
-  "version": "2.0",
   "title": "Método Price Action - Oliver Velez",
   "topics": [
     {
-      "title": "Módulo Básico 1",
-      "expanded": false,
-      "subtopics": []
+      "title": "CONHECIMENTOS BÁSICOS",
+      "subtopics": [
+        {
+          "title": "Bolsa de Valores",
+          "content": "Módulo Básico 1\nCONHECIMENTOS BÁSICOS\nBolsa de Valores\nTipos de Traders\nCorretora\n3"
+        },
+        {
+          "title": "Tipos de Traders",
+          "content": "Módulo Básico 1\nCONHECIMENTOS BÁSICOS\nBolsa de Valores\nTipos de Traders\nCorretora\n3"
+        },
+        {
+          "title": "Corretora",
+          "content": "Módulo Básico 1\nCONHECIMENTOS BÁSICOS\nBolsa de Valores\nTipos de Traders\nCorretora\n3"
+        },
+        {
+          "title": "Bolsa",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "de Valores",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "BM&F - Bolsa de Mercadorias e Futuro",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "Commodities (café, milho, etc.)",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "Contratos Futuros (índice, dólar, etc.)",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "B3 - Brasil, Bolsa, Balcão",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "IPO - Capital Aberto",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "Ações (ITUB4, BBDC4, etc.)",
+          "content": "Bolsa\nde Valores\nBM&F - Bolsa de Mercadorias e Futuro\nCommodities (café, milho, etc.)\nContratos Futuros (índice, dólar, etc.)\nB3 - Brasil, Bolsa, Balcão\nIPO - Capital Aberto\nAções (ITUB4, BBDC4, etc.)\n4"
+        },
+        {
+          "title": "Tipos",
+          "content": "Tipos\nde Trader\nDay Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas no mesmo dia da entrada.\nA grande vantagem é a alavancagem.\nSwing Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas após dias ou até semanas\napós a entrada.\nPosition Trade\nSão negociações de compras ou vendas de um ativo, na qual o trader fica posicionado por meses\nou ano.\n5"
+        },
+        {
+          "title": "de Trader",
+          "content": "Tipos\nde Trader\nDay Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas no mesmo dia da entrada.\nA grande vantagem é a alavancagem.\nSwing Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas após dias ou até semanas\napós a entrada.\nPosition Trade\nSão negociações de compras ou vendas de um ativo, na qual o trader fica posicionado por meses\nou ano.\n5"
+        },
+        {
+          "title": "Day Trade",
+          "content": "Tipos\nde Trader\nDay Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas no mesmo dia da entrada.\nA grande vantagem é a alavancagem.\nSwing Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas após dias ou até semanas\napós a entrada.\nPosition Trade\nSão negociações de compras ou vendas de um ativo, na qual o trader fica posicionado por meses\nou ano.\n5"
+        },
+        {
+          "title": "São negociações de compras ou vendas de um ativo, que são encerradas no mesmo dia da entrada.",
+          "content": "Tipos\nde Trader\nDay Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas no mesmo dia da entrada.\nA grande vantagem é a alavancagem.\nSwing Trade\nSão negociações de compras ou vendas de um ativo, que são encerradas após dias ou até semanas\napós a entrada.\nPosition Trade\nSão negociações de compras ou vendas de um ativo, na qual o trader fica posicionado por meses\nou ano.\n5"
+        }
+      ]
+    },
+    {
+      "title": "INTRODUÇÃO AO MÉTODO",
+      "subtopics": [
+        {
+          "title": "Análise dos Candles",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Controle de Forças",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Barra Elefante, Lei da Continuidade, Regra dos 2/3",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Tempos Gráficos Analíticos",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Indicadores: Médias Móveis, MACD e Volume",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Lei da Falha de Nova Máxima/Mínima",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Lei de 3,5 e 8 Barras",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Setups à Favor da Tendência",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Setups Contra à Tendência",
+          "content": "Módulo Básico 2\nINTRODUÇÃO AO MÉTODO\nAnálise dos Candles\nControle de Forças\nBarra Elefante, Lei da Continuidade, Regra dos 2/3\nTempos Gráficos Analíticos\nIndicadores: Médias Móveis, MACD e Volume\nLei da Falha de Nova Máxima/Mínima\nLei de 3,5 e 8 Barras\nSetups à Favor da Tendência\nSetups Contra à Tendência\n8"
+        },
+        {
+          "title": "Candles",
+          "content": "Candles\nO que é um candle\nEntendendo os candles\nTipos de Barras\n9"
+        },
+        {
+          "title": "O que é um candle",
+          "content": "Candles\nO que é um candle\nEntendendo os candles\nTipos de Barras\n9"
+        },
+        {
+          "title": "Entendendo os candles",
+          "content": "Candles\nO que é um candle\nEntendendo os candles\nTipos de Barras\n9"
+        },
+        {
+          "title": "Tipos de Barras",
+          "content": "Candles\nO que é um candle\nEntendendo os candles\nTipos de Barras\n9"
+        },
+        {
+          "title": "Análise",
+          "content": "Análise\nGráfica - Candlestick\nMáxima Máxima\nFechamento Abertura\nAbertura Fechamento\nMínima Mínima\n10"
+        },
+        {
+          "title": "Gráfica - Candlestick",
+          "content": "Análise\nGráfica - Candlestick\nMáxima Máxima\nFechamento Abertura\nAbertura Fechamento\nMínima Mínima\n10"
+        }
+      ]
+    },
+    {
+      "title": "CONHECIMENTO INTERMEDIÁRIO I",
+      "subtopics": [
+        {
+          "title": "Refino dos Setups",
+          "content": "Módulo Intermediário 1\nCONHECIMENTO INTERMEDIÁRIO I\nRefino dos Setups\nMapa das localizações\nSuportes e Resistências\nLocalização\nOs 4 Fantásticos - Estratégia de Abertura (FAB4)\n194"
+        },
+        {
+          "title": "Mapa das localizações",
+          "content": "Módulo Intermediário 1\nCONHECIMENTO INTERMEDIÁRIO I\nRefino dos Setups\nMapa das localizações\nSuportes e Resistências\nLocalização\nOs 4 Fantásticos - Estratégia de Abertura (FAB4)\n194"
+        },
+        {
+          "title": "Suportes e Resistências",
+          "content": "Módulo Intermediário 1\nCONHECIMENTO INTERMEDIÁRIO I\nRefino dos Setups\nMapa das localizações\nSuportes e Resistências\nLocalização\nOs 4 Fantásticos - Estratégia de Abertura (FAB4)\n194"
+        },
+        {
+          "title": "Localização",
+          "content": "Módulo Intermediário 1\nCONHECIMENTO INTERMEDIÁRIO I\nRefino dos Setups\nMapa das localizações\nSuportes e Resistências\nLocalização\nOs 4 Fantásticos - Estratégia de Abertura (FAB4)\n194"
+        },
+        {
+          "title": "Os 4 Fantásticos - Estratégia de Abertura (FAB4)",
+          "content": "Módulo Intermediário 1\nCONHECIMENTO INTERMEDIÁRIO I\nRefino dos Setups\nMapa das localizações\nSuportes e Resistências\nLocalização\nOs 4 Fantásticos - Estratégia de Abertura (FAB4)\n194"
+        },
+        {
+          "title": "Refino dos",
+          "content": "Refino dos\nSetups\n195"
+        },
+        {
+          "title": "Setups",
+          "content": "Refino dos\nSetups\n195"
+        },
+        {
+          "title": "Mapa de",
+          "content": "Mapa de\nLocalizações\n1. Barra Elefante 6. GIFT\n2. RBTO 7. BT\n3. RBI 8. BULL 180\n4. VBS 9. CDB\n5. BOP\n196"
+        },
+        {
+          "title": "Localizações",
+          "content": "Mapa de\nLocalizações\n1. Barra Elefante 6. GIFT\n2. RBTO 7. BT\n3. RBI 8. BULL 180\n4. VBS 9. CDB\n5. BOP\n196"
+        },
+        {
+          "title": "1. Barra Elefante 6. GIFT",
+          "content": "Mapa de\nLocalizações\n1. Barra Elefante 6. GIFT\n2. RBTO 7. BT\n3. RBI 8. BULL 180\n4. VBS 9. CDB\n5. BOP\n196"
+        },
+        {
+          "title": "Suportes e",
+          "content": "Suportes e\nResistências\n197"
+        },
+        {
+          "title": "Resistências",
+          "content": "Suportes e\nResistências\n197"
+        },
+        {
+          "title": "Suporte de Fundo Anterior",
+          "content": "Suporte de Fundo Anterior\nE forma de suporte ocorre quando uma\nqueda revisita ou testa um fundo anterior.\nEssencialmente, é uma correção de 100%\ndo rali anterior.\n198"
+        },
+        {
+          "title": "E forma de suporte ocorre quando uma",
+          "content": "Suporte de Fundo Anterior\nE forma de suporte ocorre quando uma\nqueda revisita ou testa um fundo anterior.\nEssencialmente, é uma correção de 100%\ndo rali anterior.\n198"
+        },
+        {
+          "title": "queda revisita ou testa um fundo anterior.",
+          "content": "Suporte de Fundo Anterior\nE forma de suporte ocorre quando uma\nqueda revisita ou testa um fundo anterior.\nEssencialmente, é uma correção de 100%\ndo rali anterior.\n198"
+        }
+      ]
+    },
+    {
+      "title": "CONHECIMENTO INTERMEDIÁRIO II",
+      "subtopics": [
+        {
+          "title": "Tipos de Stop Inicial",
+          "content": "Módulo Intermediário 2\nCONHECIMENTO INTERMEDIÁRIO II\nTipos de Stop Inicial\nPegar Lucros\nGerenciamento de Trade\n232"
+        },
+        {
+          "title": "Pegar Lucros",
+          "content": "Módulo Intermediário 2\nCONHECIMENTO INTERMEDIÁRIO II\nTipos de Stop Inicial\nPegar Lucros\nGerenciamento de Trade\n232"
+        },
+        {
+          "title": "Gerenciamento de Trade",
+          "content": "Módulo Intermediário 2\nCONHECIMENTO INTERMEDIÁRIO II\nTipos de Stop Inicial\nPegar Lucros\nGerenciamento de Trade\n232"
+        },
+        {
+          "title": "Plano de",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Posições",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Capital Inicial - quanto seu capital suporta?",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Operar somente 1 ativo",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Operar com 2 contratos",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Quanto você pode perder em uma operação?",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Quanto você pode perder em um dia?",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Quantas entradas você consegue fazer sem perder a",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "calma?",
+          "content": "Plano de\nPosições\nCapital Inicial - quanto seu capital suporta?\nOperar somente 1 ativo\nOperar com 2 contratos\nQuanto você pode perder em uma operação?\nQuanto você pode perder em um dia?\nQuantas entradas você consegue fazer sem perder a\ncalma?\n233"
+        },
+        {
+          "title": "Indo para a",
+          "content": "Indo para a\nConta Real\nSTART\nEscolha 1 ativo\nVá para a\nOpere com 2 contratos\nSim\nPreencha a planilha de 20 trades CONTA REAL\nÍndice de assertividade\nmaior que 60%?\nNão\nSim\nEsta ganhando mais\ndo que perdendo?\nNão\nContinue no\nsimulador\nRepita o\nprocesso\n234"
+        },
+        {
+          "title": "Conta Real",
+          "content": "Indo para a\nConta Real\nSTART\nEscolha 1 ativo\nVá para a\nOpere com 2 contratos\nSim\nPreencha a planilha de 20 trades CONTA REAL\nÍndice de assertividade\nmaior que 60%?\nNão\nSim\nEsta ganhando mais\ndo que perdendo?\nNão\nContinue no\nsimulador\nRepita o\nprocesso\n234"
+        },
+        {
+          "title": "START",
+          "content": "Indo para a\nConta Real\nSTART\nEscolha 1 ativo\nVá para a\nOpere com 2 contratos\nSim\nPreencha a planilha de 20 trades CONTA REAL\nÍndice de assertividade\nmaior que 60%?\nNão\nSim\nEsta ganhando mais\ndo que perdendo?\nNão\nContinue no\nsimulador\nRepita o\nprocesso\n234"
+        }
+      ]
+    },
+    {
+      "title": "CONHECIMENTO AVANÇADO",
+      "subtopics": [
+        {
+          "title": "Tipos de Pernadas e Pausas",
+          "content": "Módulo Avançado\nCONHECIMENTO AVANÇADO\nTipos de Pernadas e Pausas\nCorreções, Tipos de Subidas e Quedas\nAdições\nBarra Sólida sem Continuidade\nRegra das Duas Cores\nZona Neutra\nSharp Turn\n287"
+        },
+        {
+          "title": "Correções, Tipos de Subidas e Quedas",
+          "content": "Módulo Avançado\nCONHECIMENTO AVANÇADO\nTipos de Pernadas e Pausas\nCorreções, Tipos de Subidas e Quedas\nAdições\nBarra Sólida sem Continuidade\nRegra das Duas Cores\nZona Neutra\nSharp Turn\n287"
+        },
+        {
+          "title": "Adições",
+          "content": "Módulo Avançado\nCONHECIMENTO AVANÇADO\nTipos de Pernadas e Pausas\nCorreções, Tipos de Subidas e Quedas\nAdições\nBarra Sólida sem Continuidade\nRegra das Duas Cores\nZona Neutra\nSharp Turn\n287"
+        },
+        {
+          "title": "Barra Sólida sem Continuidade",
+          "content": "Módulo Avançado\nCONHECIMENTO AVANÇADO\nTipos de Pernadas e Pausas\nCorreções, Tipos de Subidas e Quedas\nAdições\nBarra Sólida sem Continuidade\nRegra das Duas Cores\nZona Neutra\nSharp Turn\n287"
+        },
+        {
+          "title": "Regra das Duas Cores",
+          "content": "Módulo Avançado\nCONHECIMENTO AVANÇADO\nTipos de Pernadas e Pausas\nCorreções, Tipos de Subidas e Quedas\nAdições\nBarra Sólida sem Continuidade\nRegra das Duas Cores\nZona Neutra\nSharp Turn\n287"
+        },
+        {
+          "title": "Zona Neutra",
+          "content": "Módulo Avançado\nCONHECIMENTO AVANÇADO\nTipos de Pernadas e Pausas\nCorreções, Tipos de Subidas e Quedas\nAdições\nBarra Sólida sem Continuidade\nRegra das Duas Cores\nZona Neutra\nSharp Turn\n287"
+        },
+        {
+          "title": "Sharp Turn",
+          "content": "Módulo Avançado\nCONHECIMENTO AVANÇADO\nTipos de Pernadas e Pausas\nCorreções, Tipos de Subidas e Quedas\nAdições\nBarra Sólida sem Continuidade\nRegra das Duas Cores\nZona Neutra\nSharp Turn\n287"
+        },
+        {
+          "title": "Tipos",
+          "content": "Tipos\nde Pernadas\nTipo 1 Tipo 2 Tipo 3\n288"
+        },
+        {
+          "title": "de Pernadas",
+          "content": "Tipos\nde Pernadas\nTipo 1 Tipo 2 Tipo 3\n288"
+        },
+        {
+          "title": "Tipo 1 Tipo 2 Tipo 3",
+          "content": "Tipos\nde Pernadas\nTipo 1 Tipo 2 Tipo 3\n288"
+        },
+        {
+          "title": "Tipos de Pernadas",
+          "content": "Tipos de Pernadas\n289"
+        },
+        {
+          "title": "de Pausas",
+          "content": "Tipos\nde Pausas\nTipo 1 Tipo 2 Tipo 3\n292"
+        },
+        {
+          "title": "Tipos de Pausas",
+          "content": "Tipos de Pausas\n293"
+        },
+        {
+          "title": "Correções",
+          "content": "Correções\nde mercado\nAs correções nos mostram qual lado da força do mercado está no comando, juntamente com as\nmédias para nos auxiliar a entender melhor seu comportamento;\nVale para candles grandes ou para pernada;\nTipos:\nCorreção de 1/3 (33%)\nCorreção de 1/2 (50%)\nCorreção de 2/3 (70%)\n295"
+        },
+        {
+          "title": "de mercado",
+          "content": "Correções\nde mercado\nAs correções nos mostram qual lado da força do mercado está no comando, juntamente com as\nmédias para nos auxiliar a entender melhor seu comportamento;\nVale para candles grandes ou para pernada;\nTipos:\nCorreção de 1/3 (33%)\nCorreção de 1/2 (50%)\nCorreção de 2/3 (70%)\n295"
+        }
+      ]
     }
   ]
 }

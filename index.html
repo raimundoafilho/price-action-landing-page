@@ -6,28 +6,31 @@
   <title>Método Price Action - Oliver Velez</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    #login-screen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; z-index: 9999; }
-    .login-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); width: 100%; max-width: 400px; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background: #f5f5f5; }
+
+    #login-screen { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(135deg, #667eea, #764ba2); display: flex; align-items: center; justify-content: center; z-index: 9999; }
+    .login-box { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.2); width: 90%; max-width: 400px; }
     .login-box h1 { font-size: 28px; margin-bottom: 10px; color: #333; }
     .login-box p { font-size: 14px; color: #666; margin: 5px 0; }
-    #pwd { width: 100%; padding: 12px; margin: 20px 0; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; box-sizing: border-box; }
-    #pwd:focus { outline: none; border-color: #667eea; box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1); }
+
+    #pwd { width: 100%; padding: 12px; margin: 20px 0; border: 1px solid #ddd; border-radius: 4px; font-size: 16px; }
     #btnLogin { width: 100%; padding: 12px; background: #667eea; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; }
-    #btnLogin:hover { background: #764ba2; }
-    #err { color: red; margin-top: 10px; min-height: 20px; font-size: 14px; }
+    #err { color: red; margin-top: 10px; font-size: 14px; }
 
     #app { display: none; height: 100vh; flex-direction: column; }
-    .topics-tree { list-style: none; padding: 0; margin: 0; }
-    .topic-item { margin: 0; }
-    .topic-header { padding: 12px; cursor: pointer; display: flex; align-items: center; background: #f5f5f5; border-bottom: 1px solid #ddd; user-select: none; font-weight: 500; }
-    .topic-header:hover { background: #e8e8e8; }
-    .topic-toggle { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; margin-right: 8px; font-weight: bold; }
-    .subtopics { list-style: none; padding-left: 20px; margin: 0; }
-    .subtopic-item { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid #eee; }
-    .subtopic-item:hover { background: #f9f9f9; }
-    .subtopic-item.active { background: #e3f2fd; border-left: 3px solid #2196F3; padding-left: 9px; }
-    #content { padding: 20px; line-height: 1.6; overflow-y: auto; }
-    #content h2 { margin-top: 0; color: #333; }
+    .header { background: #333; color: white; padding: 15px; display: flex; justify-content: space-between; align-items: center; }
+    .main-layout { display: flex; flex: 1; overflow: hidden; }
+    .sidebar { width: 280px; background: #f9f9f9; border-right: 1px solid #ddd; overflow-y: auto; }
+    .content { flex: 1; overflow-y: auto; padding: 20px; }
+
+    .topic { border-bottom: 1px solid #ddd; }
+    .topic-header { padding: 12px; cursor: pointer; font-weight: 500; background: #fff; }
+    .topic-header:hover { background: #f0f0f0; }
+    .subtopic-list { list-style: none; padding: 0; margin: 0; display: none; }
+    .subtopic-item { padding: 10px 20px; cursor: pointer; border-bottom: 1px solid #eee; }
+    .subtopic-item:hover { background: #f0f0f0; }
+    .subtopic-item.active { background: #e3f2fd; border-left: 3px solid #2196F3; }
   </style>
 </head>
 <body>
@@ -36,33 +39,25 @@
   <div class="login-box">
     <h1>Método Price Action</h1>
     <p>Oliver Velez | André Trader</p>
-    <input type="password" id="pwd" placeholder="Digite a senha" autofocus>
-    <button id="btnLogin">🔓 Entrar</button>
+    <input type="password" id="pwd" placeholder="Senha">
+    <button id="btnLogin">Entrar</button>
     <p id="err"></p>
   </div>
 </div>
 
 <div id="app">
-  <header class="header">
-    <div class="header-container">
-      <h1 class="logo-title">Método Price Action</h1>
-      <div>
-        <button id="themeToggle" class="theme-toggle"><span class="theme-icon">🌙</span></button>
-        <button id="btnLogout" class="logout-btn">🚪 Sair</button>
-      </div>
+  <div class="header">
+    <h1>Método Price Action</h1>
+    <button id="btnLogout">Sair</button>
+  </div>
+
+  <div class="main-layout">
+    <div class="sidebar">
+      <div id="topics-container"></div>
     </div>
-  </header>
-
-  <div style="display: flex; flex: 1; overflow: hidden;">
-    <aside style="width: 300px; overflow-y: auto; border-right: 1px solid #ddd;">
-      <ul class="topics-tree" id="topicsList"></ul>
-    </aside>
-
-    <main style="flex: 1; overflow-y: auto;">
-      <div id="content">
-        <p>Selecione um tópico para começar</p>
-      </div>
-    </main>
+    <div class="content" id="content">
+      <p>Selecione um tópico</p>
+    </div>
   </div>
 </div>
 
@@ -70,27 +65,17 @@
 const SENHA = 'AndreTrader';
 let data = null;
 
-// Login handlers
-document.getElementById('btnLogin').addEventListener('click', login);
-document.getElementById('pwd').addEventListener('keypress', (e) => {
-  if (e.key === 'Enter') login();
-});
+document.getElementById('btnLogin').onclick = () => login();
+document.getElementById('pwd').onkeypress = (e) => e.key === 'Enter' && login();
 
 function login() {
-  const pwd = document.getElementById('pwd').value.trim();
-  const correta = SENHA;
-
-  console.log('Digitado: [' + pwd + '] (' + pwd.length + ' chars)');
-  console.log('Esperado: [' + correta + '] (' + correta.length + ' chars)');
-  console.log('Match: ' + (pwd === correta));
-
-  if (pwd === correta) {
+  const pwd = document.getElementById('pwd').value;
+  if (pwd === SENHA) {
     sessionStorage.auth = 1;
     showApp();
   } else {
-    document.getElementById('err').textContent = 'Senha incorreta. Digitou: [' + pwd + ']';
+    document.getElementById('err').textContent = 'Incorreto';
     document.getElementById('pwd').value = '';
-    document.getElementById('pwd').focus();
   }
 }
 
@@ -107,73 +92,60 @@ async function showApp() {
 }
 
 function renderTopics() {
-  const list = document.getElementById('topicsList');
-  list.innerHTML = '';
+  const container = document.getElementById('topics-container');
+  container.innerHTML = '';
 
   if (!data || !data.topics) return;
 
-  data.topics.forEach((topic) => {
-    const li = document.createElement('li');
-    li.className = 'topic-item';
+  data.topics.forEach((topic, idx) => {
+    const topicDiv = document.createElement('div');
+    topicDiv.className = 'topic';
 
     const header = document.createElement('div');
     header.className = 'topic-header';
-    header.innerHTML = `<span class="topic-toggle">${topic.subtopics && topic.subtopics.length > 0 ? '+' : ''}</span><span>${topic.title}</span>`;
-
+    header.textContent = '+ ' + topic.title;
     header.onclick = () => {
-      topic.expanded = !topic.expanded;
-      const toggle = header.querySelector('.topic-toggle');
-      toggle.textContent = topic.expanded ? '−' : '+';
-      subtopicsList.style.display = topic.expanded ? 'block' : 'none';
+      const list = topicDiv.querySelector('.subtopic-list');
+      if (list.style.display === 'none') {
+        list.style.display = 'block';
+        header.textContent = '− ' + topic.title;
+      } else {
+        list.style.display = 'none';
+        header.textContent = '+ ' + topic.title;
+      }
     };
 
-    li.appendChild(header);
+    topicDiv.appendChild(header);
 
-    if (topic.subtopics && topic.subtopics.length > 0) {
-      const subtopicsList = document.createElement('ul');
-      subtopicsList.className = 'subtopics';
-      subtopicsList.style.display = 'none';
+    const list = document.createElement('ul');
+    list.className = 'subtopic-list';
 
-      topic.subtopics.forEach((sub) => {
-        const sli = document.createElement('li');
-        sli.className = 'subtopic-item';
-        sli.textContent = sub.title || 'Subtópico';
-        sli.onclick = () => {
-          document.querySelectorAll('.subtopic-item').forEach(s => s.classList.remove('active'));
-          sli.classList.add('active');
-          document.getElementById('content').innerHTML = `<h2>${sub.title}</h2><div>${sub.content || 'Sem conteúdo'}</div>`;
-        };
-        subtopicsList.appendChild(sli);
-      });
+    (topic.subtopics || []).forEach(sub => {
+      const li = document.createElement('li');
+      li.className = 'subtopic-item';
+      li.textContent = sub.title;
+      li.onclick = () => {
+        document.querySelectorAll('.subtopic-item').forEach(s => s.classList.remove('active'));
+        li.classList.add('active');
+        document.getElementById('content').innerHTML = '<h2>' + sub.title + '</h2><p>' + (sub.content || 'Sem conteúdo') + '</p>';
+      };
+      list.appendChild(li);
+    });
 
-      li.appendChild(subtopicsList);
-    }
-
-    list.appendChild(li);
+    topicDiv.appendChild(list);
+    container.appendChild(topicDiv);
   });
 }
 
-// Logout e tema
-document.getElementById('btnLogout').addEventListener('click', () => {
-  if (confirm('Sair?')) {
-    delete sessionStorage.auth;
-    location.reload();
-  }
-});
+document.getElementById('btnLogout').onclick = () => {
+  delete sessionStorage.auth;
+  location.reload();
+};
 
-document.getElementById('themeToggle').addEventListener('click', () => {
-  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-  document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-});
-
-// Init
-window.addEventListener('DOMContentLoaded', () => {
-  if (sessionStorage.auth) {
-    showApp();
-  } else {
-    document.getElementById('pwd').focus();
-  }
-});
+window.onload = () => {
+  if (sessionStorage.auth) showApp();
+  else document.getElementById('pwd').focus();
+};
 </script>
 
 </body>
