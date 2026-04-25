@@ -4,23 +4,118 @@
   <meta charset="UTF-8">
   <title>Método Price Action - Oliver Velez</title>
 </head>
-<body>
+<body style="margin:0;padding:0;font-family:Arial;">
 
-<input type="password" id="pwd" placeholder="Senha" autofocus>
-<button id="btn">Entrar</button>
-<p id="msg"></p>
+<div id="login-screen" style="position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#667eea,#764ba2);display:flex;align-items:center;justify-content:center;z-index:999;">
+  <div style="background:white;padding:40px;border-radius:8px;width:90%;max-width:400px;">
+    <h1 style="color:#333;margin:0 0 5px 0;">Método Price Action</h1>
+    <p style="color:#666;margin:0 0 20px 0;font-size:14px;">Oliver Velez | André Trader</p>
+    <input type="password" id="pwd" placeholder="Senha" autofocus>
+    <button id="btn" style="width:100%;padding:12px;background:#667eea;color:white;border:none;border-radius:4px;font-size:16px;cursor:pointer;margin-top:10px;">Entrar</button>
+    <p id="err" style="color:red;margin:10px 0 0 0;"></p>
+  </div>
+</div>
+
+<div id="app" style="display:none;height:100vh;flex-direction:column;">
+  <div style="background:#333;color:white;padding:15px;display:flex;justify-content:space-between;align-items:center;">
+    <h1 style="margin:0;">Método Price Action</h1>
+    <button id="btnLogout" style="background:#667eea;color:white;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;">Sair</button>
+  </div>
+  <div style="display:flex;flex:1;overflow:hidden;">
+    <div id="sidebar" style="width:280px;background:#f9f9f9;border-right:1px solid #ddd;overflow-y:auto;"></div>
+    <div id="content" style="flex:1;overflow-y:auto;padding:20px;"><p>Selecione um tópico</p></div>
+  </div>
+</div>
 
 <script>
 const SENHA = 'AndreTrader';
+let data = null;
 
 document.getElementById('btn').onclick = () => {
   const pwd = document.getElementById('pwd').value;
   if (pwd === SENHA) {
-    document.getElementById('msg').textContent = 'SUCESSO!';
+    sessionStorage.auth = 1;
+    showApp();
   } else {
-    document.getElementById('msg').textContent = 'Erro: ' + pwd;
+    document.getElementById('err').textContent = 'Senha incorreta';
+    document.getElementById('pwd').value = '';
   }
 };
+
+document.getElementById('pwd').onkeypress = (e) => {
+  if (e.key === 'Enter') {
+    document.getElementById('btn').click();
+  }
+};
+
+async function showApp() {
+  document.getElementById('login-screen').style.display = 'none';
+  document.getElementById('app').style.display = 'flex';
+
+  if (!data) {
+    const url = './apostila_scraped/landing-page-data.json?t=' + Date.now();
+    data = await fetch(url).then(r => r.json());
+    renderTopics();
+  }
+}
+
+function renderTopics() {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.innerHTML = '';
+
+  if (!data || !data.topics) return;
+
+  data.topics.forEach((topic) => {
+    const topicDiv = document.createElement('div');
+    topicDiv.style.borderBottom = '1px solid #ddd';
+
+    const header = document.createElement('div');
+    header.style.padding = '12px';
+    header.style.cursor = 'pointer';
+    header.style.fontWeight = '500';
+    header.style.background = '#fff';
+    header.textContent = '+ ' + topic.title;
+
+    const list = document.createElement('ul');
+    list.style.listStyle = 'none';
+    list.style.padding = '0';
+    list.style.margin = '0';
+    list.style.display = 'none';
+
+    header.onclick = () => {
+      if (list.style.display === 'none') {
+        list.style.display = 'block';
+        header.textContent = '− ' + topic.title;
+      } else {
+        list.style.display = 'none';
+        header.textContent = '+ ' + topic.title;
+      }
+    };
+
+    (topic.subtopics || []).forEach(sub => {
+      const li = document.createElement('li');
+      li.style.padding = '10px 20px';
+      li.style.cursor = 'pointer';
+      li.style.borderBottom = '1px solid #eee';
+      li.textContent = sub.title;
+      li.onclick = () => {
+        document.getElementById('content').innerHTML = '<h2>' + sub.title + '</h2><p>' + (sub.content || 'Sem conteúdo') + '</p>';
+      };
+      list.appendChild(li);
+    });
+
+    topicDiv.appendChild(header);
+    topicDiv.appendChild(list);
+    sidebar.appendChild(topicDiv);
+  });
+}
+
+document.getElementById('btnLogout').onclick = () => {
+  delete sessionStorage.auth;
+  location.reload();
+};
+
+if (sessionStorage.auth) showApp();
 </script>
 
 </body>
